@@ -158,32 +158,20 @@ Dense retrieval performed best on the hard-query subset, with the highest hard-q
 Hybrid reranking did not outperform dense retrieval on aggregate hard-query scores. It recovered different hard cases than dense retrieval, but it did not consistently rank relevant chunks higher than dense retrieval, which explains its lower MRR.
 
 The hardest case was q19, which every configuration missed. It requires recognizing a bulk-processing failure pattern and linking it to Apex trigger bulkification and governor limits. This failure shows that symptom-based troubleshooting remains the clearest area where the best practical configuration still loses.
-
 ## Dense Failure Analysis
 
-Dense retrieval completely missed five queries: q09, q12, q13, q15, and q19.
+Dense retrieval completely missed five queries: q09, q12, q13, q15, and q19. These misses were useful because they show where semantic retrieval still breaks down in Salesforce documentation search.
 
-| query | category | query text | labelled relevant docs | dense top-5 prediction |
-| --- | --- | --- | --- | --- |
-| q09 | `exact_product_feature_lookup` | Can I update the Profile object in Apex? | `salesforce_apex_developer_guide_p0169_008`<br>Apex Developer Guide p169 | `salesforce_security_impl_guide_p0028_009`<br>`salesforce_security_impl_guide_p0149_030`<br>`extend_click_automate_p0297_018`<br>`salesforce_security_impl_guide_p0021_006`<br>`salesforce_security_impl_guide_p0020_005` |
-| q12 | `cross_object_or_cross_system_workflow` | When a Case is created or updated, update a field on the related Account. | `salesforce_apex_developer_guide_p0271_014`<br>`salesforce_apex_developer_guide_p0271_015`<br>`salesforce_apex_developer_guide_p0271_016`<br>`extend_click_automate_p0036_005`<br>`extend_click_automate_p0100_008` | `extend_click_automate_p0224_011`<br>`agentforce_contact_center_5_30_2026_p0597_023`<br>`extend_click_automate_p0278_017`<br>`agentforce_contact_center_5_30_2026_p0583_009`<br>`sales_core_p0287_029` |
-| q13 | `paraphrased_feature_discovery` | Use Salesforce CRM data with Marketing Cloud data extensions for customer messaging. | `engagement_audience_builder_and_contact_builder_5_30_2026_p0139_007`<br>`engagement_audience_builder_and_contact_builder_5_30_2026_p0139_008`<br>`engagement_audience_builder_and_contact_builder_5_30_2026_p0139_009` | `mc_email_p0219_024`<br>`mc_email_p0203_022`<br>`mc_email_p0128_010`<br>`mc_email_p0123_006`<br>`mc_journeys_and_automations_p0248_013` |
-| q15 | `symptom_based_troubleshooting` | A custom field was deployed but does not appear on the Account record page. | `salesforce_security_impl_guide_p0048_020`<br>`salesforce_security_impl_guide_p0048_021`<br>`salesforce_security_impl_guide_p0048_022` | `setup_p0452_020`<br>`sales_core_p0280_028`<br>`salesforce_security_impl_guide_p0046_018`<br>`setup_p0018_001`<br>`salesforce_record_access_under_the_hood_p0015_010` |
-| q19 | `symptom_based_troubleshooting` | Case automation works for a few records but fails when many Cases are updated at once. | `salesforce_apex_developer_guide_p0290_017`<br>`salesforce_apex_developer_guide_p0354_027` | `extend_click_automate_p0277_016`<br>`extend_click_automate_p0036_005`<br>`extend_click_automate_p0224_011`<br>`extend_click_automate_p0100_008`<br>`extend_click_automate_p0278_017` |
+| query | failure pattern | explanation |
+| --- | --- | --- |
+| q09 | Ambiguous Salesforce term | The query asks whether the `Profile` object can be updated in Apex. Dense retrieval matched the word `Profile` to security and permission documentation instead of the Apex documentation about sObjects that do not support DML operations. |
+| q12 | Cross-object automation | The query describes updating an Account when a related Case is created or updated. Dense retrieval returned nearby Flow and Email-to-Case pages, but missed the more specific Apex trigger and record-triggered Flow passages. |
+| q13 | Cross-system feature discovery | The query asks how to use Salesforce CRM data in Marketing Cloud for messaging. The relevant documentation uses more specific terms such as `Synchronized Data Sources`, `Synchronized Data Extensions`, `Contact Builder`, and `Marketing Cloud Connect`, which were not present in the query. |
+| q15 | Permission and layout ambiguity | The symptom sounds like a page layout issue because the field does not appear on the Account record page. The labelled answer is actually about field-level security and field permissions, so dense retrieval returned adjacent setup and access-control pages. |
+| q19 | Symptom-based troubleshooting | The query describes an automation that works for a few Case records but fails in bulk. Dense retrieval did not connect this symptom to Apex bulk trigger patterns, SOQL limits, and governor limits. |
 
-The q09 miss is an exact-looking Apex DML question, but dense retrieved
-security-profile pages because the word `Profile` is heavily represented in
-security documentation. q12 requires connecting Case-to-Account automation
-across implementation paths, so dense retrieved nearby Flow and Email-to-Case
-pages instead of the specific trigger and record-triggered-flow passages. q13
-is a paraphrased feature-discovery miss: the query asks for using Salesforce CRM
-data in Marketing Cloud, but the labelled answer uses the more specific terms
-`synchronized data sources`, `synchronized data extensions`, and `Contact Builder`.
-q15 confuses page layout, record access, and field-level security language, causing
-dense to retrieve adjacent setup and access-control pages. q19 is the clearest
-failure: the user describes a bulk failure symptom, but the labelled answer uses
-developer terms such as bulk triggers, SOQL query limits, and governor limits.
-This is the main category where the best practical configuration still loses.
+The clearest failure case was q19, which every retrieval configuration missed. This query does not use the developer terms that appear in the labelled documentation. It describes the operational symptom instead: the automation works for a few records but fails when many records are updated at once. This shows that symptom-based troubleshooting remains the weakest area of the benchmark.
+
 
 
 # If I Had One More Week
