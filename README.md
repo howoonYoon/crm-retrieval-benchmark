@@ -102,10 +102,10 @@ including 5 hard queries.
 ![Retrieval metrics plot](results/metrics_plot.png)
 | config | recall@5 | MRR | p95 latency |
 | --- | ---: | ---: | ---: |
-| bm25 | 0.347 | 0.304 | 6.5 ms |
-| dense | 0.588 | 0.567 | 32.3 ms |
+| bm25 | 0.347 | 0.304 | **6.5 ms** |
+| dense | 0.588 | **0.567** | 32.3 ms |
 | hybrid_rrf | 0.514 | 0.421 | 31.6 ms |
-| hybrid_rerank | 0.598 | 0.497 | 177.0 ms |
+| hybrid_rerank | **0.598** | 0.497 | 177.0 ms |
 
 
 I define the best practical configuration as the one that gives the strongest quality-latency tradeoff for interactive documentation search, with MRR prioritized slightly over recall@5 because users are more likely to trust the system when a relevant document appears near the top of the results. Under this criterion, **dense retrieval** is the best choice: hybrid reranking improves recall@5 by only 0.010, but has lower MRR and about 6x higher p95 latency.
@@ -122,10 +122,10 @@ Average recall@5 by retrieval category:
 
 | category | queries | bm25 | dense | hybrid_rrf | hybrid_rerank |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `natural_language_task_description` | q01, q03, q07, q08, q10, q11, q12 | 0.564 | 0.607 | 0.707 | 0.707 |
-| `exact_product_feature_lookup` | q02, q04, q05, q06, q09, q14 | 0.333 | 0.750 | 0.583 | 0.750 |
-| `paraphrased_feature_discovery` | q13, q16, q17, q18 | 0.250 | 0.500 | 0.333 | 0.417 |
-| `symptom_based_troubleshooting` | q15, q19, q20 | 0.000 | 0.333 | 0.167 | 0.278 |
+| `natural_language_task_description` | q01, q03, q07, q08, q10, q11, q12 | 0.564 | 0.607 | **0.707** | **0.707** |
+| `exact_product_feature_lookup` | q02, q04, q05, q06, q09, q14 | 0.333 | **0.750** | 0.583 | **0.750** |
+| `paraphrased_feature_discovery` | q13, q16, q17, q18 | 0.250 | **0.500** | 0.333 | 0.417 |
+| `symptom_based_troubleshooting` | q15, q19, q20 | 0.000 | **0.333** | 0.167 | 0.278 |
 
 Dense Retrieval achieved the highest or joint-highest Recall@5 in the Exact Product Feature Lookup, Paraphrased Feature Discovery, and Symptom-Based Troubleshooting categories. In contrast, hybrid methods performed best on Natural Language Task Description queries. This suggests that combining lexical and semantic signals can help recover more relevant documents when users describe a business task or objective in broad natural language rather than using specific Salesforce terminology.
 
@@ -150,7 +150,7 @@ The five deliberately hard queries are q12, q16, q17, q19, and q20. These querie
 | config | hard recall@5 | hard MRR | complete misses among hard queries |
 | --- | ---: | ---: | --- |
 | bm25 | 0.040 | 0.067 | q16, q17, q19, q20 |
-| dense | 0.400 | 0.500 | q12, q19 |
+| dense | **0.400** | **0.500** | q12, q19 |
 | hybrid_rrf | 0.207 | 0.233 | q16, q19 |
 | hybrid_rerank | 0.207 | 0.350 | q17, q19 |
 
