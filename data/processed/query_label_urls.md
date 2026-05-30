@@ -84,7 +84,7 @@ Query: How do I add logic so that when a Case is created or updated, a field on 
 - `extend_click_automate_p0036_005` - extend_click_automate.pdf p36: https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/extend_click_automate.pdf#page=36
 - `extend_click_automate_p0100_008` - extend_click_automate.pdf p100: https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/extend_click_automate.pdf#page=100
 
-## q13 - cross_object_or_cross_system_workflow
+## q13 - paraphrased_feature_discovery
 
 Query: How can I use Salesforce CRM data with Marketing Cloud data extensions for customer messaging?
 
@@ -107,7 +107,7 @@ Query: A custom field was added in the layout and deployed successfully, but it 
 - `salesforce_security_impl_guide_p0048_021` - salesforce_security_impl_guide.pdf p48-50: https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_security_impl_guide.pdf#page=48
 - `salesforce_security_impl_guide_p0048_022` - salesforce_security_impl_guide.pdf p48-50: https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_security_impl_guide.pdf#page=48
 
-## q16 - cross_object_or_cross_system_workflow
+## q16 - paraphrased_feature_discovery
 
 Query: How can a marketer identify customers who neither opened nor clicked a voucher email in Journey Builder before sending a follow-up mobile message?
 

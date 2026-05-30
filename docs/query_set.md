@@ -37,8 +37,6 @@ The query requires connecting multiple Salesforce objects, systems, channels, or
 | id | difficulty | relevant docs | query summary |
 | --- | --- | ---: | --- |
 | q12 | hard | 5 | Update a related Account when a Case is created or updated. |
-| q13 | hard | 3 | Use Salesforce CRM data in Marketing Cloud data extensions. |
-| q16 | hard | 3 | Branch after email non-engagement before sending a mobile follow-up. |
 
 ## symptom_based_troubleshooting
 
@@ -48,7 +46,7 @@ The query describes a symptom, failure, or access problem without naming the und
 | --- | --- | ---: | --- |
 | q15 | medium | 3 | Troubleshoot a custom field that does not appear on an Account page. |
 | q19 | hard | 2 | Troubleshoot automation that fails only when many Cases are updated. |
-| q20 | medium | 2 | Troubleshoot why a user can open but not edit some Account records. |
+| q20 | hard | 2 | Troubleshoot why a user can open but not edit some Account records. |
 
 ## paraphrased_feature_discovery
 
@@ -56,5 +54,7 @@ The query describes requirements and expects the system to discover the relevant
 
 | id | difficulty | relevant docs | query summary |
 | --- | --- | ---: | --- |
+| q13 | medium | 3 | Use Salesforce CRM data in Marketing Cloud data extensions. |
+| q16 | hard | 3 | Branch after email non-engagement before sending a mobile follow-up. |
 | q17 | hard | 3 | Debug a guided Flow while preventing test records from being saved. |
 | q18 | medium | 1 | Choose an import tool for high-volume loads, updates, and export. |

@@ -14,18 +14,20 @@ Because of this, I wanted to evaluate how different retrieval approaches perform
 
 ## 1. Creating Queries from Multiple User Perspectives
 
-The queries were designed from the perspectives of different Salesforce users rather than focusing only on developers.
+The queries were inspired by real Salesforce CRM operational scenarios I had seen or handled across different user roles. This helped make the benchmark closer to how users actually search documentation in practice.
 
 The user groups included:
 
-* CRM Administrators and Developers
-* Sales Users
-* Call Center Agents
-* Marketing Users
+- CRM administrators and developers
+- Sales users
+- Call center agents
+- Marketing users
 
 For example, developers are more likely to search for technical topics such as Apex Triggers or Governor Limits, while sales users may search for Opportunity or Quote management. Call center agents are more likely to look for documentation related to Email-to-Case, case management, or access issues.
 
 Because Salesforce is used by many different roles within an organization, I believed that including queries from multiple perspectives would create a more realistic retrieval benchmark.
+
+For each query, I manually checked the selected Salesforce PDF corpus and labelled the chunk or chunks that directly answered the question.
 
 ## 2. Varying Query Difficulty
 
@@ -42,7 +44,7 @@ I initially considered collecting Salesforce documentation directly from the web
 However, Salesforce documentation relies heavily on JavaScript-based dynamic rendering, which makes reliable collection more difficult. Since reproducibility was an important requirement for this assignment, I chose publicly available PDF documentation as the corpus so that the dataset could be recreated consistently on another machine.
 
 
-## Corpus
+# Corpus
 
 The default corpus build currently writes 344 retrieval documents extracted
 from public Salesforce PDF documentation related to customer support
@@ -61,25 +63,8 @@ Raw PDF source URLs are tracked in `data/raw/source_urls.txt`.
 page text, filters CRM-operations-related chunks, and writes
 `data/processed/documents.jsonl`.
 
-## Data Format
 
-`data/processed/documents.jsonl`:
-
-```json
-{"doc_id":"sales_core_p0096_002","title":"Sales Core Guide p96 chunk 2: Troubleshoot Lead Conversion","url":"https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sales_core.pdf#page=96","source_file":"sales_core.pdf","product_area":"Sales Lifecycle","page_start":96,"page_end":96,"text":"Documentation passage text..."}
-```
-
-`data/processed/queries.jsonl`:
-
-```json
-{"query_id":"q01","query":"I am converting a Lead, but Salesforce shows a duplicate Account warning. How should I handle the duplicate record during lead conversion?","relevant_doc_ids":["sales_core_p0096_002"],"difficulty":"easy","category":"natural_language_task_description"}
-```
-
-The 20 hand-written queries are grouped by retrieval category and difficulty in
-[`docs/query_set.md`](docs/query_set.md). Machine-readable labels are stored in
-`data/processed/queries.jsonl`.
-
-## Retrieval Configurations
+# Retrieval Configurations
 
 The benchmark evaluates four configurations on the same documents and queries:
 
@@ -89,7 +74,7 @@ The benchmark evaluates four configurations on the same documents and queries:
 - `hybrid_rerank`: hybrid RRF candidate generation followed by a CrossEncoder
   reranker over the top 20 candidates.
 
-## Metrics
+# Metrics
 
 The evaluation reports:
 
@@ -99,20 +84,23 @@ The evaluation reports:
 
 Latency is measured after indexes and embedding models are loaded. The target is
 p95 retrieval latency under 1 second on a single laptop or free-tier VM.
-Each query has between 1 and 5 labelled relevant documents, so recall@5 is not
-artificially capped by having more than five relevant labels.
+Each query has between 1 and 5 labelled relevant documents. Recall@5 is computed as fractional document-level recall: the number of labelled relevant documents retrieved in the top 5 divided by the total number of labelled relevant documents for that query.
 
-## Results
+# Results
+
+## Overall Analysis
 
 The benchmark was run on 344 retrieval documents and 20 labelled queries,
 including 5 hard queries.
 
 | config | recall@5 | MRR | p95 latency |
 | --- | ---: | ---: | ---: |
-| bm25 | 0.347 | 0.304 | 1.9 ms |
-| dense | 0.588 | 0.567 | 8.9 ms |
-| hybrid_rrf | 0.514 | 0.421 | 11.9 ms |
-| hybrid_rerank | 0.598 | 0.497 | 111.4 ms |
+| bm25 | 0.347 | 0.304 | 1.7 ms |
+| dense | 0.588 | 0.567 | 10.0 ms |
+| hybrid_rrf | 0.514 | 0.421 | 9.8 ms |
+| hybrid_rerank | 0.598 | 0.497 | 83.1 ms |
+
+![Retrieval metrics plot](results/metrics_plot.png)
 
 I choose dense retrieval as the best practical configuration for this corpus.
 Hybrid reranking has the highest recall@5 by a narrow margin, but dense has the
@@ -127,36 +115,71 @@ retrieval after indexes and models are loaded.
 
 ## Category Analysis
 
-| category | queries | best recall@5 | dense recall@5 | note |
-| --- | --- | ---: | ---: | --- |
-| `natural_language_task_description` | q01, q03, q07, q08, q10, q11 | 0.792 | 0.708 | Hybrid methods retrieved more of the top-five evidence, but dense kept the strongest MRR. |
-| `exact_product_feature_lookup` | q02, q04, q05, q06, q09, q14 | 0.750 | 0.750 | Dense and reranking tied on recall; BM25 was weaker despite exact terms because chunks often contain repeated nearby terminology. |
-| `cross_object_or_cross_system_workflow` | q12, q13, q16 | 0.289 | 0.222 | All methods struggled because answers span Flow, Apex, Contact Builder, Journey Builder, and synchronized data. |
-| `symptom_based_troubleshooting` | q15, q19, q20 | 0.333 | 0.333 | Dense was best on recall, but failures remain when symptoms do not name the underlying feature. |
-| `paraphrased_feature_discovery` | q17, q18 | 0.667 | 0.667 | Dense and hybrid RRF handled feature discovery better than BM25 and reranking. |
+Average recall@5 by retrieval category:
+
+| category | bm25 | dense | hybrid_rrf | hybrid_rerank |
+| --- | ---: | ---: | ---: | ---: |
+| `natural_language_task_description` | 0.625 | 0.708 | 0.792 | 0.792 |
+| `exact_product_feature_lookup` | 0.333 | 0.750 | 0.583 | 0.750 |
+| `paraphrased_feature_discovery` | 0.250 | 0.500 | 0.333 | 0.417 |
+| `symptom_based_troubleshooting` | 0.000 | 0.333 | 0.167 | 0.278 |
+| `cross_object_or_cross_system_workflow` | 0.200 | 0.000 | 0.200 | 0.200 |
+
+The category-level results show that hybrid reranking had the highest macro-average Recall@5 across retrieval categories, with an average score of 0.487, compared with 0.458 for dense retrieval, 0.415 for hybrid RRF, and 0.282 for BM25. However, dense retrieval remains the best practical choice overall because its overall MRR is higher, its overall recall is nearly tied with hybrid reranking, and its latency is much lower.
+
+BM25 was weaker because many queries were written in natural business language instead of exact Salesforce documentation terms. Dense retrieval handled these queries better, especially in natural-language task descriptions, exact product feature lookup, symptom-based troubleshooting, and paraphrased feature discovery.
+
+Hybrid reranking matched or improved dense retrieval in some categories, especially exact product feature lookup and cross-object or cross-system workflows. However, the improvement was small compared with the added latency and complexity. For this benchmark, dense retrieval provided the best balance between retrieval quality, speed, and implementation simplicity.
+
+The cross-object category is now a one-query slice after revising the query labels, so I treat it as diagnostic rather than a stable category-level conclusion. The broader weak areas are symptom-based troubleshooting and paraphrased feature discovery, where users describe an issue or requirement without naming the target Salesforce feature directly.
 
 ## Hard Queries
 
-The five deliberately hard queries are q12, q13, q16, q17, and q19. Dense
-retrieval has the best hard-query MRR at 0.300, while hybrid reranking has lower
-MRR but slightly better hard-query recall@5.
+The five deliberately hard queries are q12, q16, q17, q19, and q20. These queries were designed to avoid direct target-feature lookup. Instead, they describe cross-object automation, paraphrased feature discovery, or symptom-based troubleshooting scenarios.
+
+
+| query | category | query text | related area |
+| --- | --- | --- | --- |
+| q12 | `cross_object_or_cross_system_workflow` | How do I add logic so that when a Case is created or updated, a field on the related Account is also updated? | Case-to-Account automation with Apex triggers and record-triggered Flow |
+| q16 | `paraphrased_feature_discovery` | How can a marketer identify customers who neither opened nor clicked a voucher email in Journey Builder before sending a follow-up mobile message? | Journey Builder email engagement branching followed by mobile messaging |
+| q17 | `paraphrased_feature_discovery` | A guided process creates an Opportunity with related records. How can an admin test input combinations, observe the execution path, and prevent test records from being saved? | Flow Builder debugging, input testing, and rollback behavior |
+| q19 | `symptom_based_troubleshooting` | A Case automation works for a few records but fails when many Cases are updated at once. How should I investigate and redesign it for large batches? | Bulk Case automation failure, trigger bulkification, SOQL limits, and governor limits |
+| q20 | `symptom_based_troubleshooting` | A user can open Account records but the Edit option is unavailable for some customer accounts. What access settings should I investigate? | Record-level access, sharing calculation, and edit access troubleshooting |
 
 | config | hard recall@5 | hard MRR | complete misses |
 | --- | ---: | ---: | --- |
-| bm25 | 0.040 | 0.067 | q13, q16, q17, q19 |
-| dense | 0.200 | 0.300 | q12, q13, q19 |
-| hybrid_rrf | 0.107 | 0.167 | q13, q16, q19 |
-| hybrid_rerank | 0.173 | 0.200 | q17, q19 |
+| bm25 | 0.040 | 0.067 | q16, q17, q19, q20 |
+| dense | 0.400 | 0.500 | q12, q19 |
+| hybrid_rrf | 0.207 | 0.233 | q16, q19 |
+| hybrid_rerank | 0.207 | 0.350 | q17, q19 |
+
+Dense retrieval performed best on the hard-query subset, with the highest hard-query Recall@5 and MRR. This suggests that semantic matching was more effective than lexical matching when the query described an operational problem without naming the target Salesforce feature directly.
+
+Hybrid reranking did not outperform dense retrieval on aggregate hard-query scores. It recovered different hard cases than dense retrieval, but it did not consistently rank relevant chunks higher than dense retrieval, which explains its lower MRR.
+
+The hardest case was q19, which every configuration missed. It requires recognizing a bulk-processing failure pattern and linking it to Apex trigger bulkification and governor limits. This failure shows that symptom-based troubleshooting remains the clearest area where the best practical configuration still loses.
 
 ## Dense Failure Analysis
 
 Dense retrieval completely missed five queries: q09, q12, q13, q15, and q19.
+
+| query | category | query text | labelled relevant docs | dense top-5 prediction |
+| --- | --- | --- | --- | --- |
+| q09 | `exact_product_feature_lookup` | Can I update the Profile object in Apex? | `salesforce_apex_developer_guide_p0169_008`<br>Apex Developer Guide p169 | `salesforce_security_impl_guide_p0028_009`<br>`salesforce_security_impl_guide_p0149_030`<br>`extend_click_automate_p0297_018`<br>`salesforce_security_impl_guide_p0021_006`<br>`salesforce_security_impl_guide_p0020_005` |
+| q12 | `cross_object_or_cross_system_workflow` | When a Case is created or updated, update a field on the related Account. | `salesforce_apex_developer_guide_p0271_014`<br>`salesforce_apex_developer_guide_p0271_015`<br>`salesforce_apex_developer_guide_p0271_016`<br>`extend_click_automate_p0036_005`<br>`extend_click_automate_p0100_008` | `extend_click_automate_p0224_011`<br>`agentforce_contact_center_5_30_2026_p0597_023`<br>`extend_click_automate_p0278_017`<br>`agentforce_contact_center_5_30_2026_p0583_009`<br>`sales_core_p0287_029` |
+| q13 | `paraphrased_feature_discovery` | Use Salesforce CRM data with Marketing Cloud data extensions for customer messaging. | `engagement_audience_builder_and_contact_builder_5_30_2026_p0139_007`<br>`engagement_audience_builder_and_contact_builder_5_30_2026_p0139_008`<br>`engagement_audience_builder_and_contact_builder_5_30_2026_p0139_009` | `mc_email_p0219_024`<br>`mc_email_p0203_022`<br>`mc_email_p0128_010`<br>`mc_email_p0123_006`<br>`mc_journeys_and_automations_p0248_013` |
+| q15 | `symptom_based_troubleshooting` | A custom field was deployed but does not appear on the Account record page. | `salesforce_security_impl_guide_p0048_020`<br>`salesforce_security_impl_guide_p0048_021`<br>`salesforce_security_impl_guide_p0048_022` | `setup_p0452_020`<br>`sales_core_p0280_028`<br>`salesforce_security_impl_guide_p0046_018`<br>`setup_p0018_001`<br>`salesforce_record_access_under_the_hood_p0015_010` |
+| q19 | `symptom_based_troubleshooting` | Case automation works for a few records but fails when many Cases are updated at once. | `salesforce_apex_developer_guide_p0290_017`<br>`salesforce_apex_developer_guide_p0354_027` | `extend_click_automate_p0277_016`<br>`extend_click_automate_p0036_005`<br>`extend_click_automate_p0224_011`<br>`extend_click_automate_p0100_008`<br>`extend_click_automate_p0278_017` |
+
 The q09 miss is an exact-looking Apex DML question, but dense retrieved
 security-profile pages because the word `Profile` is heavily represented in
-security documentation. q12 and q13 require connecting multiple Salesforce
-areas, so dense retrieved nearby Flow, Email-to-Case, and Marketing Cloud pages
-instead of the specific trigger and synchronized-data-source passages. q15
-confuses page layout, record access, and field-level security language, causing
+security documentation. q12 requires connecting Case-to-Account automation
+across implementation paths, so dense retrieved nearby Flow and Email-to-Case
+pages instead of the specific trigger and record-triggered-flow passages. q13
+is a paraphrased feature-discovery miss: the query asks for using Salesforce CRM
+data in Marketing Cloud, but the labelled answer uses the more specific terms
+`synchronized data sources`, `synchronized data extensions`, and `Contact Builder`.
+q15 confuses page layout, record access, and field-level security language, causing
 dense to retrieve adjacent setup and access-control pages. q19 is the clearest
 failure: the user describes a bulk failure symptom, but the labelled answer uses
 developer terms such as bulk triggers, SOQL query limits, and governor limits.
@@ -167,7 +190,7 @@ This is the main category where the best practical configuration still loses.
 
 If I had one more week, I would improve both the corpus construction and the evaluation set.
 
-For corpus construction, I would add more document context to each retrieval chunk. The current corpus contains 344 mostly text-based chunks, but Salesforce PDFs often depend on guide titles, section headings, tables, setup steps, diagrams, and screenshots. Without this context, chunks containing terms such as “routing address,” “debug options,” or “field permissions” can be difficult to distinguish across Email-to-Case, Flow Debug, and Field-Level Security documentation. I would therefore prepend guide titles and section headings to chunks, preserve table and step-by-step structures, generate short descriptions for visual content, and store parent document metadata. I would also test grouping results from the same page or section.
+For corpus construction, I would add more document context to each retrieval chunk. The current corpus contains 344 mostly text-based chunks, but Salesforce PDFs often depend on guide titles, section headings, tables, setup steps, diagrams, and screenshots. Without this context, chunks containing terms such as `routing address`, `debug options`, or `field permissions` can be difficult to distinguish across Email-to-Case, Flow Debug, and Field-Level Security documentation. I would therefore prepend guide titles and section headings to chunks, preserve table and step-by-step structures, generate short descriptions for visual content, and store parent document metadata. I would also test grouping results from the same page or section.
 
 For evaluation, I would expand the 20-query benchmark, especially in the hardest categories: cross-object or cross-system workflows, symptom-based troubleshooting, and paraphrased feature discovery. I would also inspect hard misses to see whether they are caused by poor chunk boundaries, missing section context, ambiguous labels, or model limitations. This would make the benchmark more representative of real Salesforce documentation search, where users often describe their goal or problem without knowing the exact Salesforce feature name.
 
