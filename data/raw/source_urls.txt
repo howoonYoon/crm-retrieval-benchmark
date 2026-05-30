@@ -1,0 +1,12 @@
+file:///C:/Users/hanna/Desktop/agentforce_contact_center_5-30-2026.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sales_core.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/lightning_knowledge_guide.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/extend_click_automate.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/setup.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_security_impl_guide.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_record_access_under_the_hood.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/mc_email.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/mc_journeys_and_automations.pdf
+file:///C:/Users/hanna/Desktop/engagement_audience_builder_and_contact_builder_5-30-2026.pdf
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/messaging_admin_implementation_guide.pdf
