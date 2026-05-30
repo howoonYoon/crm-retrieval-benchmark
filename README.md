@@ -6,7 +6,7 @@ Comparison of retrieval configurations (BM25 vs Dense vs Hybrid vs Reranker) on 
 
 I chose this assignment because it is closely related to my previous experience operating and developing Salesforce-based CRM systems. At the time, Salesforce was a relatively new platform within the team, so we frequently relied on official documentation for feature implementation, configuration changes, troubleshooting, and new business requirements.
 
-In a real CRM environment, finding the right information is critical. Salesforce documentation is extensive and spans many areas, including Sales Cloud, Service Cloud, Marketing Cloud, Apex, Flow, and Security. Users also do not always search using official Salesforce terminology. They often describe business problems, operational issues, or desired outcomes in natural language.
+This made retrieval a natural choice for me. In practice, the first challenge was finding the correct source material from a large and fragmented documentation corpus. In a real CRM environment, this is critical because Salesforce documentation spans many areas, including Sales Cloud, Service Cloud, Marketing Cloud, Apex, Flow, and Security. Users also do not always search using official Salesforce terminology. They often describe business problems, operational issues, or desired outcomes in natural language.
 
 Because of this, I wanted to evaluate how different retrieval approaches perform in a realistic CRM documentation search scenario. The goal was to compare whether different retrieval methods could handle both exact technical terminology and the natural language queries that arise during day-to-day CRM operations.
 
