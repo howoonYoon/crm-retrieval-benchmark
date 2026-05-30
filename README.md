@@ -92,7 +92,7 @@ Latency is measured after indexes and embedding models are loaded. The target is
 p95 retrieval latency under 1 second on a single laptop or free-tier VM.
 Each query has between 1 and 5 labelled relevant documents. Recall@5 is computed as fractional document-level recall: the number of labelled relevant documents retrieved in the top 5 divided by the total number of labelled relevant documents for that query.
 
-# Results
+# Results and Evaluation
 
 ## Overall Analysis
 
