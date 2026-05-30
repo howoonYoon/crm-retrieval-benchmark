@@ -102,17 +102,19 @@ including 5 hard queries.
 ![Retrieval metrics plot](results/metrics_plot.png)
 | config | recall@5 | MRR | p95 latency |
 | --- | ---: | ---: | ---: |
-| bm25 | 0.347 | 0.304 | 3.1 ms |
-| dense | 0.588 | 0.567 | 12.2 ms |
-| hybrid_rrf | 0.514 | 0.421 | 10.4 ms |
-| hybrid_rerank | 0.598 | 0.497 | 75.3 ms |
+| bm25 | 0.347 | 0.304 | 6.5 ms |
+| dense | 0.588 | 0.567 | 32.3 ms |
+| hybrid_rrf | 0.514 | 0.421 | 31.6 ms |
+| hybrid_rerank | 0.598 | 0.497 | 177.0 ms |
 
 
 I define the best practical configuration as the one that gives the strongest quality-latency tradeoff for interactive documentation search, with MRR prioritized slightly over recall@5 because users are more likely to trust the system when a relevant document appears near the top of the results. Under this criterion, **dense retrieval** is the best choice: hybrid reranking improves recall@5 by only 0.010, but has lower MRR and about 6x higher p95 latency.
 
 All configurations meet the p95 latency constraint. The reported latency
-excludes corpus construction and dense embedding generation, and measures
-retrieval after indexes and models are loaded.
+excludes offline corpus construction and document embedding generation.
+Query-time processing was measured after indexes and models were loaded, so
+dense query embedding and reranker scoring are included in the timed retrieval
+calls.
 
 ## Category Analysis
 
@@ -172,18 +174,21 @@ Dense retrieval returned no labelled relevant document in the top 5 for five que
 | q15 | Permission and layout ambiguity | The symptom sounds like a page layout issue because the field does not appear on the Account record page. The labelled answer is actually about field-level security and field permissions, so dense retrieval returned adjacent setup and access-control pages. |
 | q19 | Symptom-based troubleshooting | The query describes an automation that works for a few Case records but fails in bulk. Dense retrieval did not connect this symptom to Apex bulk trigger patterns, SOQL limits, and governor limits. |
 
-
+Overall, these errors suggest that dense retrieval is strong at capturing broad semantic similarity, but still struggles when the query requires Salesforce-specific disambiguation, hidden feature-name matching, or symptom-to-cause reasoning. These cases motivate improvements such as richer chunk context, query rewriting for troubleshooting queries, and more carefully tuned hybrid reranking.
 
 
 # If I Had One More Week
 
-If I had one more week, I would improve both the corpus construction and the evaluation set.
+If I had one more week, I would improve the corpus construction, the evaluation set, and the retrieval pipeline.
 
 For corpus construction, I would add more document context to each retrieval chunk. The current corpus contains 344 mostly text-based chunks, but Salesforce PDFs often depend on guide titles, section headings, tables, setup steps, diagrams, and screenshots. Without this context, chunks containing terms such as `routing address`, `debug options`, or `field permissions` can be difficult to distinguish across Email-to-Case, Flow Debug, and Field-Level Security documentation. I would therefore prepend guide titles and section headings to chunks, preserve table and step-by-step structures, generate short descriptions for visual content, and store parent document metadata. I would also test grouping results from the same page or section.
 
-For evaluation, I would expand the 20-query benchmark, especially in the hardest categories: symptom-based troubleshooting and paraphrased feature discovery. I would also add more natural-language automation cases involving Flow and Apex alternatives, CRM-to-Marketing Cloud data usage, and multi-step customer communication workflows to test whether dense retrieval consistently handles broad operator phrasing.
+For evaluation, I would expand the 20-query benchmark, especially in the hardest categories: symptom-based troubleshooting and paraphrased feature discovery. I would also add more natural-language automation cases to test whether dense retrieval can consistently handle broad, goal-oriented user phrasing.
 
-I would also inspect hard misses to see whether they are caused by poor chunk boundaries, missing section context, ambiguous labels, or model limitations. This would make the benchmark more representative of real Salesforce documentation search, where users often describe their goal or problem without knowing the exact Salesforce feature name.
+I would also tune the hybrid retrieval and reranking pipeline rather than assuming the current hybrid settings are optimal. The current results show that hybrid methods recovered different hard cases from dense retrieval, so better weighting, candidate depth, or reranker calibration might improve robustness on difficult queries.
+
+Finally, I would inspect hard misses to see whether they are caused by poor chunk boundaries, missing section context, ambiguous labels, or model limitations. This would make the benchmark more representative of real Salesforce documentation search, where users often describe their goal or problem without knowing the exact Salesforce feature name.
+
 
 # Reproduce
 
