@@ -74,7 +74,7 @@ Query: How should an admin estimate Salesforce Knowledge capacity when articles 
 - `lightning_knowledge_guide_p0011_007` - lightning_knowledge_guide.pdf p11: https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/lightning_knowledge_guide.pdf#page=11
 - `lightning_knowledge_guide_p0012_008` - lightning_knowledge_guide.pdf p12: https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/lightning_knowledge_guide.pdf#page=12
 
-## q12 - cross_object_or_cross_system_workflow
+## q12 - natural_language_task_description
 
 Query: How do I add logic so that when a Case is created or updated, a field on the related Account is also updated?
 

@@ -4,6 +4,17 @@ This benchmark uses 20 hand-written queries. Each query has labelled relevant do
 
 Difficulty is assigned by retrieval difficulty, not by Salesforce administration difficulty alone.
 
+## User Perspectives
+
+User perspective is tracked separately from retrieval category. This keeps role context visible without changing how recall@5 or MRR is computed.
+
+| user perspective | queries |
+| --- | --- |
+| `crm_admin_or_developer` | q04, q07, q09, q11, q12, q15, q17, q18, q19, q20 |
+| `sales_user` | q01, q05, q06 |
+| `service_operations_user` | q03, q10 |
+| `marketing_user` | q02, q08, q13, q14, q16 |
+
 ## exact_product_feature_lookup
 
 The query directly names the product, feature, or API concept used by the target documentation.
@@ -29,13 +40,6 @@ The query describes an operator task in natural language while still using some 
 | q08 | medium | 2 | Send approved WhatsApp template messages for a campaign. |
 | q10 | medium | 2 | Route work to another queue based on agent availability. |
 | q11 | medium | 2 | Estimate Knowledge capacity with article versions and translations. |
-
-## cross_object_or_cross_system_workflow
-
-The query requires connecting multiple Salesforce objects, systems, channels, or workflow steps.
-
-| id | difficulty | relevant docs | query summary |
-| --- | --- | ---: | --- |
 | q12 | hard | 5 | Update a related Account when a Case is created or updated. |
 
 ## symptom_based_troubleshooting
