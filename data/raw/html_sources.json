@@ -1,0 +1,206 @@
+[
+  {
+    "title_hint": "AccountContactRelation — Object Reference",
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_accountcontactrelation.htm",
+    "query_hints": [
+      "q05"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "AccountContactRelation — Field Reference",
+    "url": "https://developer.salesforce.com/docs/platform/field-reference/references/field-reference/salesforce-field-reference-accountcontactrelation.html",
+    "query_hints": [
+      "q05"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Quote — Object Reference",
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quote.htm",
+    "query_hints": [
+      "q06"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "QuoteLineItem — Object Reference",
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+    "query_hints": [
+      "q06"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Profile — Metadata API Developer Guide",
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm",
+    "query_hints": [
+      "q09"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "PermissionSet — Metadata API Developer Guide",
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_permissionset.htm",
+    "query_hints": [
+      "q09"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Deploy Source",
+    "url": "https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/deploy-source.html",
+    "query_hints": [
+      "q09"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Transactional Messaging — OTT API",
+    "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_transactional_messaging_ott",
+    "query_hints": [
+      "q08"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "WhatsApp Send Events",
+    "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/transactional_ott_events.html",
+    "query_hints": [
+      "q08"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "WhatsApp Delivery Receipt Events",
+    "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/engagement_ott_events_delivery_receipts.html",
+    "query_hints": [
+      "q08"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Server-to-Server Integrations with Client Credentials",
+    "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/integration-s2s-client-credentials.html",
+    "query_hints": [
+      "q08"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Access Token for Server-to-Server Integrations",
+    "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-s2s",
+    "query_hints": [
+      "q08"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Check Availability for Routing",
+    "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+    "query_hints": [
+      "q10"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Add a Route Work Action",
+    "url": "https://help.salesforce.com/s/articleView?id=service.omnichannel_add_route_action.htm&language=en_US&type=5",
+    "query_hints": [
+      "q10"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "How Does an Omni-Channel Flow Work?",
+    "url": "https://help.salesforce.com/s/articleView?id=sf.how_does_an_omni_channel_flow_work.htm&language=en_US&type=5",
+    "query_hints": [
+      "q10"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Visibility Rules on Lightning Pages",
+    "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+    "query_hints": [
+      "q15"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Activate Lightning Record or Home Pages",
+    "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_customize_lex_pages_activate.htm&language=en_US&type=5",
+    "query_hints": [
+      "q15"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Dynamic Forms Tips and Considerations",
+    "url": "https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_considerations.htm&language=en_US&type=5",
+    "query_hints": [
+      "q15"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Classic Approval Processes Terminology",
+    "url": "https://help.salesforce.com/s/articleView?id=sf.approvals_terminology.htm&language=en_US&type=5",
+    "query_hints": [
+      "q20"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Customize Actions with the Enhanced Page Layout Editor",
+    "url": "https://help.salesforce.com/s/articleView?id=platform.adding_actions_using_ple.htm&language=en_US&type=5",
+    "query_hints": [
+      "q20"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "How Actions Are Ordered in Lightning Experience",
+    "url": "https://help.salesforce.com/s/articleView?id=platform.actions_in_lex_ordering.htm&language=en_US&type=5",
+    "query_hints": [
+      "q20"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Change Case Account Name when Contact Changes",
+    "url": "https://help.salesforce.com/s/articleView?id=000387888&language=en_US&type=1",
+    "query_hints": [
+      "q12",
+      "q19"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Update Salesforce Records from a Flow",
+    "url": "https://help.salesforce.com/s/articleView?id=flow_build_data_update.htm&language=en_US&type=0",
+    "query_hints": [
+      "q12",
+      "q19"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Triggers and Order of Execution",
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+    "query_hints": [
+      "q12",
+      "q19"
+    ],
+    "document_type": "html"
+  },
+  {
+    "title_hint": "Capture and Read Salesforce Debug Logs",
+    "url": "https://help.salesforce.com/s/articleView?id=000392579&language=en_US&type=1",
+    "query_hints": [
+      "q12",
+      "q19"
+    ],
+    "document_type": "html"
+  }
+]

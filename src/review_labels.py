@@ -52,8 +52,6 @@ def review_query(
     query = queries_by_id[query_id]
     print_query_summary(query)
 
-    if query.get("expected_source"):
-        print(f"  expected_source: {query['expected_source']}")
     if query.get("label_search_terms"):
         print(f"  label_search_terms: {', '.join(query['label_search_terms'])}")
 

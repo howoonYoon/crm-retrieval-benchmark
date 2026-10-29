@@ -1,0 +1,25 @@
+{
+  "scope": "admin_agent_html_v1",
+  "date": "2026-10-23",
+  "method": "fresh execution: python run_eval.py",
+  "documents": 594,
+  "html_documents": 240,
+  "successful_urls": 24,
+  "failed_urls": 1,
+  "queries": 20,
+  "labels": 170,
+  "aspects": 49,
+  "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "reranker_model": "cross-encoder/ms-marco-TinyBERT-L-2-v2",
+  "rerank_candidate_k": 20,
+  "sha256": {
+    "data/processed/documents.jsonl": "b1d16b869afc846eb60d13778f7914422a8d96bd2f871ee025857ae860ee3e2f",
+    "data/processed/queries.jsonl": "290dbf0425b35429d570eceb9faf26e17b4b486fcdb37c2ca1cd36675d5cf9fe",
+    "data/processed/html_pages.jsonl": "e5c483d3c8e0fa6715ba053485db74613d8964ce19e3653bd1c61093cf2253fb",
+    "data/processed/html_documents.jsonl": "ed4282517e94106894e0075d1bdb5779087db8ddaeafcfa47e08bef8bb9bc18b",
+    "data/raw/html_sources.json": "66b3228e39bf57406cd7326395ec69c34616e8aaafa52a9fa05c34824c27330b",
+    "data/raw/html_label_rules.json": "8f29e7a317f7b46dd313691e486a962cbbac4585b4caa7cedf23171c473f8285",
+    "results/metrics.csv": "feddc46ec95ccc58a0dbd1616676330278ff72d0a7bbee4ad3cf9896d2fb231a",
+    "results/per_query_results.csv": "fe6e15791fc1b31edef434b48ae77af7ad2b64f4dfc2df95c6609045ed28517f"
+  }
+}

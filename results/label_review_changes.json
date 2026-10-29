@@ -1,0 +1,141 @@
+{
+  "review_date": "2026-10-22",
+  "policy": "Include passages that explain a core answer, configuration step, or diagnostic setting. Exclude generic context, unrelated workflow steps and fragments whose useful content is already in the preceding chunk. Query wording, corpus, categories and difficulty are unchanged. Relevance is not exhaustive; see per-query scope limitations.",
+  "changes": [
+    {
+      "query_id": "q01",
+      "added": [
+        "sales_core_p0095_001",
+        "sales_core_p0103_004"
+      ],
+      "removed": []
+    },
+    {
+      "query_id": "q02",
+      "added": [
+        "sales_core_p0220_023"
+      ],
+      "removed": []
+    },
+    {
+      "query_id": "q03",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q04",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q05",
+      "added": [
+        "sales_core_p0277_026",
+        "sales_core_p0287_029"
+      ],
+      "removed": []
+    },
+    {
+      "query_id": "q06",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q07",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q08",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q09",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q10",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q11",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q12",
+      "added": [
+        "extend_click_automate_p0031_004"
+      ],
+      "removed": [
+        "salesforce_apex_developer_guide_p0271_015",
+        "salesforce_apex_developer_guide_p0271_016",
+        "extend_click_automate_p0036_005"
+      ]
+    },
+    {
+      "query_id": "q13",
+      "added": [],
+      "removed": [
+        "engagement_audience_builder_and_contact_builder_5_30_2026_p0139_009"
+      ]
+    },
+    {
+      "query_id": "q14",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q15",
+      "added": [],
+      "removed": [
+        "salesforce_security_impl_guide_p0048_022"
+      ]
+    },
+    {
+      "query_id": "q16",
+      "added": [
+        "mc_journeys_and_automations_p0350_040"
+      ],
+      "removed": [
+        "mc_journeys_and_automations_p0300_028",
+        "mc_journeys_and_automations_p0300_029"
+      ]
+    },
+    {
+      "query_id": "q17",
+      "added": [],
+      "removed": [
+        "extend_click_automate_p0238_014"
+      ]
+    },
+    {
+      "query_id": "q18",
+      "added": [],
+      "removed": []
+    },
+    {
+      "query_id": "q19",
+      "added": [
+        "salesforce_apex_developer_guide_p0141_003",
+        "salesforce_apex_developer_guide_p0142_004",
+        "salesforce_apex_developer_guide_p0353_026"
+      ],
+      "removed": []
+    },
+    {
+      "query_id": "q20",
+      "added": [
+        "salesforce_security_impl_guide_p0017_002",
+        "salesforce_record_access_under_the_hood_p0010_006",
+        "salesforce_security_impl_guide_p0046_018",
+        "salesforce_security_impl_guide_p0047_019",
+        "salesforce_security_impl_guide_p0059_023"
+      ],
+      "removed": []
+    }
+  ]
+}

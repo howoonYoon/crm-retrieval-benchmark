@@ -1,0 +1,17 @@
+{
+  "review_date": "2026-10-22",
+  "method": "fresh execution: python run_eval.py",
+  "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "reranker_model": "cross-encoder/ms-marco-TinyBERT-L-2-v2",
+  "rerank_candidate_k": 20,
+  "top_k": 5,
+  "query_strings_unchanged": true,
+  "top5_rows_changed_vs_baseline": 0,
+  "validated_config_query_rows": 80,
+  "sha256": {
+    "data/processed/queries.jsonl": "55a233243004a4fcc00eef7e4b26579a96f2e3230ee79782c0e57cc1860092d3",
+    "data/processed/documents.jsonl": "486caf8856988b6c047d847d21dd2c9783bf1539da665dc080c7be59442f9fe8",
+    "results/metrics.csv": "4f41482248461bb308bebc946164549a3ff9382bcef411e1d20ac2cf7311dea5",
+    "results/per_query_results.csv": "5f5304fcb672c9367b30cb9d3df36141c9c18f222db8bcd110f6d65d95a16b49"
+  }
+}

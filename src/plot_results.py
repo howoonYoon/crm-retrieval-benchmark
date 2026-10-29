@@ -19,7 +19,7 @@ def plot_metrics(metrics_path: Path, out_path: Path) -> None:
 
     metrics.plot(
         x="config",
-        y=["recall_at_5", "mrr"],
+        y=[name for name in ["recall_at_5", "mrr", "aspect_recall_at_5"] if name in metrics.columns],
         kind="bar",
         ax=axes[0],
         ylim=(0, 1),
@@ -28,7 +28,9 @@ def plot_metrics(metrics_path: Path, out_path: Path) -> None:
     axes[0].set_title("Retrieval quality")
     axes[0].set_xlabel("")
     axes[0].set_ylabel("score")
-    axes[0].legend(loc="lower right")
+    handles, labels = axes[0].get_legend_handles_labels()
+    names = {"recall_at_5": "Document recall@5", "mrr": "MRR@5", "aspect_recall_at_5": "Evidence aspect recall@5"}
+    axes[0].legend(handles, [names.get(label, label) for label in labels], loc="lower right", fontsize=8)
 
     metrics.plot(
         x="config",

@@ -46,3 +46,17 @@ make build-corpus
 make inspect
 make run
 ```
+
+## Official HTML Sources
+
+The current corpus includes PDF and official HTML documentation. `make build-corpus`
+first rebuilds HTML chunks from checked-in cleaned snapshots without network access.
+To fetch the original URLs and render dynamic Help articles, run:
+
+```powershell
+python src/build_html_corpus.py --render
+```
+
+Windows uses installed Edge. Other environments can install Chromium with
+`python -m playwright install chromium`. See `docs/html_ingestion.md` for URL-level
+success/failure reports, metadata, label review and reproduction commands.

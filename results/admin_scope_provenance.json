@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-23",
+  "scope": "admin_agent_v1",
+  "method": "fresh execution: python run_eval.py",
+  "original_documents_preserved": 344,
+  "documents": 354,
+  "queries": 20,
+  "labels": 67,
+  "answer_aspects": 39,
+  "validated_rows": 80,
+  "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "reranker_model": "cross-encoder/ms-marco-TinyBERT-L-2-v2",
+  "rerank_candidate_k": 20,
+  "packages": {
+    "sentence-transformers": "5.5.1",
+    "torch": "2.10.0",
+    "numpy": "2.3.3",
+    "rank-bm25": "0.2.2"
+  },
+  "sha256": {
+    "data/processed/documents.jsonl": "df78824688a45d5a2a3ebe60411cf9ba4d0b0d38cc9a55c8a529a75c432a7e6c",
+    "data/processed/queries.jsonl": "7beb82889e54417a940dda2201b4318793fc589e0ec1e4e166f4657e8fde20e4",
+    "data/raw/admin_passages.json": "e43e8584a25c7af8907e517699d27fcd39b438c083b84696a207b5d9ef40a6d1",
+    "results/metrics.csv": "9640b48786c7027b5d5b434d50ef75562ccb4001a05cb1803a96a49ffa887279",
+    "results/per_query_results.csv": "7c0c41b84d2771af83496294b6cc0f01ae0ec306f37cc747bfba58e4a4f170a4"
+  }
+}

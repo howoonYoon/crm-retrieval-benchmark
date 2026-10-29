@@ -1,0 +1,835 @@
+{
+  "scope": "admin_agent_html_v1",
+  "baseline": "results/before_html_sources",
+  "rules": "data/raw/html_label_rules.json",
+  "reviewed_additions": [
+    {
+      "query_id": "q05",
+      "aspect_id": "object_api",
+      "doc_id": "sf_html_a32b6bcfc3358a0c_6646068869_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_accountcontactrelation.htm",
+      "section": "AccountContactRelation > Supported Calls",
+      "content_sha256": "84edb116eed594b97e09b6a835e9757893e128d1b157619d008e8b749555333b"
+    },
+    {
+      "query_id": "q05",
+      "aspect_id": "object_api",
+      "doc_id": "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_accountcontactrelation.htm",
+      "section": "AccountContactRelation > Fields",
+      "content_sha256": "e1f40e3604eaaf3e96e359e2082a2931257e605376b13703f91372e84bc492f8"
+    },
+    {
+      "query_id": "q05",
+      "aspect_id": "object_api",
+      "doc_id": "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_002",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_accountcontactrelation.htm",
+      "section": "AccountContactRelation > Fields",
+      "content_sha256": "009cd23716096e96c721be059f8482e5a0a88205d4022a11facb18a2c2a434c5"
+    },
+    {
+      "query_id": "q05",
+      "aspect_id": "object_api",
+      "doc_id": "sf_html_a32b6bcfc3358a0c_61b6181242_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_accountcontactrelation.htm",
+      "section": "AccountContactRelation > Usage",
+      "content_sha256": "c05fede3b8a7956c834ef530b6b6d5f7e13bb48e4e912bbd2b0849f744873692"
+    },
+    {
+      "query_id": "q05",
+      "aspect_id": "object_api",
+      "doc_id": "sf_html_6f20793c7f9103fe_91b9a51529_001",
+      "url": "https://developer.salesforce.com/docs/platform/field-reference/references/field-reference/salesforce-field-reference-accountcontactrelation.html",
+      "section": "AccountContactRelation",
+      "content_sha256": "959d2e37d57dbbe58e51058a77c67159552dfd7265a097ed780681aaa8ff0c55"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_0d75cf2e23568fa8_7b22e0f9fc_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quote.htm",
+      "section": "Quote > Supported Calls",
+      "content_sha256": "86ba06ca214f246f49d83fb8f55e07347ddcc9fa03ed75221735577eb7007097"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_0d75cf2e23568fa8_b39f13b193_007",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quote.htm",
+      "section": "Quote > Fields",
+      "content_sha256": "70375eb4166cb6148ef623d879a1fa85b29d5b4f9703a4d7fa77b38748255f75"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_0d75cf2e23568fa8_b39f13b193_008",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quote.htm",
+      "section": "Quote > Fields",
+      "content_sha256": "d087c658b02848c31d1a04968e0b2aa44dad3db7aab27a8ad2b4392348c0149e"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_0d75cf2e23568fa8_b5b2abd769_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quote.htm",
+      "section": "Quote > Usage",
+      "content_sha256": "2360fe25c9c16a0677f31973ca69cb501d6aea8dc3aecfe3af5497ad2f7f1d38"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_49e705a3fa_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Supported Calls",
+      "content_sha256": "86ba06ca214f246f49d83fb8f55e07347ddcc9fa03ed75221735577eb7007097"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_20d5c83054_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Special Access Rules",
+      "content_sha256": "c42cecd4678317eb5d5eb07117143004d4d2345fd2bdadc6a482a853e0860fe2"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_8cca3430d4_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Fields",
+      "content_sha256": "32d5ca0f116754ff5346fcb33853bea90657346e89091318f385b46259367826"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_8cca3430d4_002",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Fields",
+      "content_sha256": "4d42476b512941e30e657b1c159b0c3da372e4aeec779f1a62192914bd593800"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_8cca3430d4_010",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Fields",
+      "content_sha256": "01924895daf3b6fac9874d6099f79720dcfc8ffd2ff0ef454c88a83221b17b62"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_8cca3430d4_013",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Fields",
+      "content_sha256": "0d388e000f4c283f3dfbcdd0827f944119b29e6182b4988d380193cfb86a35e6"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_8cca3430d4_017",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Fields",
+      "content_sha256": "eee419b206f1faf2f61d7279e314557776ea8fb7e7fa1f11e6afa600d580a3f9"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_8cca3430d4_020",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Fields",
+      "content_sha256": "8a8fe99227faeee0f115ccbef6a6088bc2651bd780be9be68c5ddeae88b8a14b"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_bef94e49e6_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Usage",
+      "content_sha256": "53ef241889854fc3339f57f2bfcb57eca7a492ed288d8e6ee29df99e7f5bbb3f"
+    },
+    {
+      "query_id": "q06",
+      "aspect_id": "quote_api",
+      "doc_id": "sf_html_7b09fcf632e1d93c_92360aacad_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "section": "QuoteLineItem > Usage > Note",
+      "content_sha256": "1627ee0e9ee1b1e09e1d6af761e41c0ea8698308b22bb10f0313ca87c7715987"
+    },
+    {
+      "query_id": "q09",
+      "aspect_id": "metadata_deployment",
+      "doc_id": "sf_html_604b2c392779a3af_d88992ff1f_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm",
+      "section": "Profile",
+      "content_sha256": "85ef7d2fd2fda03a43da78ffc4d571a571b2e30883482298bdbbc1f0dce8a6e1"
+    },
+    {
+      "query_id": "q09",
+      "aspect_id": "metadata_deployment",
+      "doc_id": "sf_html_604b2c392779a3af_f8063e22bf_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm",
+      "section": "Profile > Declarative Metadata File Suffix and Directory Location",
+      "content_sha256": "39172fbe30d2111747d38bfefb8800da9c5009dcbf6d7d7a7da0fceda284f049"
+    },
+    {
+      "query_id": "q09",
+      "aspect_id": "metadata_deployment",
+      "doc_id": "sf_html_604b2c392779a3af_5a3e564979_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm",
+      "section": "Profile > Declarative Metadata Sample Definition",
+      "content_sha256": "bb919c227523fa6c0000a90e9c9097ce922332993d2aa0c16b697ccb99d17159"
+    },
+    {
+      "query_id": "q09",
+      "aspect_id": "metadata_deployment",
+      "doc_id": "sf_html_9ccd5bdd18eb6c87_b2b465f622_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_permissionset.htm",
+      "section": "PermissionSet",
+      "content_sha256": "00bd72cd49e76b430019b23f7f7d2a56701bfcdd342a310eaf2a2018c6ba9f5c"
+    },
+    {
+      "query_id": "q09",
+      "aspect_id": "metadata_deployment",
+      "doc_id": "sf_html_9ccd5bdd18eb6c87_995ce7e129_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_permissionset.htm",
+      "section": "PermissionSet > Declarative Metadata File Suffix and Directory Location",
+      "content_sha256": "1f037e36a2513f5d97f188c9843195e8700e35571a58c54d16ef6e6b2b1856a3"
+    },
+    {
+      "query_id": "q09",
+      "aspect_id": "metadata_deployment",
+      "doc_id": "sf_html_3fabad8a358cefc2_c32ac9f11c_001",
+      "url": "https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/deploy-source.html",
+      "section": "Deploy Source",
+      "content_sha256": "b9313d2f936d81acaab0cca9ff8c93369baf77f88bd04bb4f7e74b45062b7574"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "api_authentication",
+      "doc_id": "sf_html_ddc7c4c33d518244_dcf90eb56e_001",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/integration-s2s-client-credentials.html",
+      "section": "Server-to-Server Integrations with Client Credentials Grant Type",
+      "content_sha256": "4ac5882642fc146f013b878d7c5ad12268b296eabb95f1138ef17a059fb75015"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "api_authentication",
+      "doc_id": "sf_html_ddc7c4c33d518244_dcf90eb56e_002",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/integration-s2s-client-credentials.html",
+      "section": "Server-to-Server Integrations with Client Credentials Grant Type",
+      "content_sha256": "6512f789f41608667d7d3c187a792ad4b6e9cabecac4637e58640ade588510ba"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "api_authentication",
+      "doc_id": "sf_html_b90a277af96128e6_99de7b6b4b_001",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-s2s",
+      "section": "Access Token for Server-to-Server Integrations",
+      "content_sha256": "2d35446db813f6259430d5cc4776ba965d2c05deab29543ba81b9678ac14ce68"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "api_authentication",
+      "doc_id": "sf_html_b90a277af96128e6_99de7b6b4b_002",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-s2s",
+      "section": "Access Token for Server-to-Server Integrations",
+      "content_sha256": "042f83da3463847e2beba8c1dcc7f954cba8c979a03923312605f761bbdaa2bf"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "api_authentication",
+      "doc_id": "sf_html_b90a277af96128e6_99de7b6b4b_003",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-s2s",
+      "section": "Access Token for Server-to-Server Integrations",
+      "content_sha256": "5c61753f7bfe59c76930c4a2cafee9cba9f30c530d7ac84d42e5f022ec8b8940"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "api_authentication",
+      "doc_id": "sf_html_b90a277af96128e6_99de7b6b4b_004",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-s2s",
+      "section": "Access Token for Server-to-Server Integrations",
+      "content_sha256": "b9c3e40a2b341ee6255ce9a952cb52fe4f039acdb447ce58ae28f604c8340b5b"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "whatsapp_delivery_events",
+      "doc_id": "sf_html_5d436c15ff0d542a_fc26fba295_001",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/transactional_ott_events.html",
+      "section": "WhatsApp Send Events",
+      "content_sha256": "adfccc939dc2251aefe2e2767b3e20c93cbeb23f0895e153c1bacc0bb65a4a35"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "whatsapp_delivery_events",
+      "doc_id": "sf_html_5d436c15ff0d542a_fc26fba295_002",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/transactional_ott_events.html",
+      "section": "WhatsApp Send Events",
+      "content_sha256": "f2152bcb420844687bf91fbc8827c855f14d1395a02bee9537dfb0c36d18f1da"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "whatsapp_delivery_events",
+      "doc_id": "sf_html_5d436c15ff0d542a_fc26fba295_003",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/transactional_ott_events.html",
+      "section": "WhatsApp Send Events",
+      "content_sha256": "55e1af5275285ff9a72249efa2abd55d20e419f5bbc81e871ab047ea8407529c"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "whatsapp_delivery_events",
+      "doc_id": "sf_html_0ecb9d2e864432dd_6c9660c73f_001",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/engagement_ott_events_delivery_receipts.html",
+      "section": "WhatsApp Delivery Receipt Events",
+      "content_sha256": "2481ad55246b317f2ef7230f832f8ff992b30a15415c975807ad1fd40bdbac63"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "whatsapp_delivery_events",
+      "doc_id": "sf_html_0ecb9d2e864432dd_6c9660c73f_002",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/engagement_ott_events_delivery_receipts.html",
+      "section": "WhatsApp Delivery Receipt Events",
+      "content_sha256": "14d8d8e2a317ea4880e07da0bc9740c103133c6e6265b58034bb9f0ee08f41a8"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "whatsapp_delivery_events",
+      "doc_id": "sf_html_0ecb9d2e864432dd_6c9660c73f_003",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/engagement_ott_events_delivery_receipts.html",
+      "section": "WhatsApp Delivery Receipt Events",
+      "content_sha256": "130a727006a89793ca1c0239f5a55d0ec7492cb2b8fcb7a31d9e4586f89e770f"
+    },
+    {
+      "query_id": "q08",
+      "aspect_id": "whatsapp_delivery_events",
+      "doc_id": "sf_html_0ecb9d2e864432dd_6c9660c73f_004",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/engagement_ott_events_delivery_receipts.html",
+      "section": "WhatsApp Delivery Receipt Events",
+      "content_sha256": "955be23262026ecba2dd7191bdc606ce30e7908be4e3aa6f92df0d565afe353e"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_a158f2754a62a0da_968aacb04f_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "section": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "content_sha256": "fcd0ba03cb198ec18da48555676e1aea7b2279ef9e9b59dac5487dd8bd308226"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "section": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "content_sha256": "bd2190aabce607f95eb5627c2a56e0df875d70ed141e1f478135b42206c51590"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_002",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "section": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "content_sha256": "6c63524fe4d1a79eebe90c2bbb0d9076611d1cfef8bc1d2ba0b7cf9abccb0a87"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_003",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "section": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "content_sha256": "6c6cce04c1a433b01b2e1b8f4a5b731da495ad0712732e06b144b36c07182a20"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_004",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "section": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "content_sha256": "ec2405ab8c896c5498fbb0b0b53de4c636f9a93e92c8a3c29b2610e378c808e7"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_005",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "section": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "content_sha256": "dcafc31921b0f3d8ba783867237d36762c1e490952be198f2cd9f81c13533b07"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_006",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "section": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "content_sha256": "bfccac023607a91843eede8241aac812f694345fa179e89b3a680420d39a1b1c"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_fda52494777cd957_b79ade9ae3_001",
+      "url": "https://help.salesforce.com/s/articleView?id=service.omnichannel_add_route_action.htm&language=en_US&type=5",
+      "section": "Add a Route Work Action",
+      "content_sha256": "fcd0ba03cb198ec18da48555676e1aea7b2279ef9e9b59dac5487dd8bd308226"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_fda52494777cd957_06cfe97dc8_001",
+      "url": "https://help.salesforce.com/s/articleView?id=service.omnichannel_add_route_action.htm&language=en_US&type=5",
+      "section": "Add a Route Work Action",
+      "content_sha256": "2b244a1088cb4be73c75b62452e1f5c802708a606c410d9bfd1428400a924b96"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_fda52494777cd957_06cfe97dc8_002",
+      "url": "https://help.salesforce.com/s/articleView?id=service.omnichannel_add_route_action.htm&language=en_US&type=5",
+      "section": "Add a Route Work Action",
+      "content_sha256": "37dd1a3f57f7266f26f97c22952f0c688d013083b85ef70b1bc66eaed8b465af"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "availability_flow",
+      "doc_id": "sf_html_fda52494777cd957_06cfe97dc8_003",
+      "url": "https://help.salesforce.com/s/articleView?id=service.omnichannel_add_route_action.htm&language=en_US&type=5",
+      "section": "Add a Route Work Action",
+      "content_sha256": "eac37387826c326779caddcc7361ed0d0cd6d44eacab07c964ab593c1f7958a0"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "omni_channel_setup",
+      "doc_id": "sf_html_bf7a39fb814a7cd8_9f3ad03c72_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.how_does_an_omni_channel_flow_work.htm&language=en_US&type=5",
+      "section": "How Does an Omni-Channel Flow Work?",
+      "content_sha256": "fcd0ba03cb198ec18da48555676e1aea7b2279ef9e9b59dac5487dd8bd308226"
+    },
+    {
+      "query_id": "q10",
+      "aspect_id": "omni_channel_setup",
+      "doc_id": "sf_html_bf7a39fb814a7cd8_44cba26590_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.how_does_an_omni_channel_flow_work.htm&language=en_US&type=5",
+      "section": "How Does an Omni-Channel Flow Work?",
+      "content_sha256": "4d96307186cc9f25b33b130dbb870a2b5243a9273ba2b03095c538bd29a9e012"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_1644173698_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages",
+      "content_sha256": "a1228bf4bda72eddbf7753da6012f6479fe6e7326c4e06bf295a0a24a48e1297"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_7b7f2fa2ed_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages",
+      "content_sha256": "2f25ed412c3cf05e848995646d44c555816c8882ac8026061147de53ca0f0251"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_cf0e442d16_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages > Required Editions",
+      "content_sha256": "14b543f87e02a049bcd752772cbc9c04ee57ebd99db59fe5f6a66a5f167cf7a9"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_cf0e442d16_002",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages > Required Editions",
+      "content_sha256": "dcbfdbcf4e06e5b69fd557069b554ae3946c998709a18c04c382e7936d5e5115"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_62cad5e94b_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages > Visibility Rules on Dynamic Forms Fields and Field Sections",
+      "content_sha256": "224acaa5e7dec0f053b4906116aea229664f743b3c10bde3868fa0429ccf3509"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_62cad5e94b_002",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages > Visibility Rules on Dynamic Forms Fields and Field Sections",
+      "content_sha256": "2c28d673bbee241a00bd0c926cdfdb3bad843d551392fefe74ad5c3a3b8c2484"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_5f34dbfdef_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages > Component Visibility Based on Form Factor",
+      "content_sha256": "1554865c68a24f8fb369ea21f1e5c3f51de83041aea40dde250e43cce9fc8d40"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_7be2b814b39ccb02_ae865163dc_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "section": "Visibility Rules on Lightning Pages > Supported Objects, Fields, Field Types, and Operators",
+      "content_sha256": "c16ae7e529536bc3fbc0cbe6696ddd7b1149748023fa73ea675c42ddc401f6b5"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_ac87ed5d4bc22bf8_01632ab6de_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_customize_lex_pages_activate.htm&language=en_US&type=5",
+      "section": "Activate Lightning  Record or Home Pages",
+      "content_sha256": "a1228bf4bda72eddbf7753da6012f6479fe6e7326c4e06bf295a0a24a48e1297"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_ac87ed5d4bc22bf8_6461d16d6f_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_customize_lex_pages_activate.htm&language=en_US&type=5",
+      "section": "Activate Lightning  Record or Home Pages",
+      "content_sha256": "880b6a5b9518a46502b75065ea92d00bd9dac4edd81cd9d66a3696e3d2027692"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_ac87ed5d4bc22bf8_aa7d572199_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_customize_lex_pages_activate.htm&language=en_US&type=5",
+      "section": "Activate Lightning  Record or Home Pages > Required Editions",
+      "content_sha256": "723cea48f7db1a82c98eaa8952b69abdeec5435c702281f67355ea15e8b03517"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_ac87ed5d4bc22bf8_aa7d572199_002",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_customize_lex_pages_activate.htm&language=en_US&type=5",
+      "section": "Activate Lightning  Record or Home Pages > Required Editions",
+      "content_sha256": "10fb5c2643c169468a7897266ec2a17003c86b1cb2c39dd911fe8b158bb5ff83"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_ac87ed5d4bc22bf8_aa7d572199_003",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_customize_lex_pages_activate.htm&language=en_US&type=5",
+      "section": "Activate Lightning  Record or Home Pages > Required Editions",
+      "content_sha256": "d9b75b417f49bdd07fbe6b0dae9c206a89d2e9ba62b8d76d518718818b8e0bcd"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_8ada3a8db77b5a87_fd8f93e18b_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_considerations.htm&language=en_US&type=5",
+      "section": "Dynamic Forms Tips and Considerations > General Tips",
+      "content_sha256": "c087cee30022e7bd79b6494d16f45d627150021370b69129691b6d593195c2e6"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_8ada3a8db77b5a87_54fe993072_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_considerations.htm&language=en_US&type=5",
+      "section": "Dynamic Forms Tips and Considerations > Visibility Rules and Dynamic Forms",
+      "content_sha256": "e91f8b84e59ed185b8d072cc0ee3d28df0163501634212e99d8277f8a07f1a48"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_8ada3a8db77b5a87_54fe993072_002",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_considerations.htm&language=en_US&type=5",
+      "section": "Dynamic Forms Tips and Considerations > Visibility Rules and Dynamic Forms",
+      "content_sha256": "c380f85666a2ed25c3975f367b39fbc6e67d1628e02b22b9eb0fc7456678badd"
+    },
+    {
+      "query_id": "q15",
+      "aspect_id": "lightning_page_visibility",
+      "doc_id": "sf_html_8ada3a8db77b5a87_9aabd6a9da_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_considerations.htm&language=en_US&type=5",
+      "section": "Dynamic Forms Tips and Considerations > Visibility Rules and Dynamic Forms > See Also",
+      "content_sha256": "fe6a497aee6149cf292a5faf35a1cf76a4fe3c455d43cb69bbbbfab57f8aeb76"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "approval_locking",
+      "doc_id": "sf_html_abd6d4a3ef832849_84b8c9d7ec_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.approvals_terminology.htm&language=en_US&type=5",
+      "section": "Classic Approval Processes Terminology > Initial Submission Actions",
+      "content_sha256": "5de397e5b6baf8310d4391854a97f04ac8f5dfd945d49b38b09ddfebd74a1a44"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "approval_locking",
+      "doc_id": "sf_html_abd6d4a3ef832849_aa2e9eb3de_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.approvals_terminology.htm&language=en_US&type=5",
+      "section": "Classic Approval Processes Terminology > Recall Actions",
+      "content_sha256": "0d3ba556884fd59d73438036d5275d83ddd23cadec11ccbf76e71381f6a20e85"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "approval_locking",
+      "doc_id": "sf_html_abd6d4a3ef832849_da0f42fbec_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.approvals_terminology.htm&language=en_US&type=5",
+      "section": "Classic Approval Processes Terminology > Record Locking",
+      "content_sha256": "b3e6450a87954905b096fb402a6d503f85bacacb61ec42b15d155d96517b4ef3"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "approval_locking",
+      "doc_id": "sf_html_abd6d4a3ef832849_06b9b0819d_001",
+      "url": "https://help.salesforce.com/s/articleView?id=sf.approvals_terminology.htm&language=en_US&type=5",
+      "section": "Classic Approval Processes Terminology > Record Locking > See Also",
+      "content_sha256": "e0f229d681be56f2b2285fee7ba0caffb6d308c18f41026ec84f73b830dbdcb4"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_7a7bb2c313e0efbb_59516010bb_001",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.adding_actions_using_ple.htm&language=en_US&type=5",
+      "section": "Customize Actions with the Enhanced Page Layout Editor",
+      "content_sha256": "a1228bf4bda72eddbf7753da6012f6479fe6e7326c4e06bf295a0a24a48e1297"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_7a7bb2c313e0efbb_d4d3fe8e4c_001",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.adding_actions_using_ple.htm&language=en_US&type=5",
+      "section": "Customize Actions with the Enhanced Page Layout Editor",
+      "content_sha256": "766884cbc6d2debc7769e840ba0343b439855d925b43f4b31424d1d5ca6378cc"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_7a7bb2c313e0efbb_6cc2337d89_001",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.adding_actions_using_ple.htm&language=en_US&type=5",
+      "section": "Customize Actions with the Enhanced Page Layout Editor > Required Editions",
+      "content_sha256": "caa152f6b5a8a5e5206a9f3d7f8e6239e9fada8b59b9f2e30281aa0cc274ffe1"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_7a7bb2c313e0efbb_6cc2337d89_002",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.adding_actions_using_ple.htm&language=en_US&type=5",
+      "section": "Customize Actions with the Enhanced Page Layout Editor > Required Editions",
+      "content_sha256": "39ec3979a2754252692a366dfe5686ab9b2ab83efbe2ec15e05e5730b64d2c73"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_363303a2e9de2b80_88e2d2f8b5_001",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.actions_in_lex_ordering.htm&language=en_US&type=5",
+      "section": "How Actions Are Ordered in Lightning Experience",
+      "content_sha256": "a1228bf4bda72eddbf7753da6012f6479fe6e7326c4e06bf295a0a24a48e1297"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_363303a2e9de2b80_280d936586_001",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.actions_in_lex_ordering.htm&language=en_US&type=5",
+      "section": "How Actions Are Ordered in Lightning Experience",
+      "content_sha256": "81aaec40a9cfd1c05f6a3c8bfd82199cf7a3d8072f23b6e1a82ec65cba6160bb"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_363303a2e9de2b80_2063a662c5_001",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.actions_in_lex_ordering.htm&language=en_US&type=5",
+      "section": "How Actions Are Ordered in Lightning Experience > Required Editions",
+      "content_sha256": "d9cc5b0f00d5694a633c9b2f8b98680d3e7b368a6be35470a8e1e747af0f8e08"
+    },
+    {
+      "query_id": "q20",
+      "aspect_id": "edit_action_visibility",
+      "doc_id": "sf_html_363303a2e9de2b80_2063a662c5_002",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.actions_in_lex_ordering.htm&language=en_US&type=5",
+      "section": "How Actions Are Ordered in Lightning Experience > Required Editions",
+      "content_sha256": "95052f8beb23ffc745d329e22e89a81b20671b826dd071300fcff19ee4517deb"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_d3a69febac_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution",
+      "content_sha256": "93c45ca23d477c74b404b2d56d00992f84cb0837a31b397998e3c040cbed4d27"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_577eea7548_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Note",
+      "content_sha256": "786e049b198a54d0e93e129dd97d20e146814d4fd2a0dbf153a9be0f794407e4"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_69575e955a_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Note",
+      "content_sha256": "b82bba1d91282954cde130e01f301a0e8f9952346183ed2004c09b6869873c63"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_69575e955a_002",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Note",
+      "content_sha256": "1e12da0d73d36e8a63e4c3c5d468c20c157977a720481cba0f227972ecedf45b"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_69575e955a_003",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Note",
+      "content_sha256": "1679a5ff491a7d9a89419cd9506cc9e45533a0b7a44a634e288a8d55d2c0d318"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_69575e955a_004",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Note",
+      "content_sha256": "5a4cd60f361c9fd06bcebc06e2c612d51401525d1382741a48cb6787509fab80"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Additional Considerations",
+      "content_sha256": "bda813fe01f3056dd7f0dceaca267a09e827a3860dd2255e04a11a6d1c230e7f"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Additional Considerations",
+      "content_sha256": "d66a6d6535f14c76a51a4feba430c92eb842c54697c09fa7ec697898bdd3be89"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "execution_order",
+      "doc_id": "sf_html_b3ed2404dfa55aae_2895bfacce_003",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Additional Considerations",
+      "content_sha256": "bb9ca0bf107504fd0c72071f36774eab415c54d0d2844eadf8d8f4900cda846f"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "flow_implementation",
+      "doc_id": "sf_html_cba0a7e8ba972c9d_d2187ae730_001",
+      "url": "https://help.salesforce.com/s/articleView?id=flow_build_data_update.htm&language=en_US&type=0",
+      "section": "Update Salesforce Records from a Flow",
+      "content_sha256": "3b885110833d31b83c9d7a0e7c96a5c6c72c7f8779373bfae7ad7cff1f7bb487"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "flow_implementation",
+      "doc_id": "sf_html_cba0a7e8ba972c9d_93946e1262_001",
+      "url": "https://help.salesforce.com/s/articleView?id=flow_build_data_update.htm&language=en_US&type=0",
+      "section": "Update Salesforce Records from a Flow",
+      "content_sha256": "1943618ade162e23b0245c1541a8019c64cf82a37629029294cd6289c74b91d4"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "flow_implementation",
+      "doc_id": "sf_html_cba0a7e8ba972c9d_71ecfefff0_001",
+      "url": "https://help.salesforce.com/s/articleView?id=flow_build_data_update.htm&language=en_US&type=0",
+      "section": "Update Salesforce Records from a Flow > Required Editions",
+      "content_sha256": "7b37694f965fe54464254bcac9247b8df9fd73a66842167b256cecff4e52cc16"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "flow_implementation",
+      "doc_id": "sf_html_cba0a7e8ba972c9d_71ecfefff0_002",
+      "url": "https://help.salesforce.com/s/articleView?id=flow_build_data_update.htm&language=en_US&type=0",
+      "section": "Update Salesforce Records from a Flow > Required Editions",
+      "content_sha256": "15a8c0e17a1801cd7b06fff500ed1e75716c6397a817241240712792a2da4b9b"
+    },
+    {
+      "query_id": "q12",
+      "aspect_id": "flow_implementation",
+      "doc_id": "sf_html_cba0a7e8ba972c9d_71ecfefff0_003",
+      "url": "https://help.salesforce.com/s/articleView?id=flow_build_data_update.htm&language=en_US&type=0",
+      "section": "Update Salesforce Records from a Flow > Required Editions",
+      "content_sha256": "bd7b4acbb3c9b1022b5e6c7b31032cb8b9dda95c85ce3eb1b615470838f87964"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_464fa8a2f5d3c3df_46f73113c5_001",
+      "url": "https://help.salesforce.com/s/articleView?id=000392579&language=en_US&type=1",
+      "section": "How to Capture and Read Salesforce Debug Logs for Troubleshooting Flows, Apex, and Automations",
+      "content_sha256": "69d14db0c13218a2ce1625b248c082dddedc8fc703d397eb301fb7aeb45e846f"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_464fa8a2f5d3c3df_6be58da2dd_001",
+      "url": "https://help.salesforce.com/s/articleView?id=000392579&language=en_US&type=1",
+      "section": "How to Capture and Read Salesforce Debug Logs for Troubleshooting Flows, Apex, and Automations",
+      "content_sha256": "5f310966da922bd869a267a93378f74d69bb74169cdc4dd81a16f823e32273eb"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_464fa8a2f5d3c3df_fffc69cbd1_001",
+      "url": "https://help.salesforce.com/s/articleView?id=000392579&language=en_US&type=1",
+      "section": "How to Capture and Read Salesforce Debug Logs for Troubleshooting Flows, Apex, and Automations",
+      "content_sha256": "65769887c55b875f4bc62e470e0f6f08c516a69731cfb6a672b13d67dba98af3"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_464fa8a2f5d3c3df_fffc69cbd1_002",
+      "url": "https://help.salesforce.com/s/articleView?id=000392579&language=en_US&type=1",
+      "section": "How to Capture and Read Salesforce Debug Logs for Troubleshooting Flows, Apex, and Automations",
+      "content_sha256": "f3998cdab3cea10d9027044f3079aed9afab770d45721d5e738938b4ea10599f"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_464fa8a2f5d3c3df_fffc69cbd1_003",
+      "url": "https://help.salesforce.com/s/articleView?id=000392579&language=en_US&type=1",
+      "section": "How to Capture and Read Salesforce Debug Logs for Troubleshooting Flows, Apex, and Automations",
+      "content_sha256": "fa6cf7d32eb2f98c37e8120fbacaba7682489869a61c0036c296d29ccd472b47"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Additional Considerations",
+      "content_sha256": "bda813fe01f3056dd7f0dceaca267a09e827a3860dd2255e04a11a6d1c230e7f"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Additional Considerations",
+      "content_sha256": "d66a6d6535f14c76a51a4feba430c92eb842c54697c09fa7ec697898bdd3be89"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_b3ed2404dfa55aae_2895bfacce_003",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Additional Considerations",
+      "content_sha256": "bb9ca0bf107504fd0c72071f36774eab415c54d0d2844eadf8d8f4900cda846f"
+    },
+    {
+      "query_id": "q19",
+      "aspect_id": "debug_log_investigation",
+      "doc_id": "sf_html_b3ed2404dfa55aae_dcc0d6f3f1_001",
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "section": "Triggers and Order of Execution > Additional Considerations > See Also",
+      "content_sha256": "93111bf4cd6df9cf7c85b2e8c89044769577c81f2ea310909b7560df96a04f03"
+    }
+  ],
+  "excluded_as_q12_answer": {
+    "url_id": "000387888",
+    "reason": "Updates Case.AccountId from the related Contact; does not update a field on the related Account record."
+  }
+}

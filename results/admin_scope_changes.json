@@ -1,0 +1,227 @@
+{
+  "date": "2026-10-23",
+  "baseline": "results/before_admin_scope",
+  "query_strings_changed": false,
+  "added_documents": [
+    "salesforce_apex_developer_guide_p0156_admin_lead_conversion_001",
+    "salesforce_apex_developer_guide_p0152_admin_account_merge_001",
+    "salesforce_apex_developer_guide_p0152_admin_account_merge_002",
+    "sales_core_p0160_admin_quote_setup_001",
+    "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001",
+    "salesforce_apex_developer_guide_p0218_admin_apex_sharing_001",
+    "extend_click_automate_p0068_admin_flow_bulk_001",
+    "extend_click_automate_p0286_admin_flow_debug_limits_001",
+    "mc_journeys_and_automations_p0029_admin_sql_query_setup_001",
+    "mc_journeys_and_automations_p0102_admin_sql_nonengagement_001"
+  ],
+  "changes": [
+    {
+      "query_id": "q01",
+      "added": [
+        "salesforce_apex_developer_guide_p0156_admin_lead_conversion_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "admin_resolution",
+        "apex_conversion"
+      ]
+    },
+    {
+      "query_id": "q02",
+      "added": [
+        "salesforce_apex_developer_guide_p0152_admin_account_merge_001",
+        "salesforce_apex_developer_guide_p0152_admin_account_merge_002"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "admin_merge",
+        "apex_merge"
+      ]
+    },
+    {
+      "query_id": "q03",
+      "added": [
+        "agentforce_contact_center_5_30_2026_p0585_011"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "feature_setup",
+        "routing_integration"
+      ]
+    },
+    {
+      "query_id": "q04",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "apex_warning_configuration"
+      ]
+    },
+    {
+      "query_id": "q05",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "admin_relationship_setup",
+        "relationship_model"
+      ]
+    },
+    {
+      "query_id": "q06",
+      "added": [
+        "sales_core_p0160_admin_quote_setup_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "quote_workflow",
+        "admin_quote_setup"
+      ]
+    },
+    {
+      "query_id": "q07",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "flow_selection",
+        "flow_implementation"
+      ]
+    },
+    {
+      "query_id": "q08",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "template_lifecycle",
+        "journey_execution"
+      ]
+    },
+    {
+      "query_id": "q09",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "apex_dml_support"
+      ]
+    },
+    {
+      "query_id": "q10",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "omni_channel_setup",
+        "availability_flow"
+      ]
+    },
+    {
+      "query_id": "q11",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "capacity_model",
+        "capacity_monitoring"
+      ]
+    },
+    {
+      "query_id": "q12",
+      "added": [],
+      "removed": [],
+      "aspect_ids": [
+        "flow_implementation",
+        "apex_implementation"
+      ]
+    },
+    {
+      "query_id": "q13",
+      "added": [
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "crm_sync_setup",
+        "data_pipeline"
+      ]
+    },
+    {
+      "query_id": "q14",
+      "added": [
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "filtered_de",
+        "sql_alternative"
+      ]
+    },
+    {
+      "query_id": "q15",
+      "added": [
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "ui_field_access",
+        "apex_field_access"
+      ]
+    },
+    {
+      "query_id": "q16",
+      "added": [
+        "mc_journeys_and_automations_p0102_002",
+        "mc_journeys_and_automations_p0103_003",
+        "mc_journeys_and_automations_p0102_admin_sql_nonengagement_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "journey_branching",
+        "sql_audience"
+      ]
+    },
+    {
+      "query_id": "q17",
+      "added": [
+        "extend_click_automate_p0286_admin_flow_debug_limits_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "debug_workflow",
+        "execution_context_testing"
+      ]
+    },
+    {
+      "query_id": "q18",
+      "added": [
+        "setup_p0439_013",
+        "setup_p0444_017"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "tool_selection",
+        "automated_loading",
+        "api_permissions"
+      ]
+    },
+    {
+      "query_id": "q19",
+      "added": [
+        "extend_click_automate_p0068_admin_flow_bulk_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "apex_bulk_path",
+        "flow_bulk_path"
+      ]
+    },
+    {
+      "query_id": "q20",
+      "added": [
+        "salesforce_apex_developer_guide_p0218_admin_apex_sharing_001",
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001"
+      ],
+      "removed": [],
+      "aspect_ids": [
+        "record_permissions",
+        "apex_execution_context"
+      ]
+    }
+  ]
+}

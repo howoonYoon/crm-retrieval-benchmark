@@ -47,10 +47,12 @@ def main() -> None:
     plot_metrics(args.results_dir / "metrics.csv", args.results_dir / "metrics_plot.png")
 
     for row in metrics_rows:
+        aspect_text = f"aspect@5={row['aspect_recall_at_5']:.3f}, " if "aspect_recall_at_5" in row else ""
         print(
             f"{row['config']}: "
             f"recall@5={row['recall_at_5']:.3f}, "
             f"mrr={row['mrr']:.3f}, "
+            f"{aspect_text}"
             f"p95={row['p95_latency_ms']:.1f}ms"
         )
 

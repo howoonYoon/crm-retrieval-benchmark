@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import time
 from pathlib import Path
@@ -40,6 +41,14 @@ def reciprocal_rank(results: list[SearchResult], relevant_doc_ids: set[str]) -> 
         if result.doc_id in relevant_doc_ids:
             return 1.0 / rank
     return 0.0
+
+
+def aspect_recall_at_k(results: list[SearchResult], aspects: list[dict]) -> float:
+    """Fraction of reviewed evidence aspects with at least one retrieved passage."""
+    if not aspects:
+        return 0.0
+    retrieved = {result.doc_id for result in results}
+    return sum(bool(retrieved & set(aspect["relevant_doc_ids"])) for aspect in aspects) / len(aspects)
 
 
 def first_relevant_rank(results: list[SearchResult], relevant_doc_ids: set[str]) -> int | None:
@@ -85,8 +94,38 @@ def validate_inputs(documents: list[dict], queries: list[dict]) -> None:
         raise ValueError("No queries found. Add 20 labelled queries to data/processed/queries.jsonl.")
 
     doc_ids = {document["doc_id"] for document in documents}
+    documents_by_id = {document["doc_id"]: document for document in documents}
+    if len(doc_ids) != len(documents):
+        raise ValueError("Duplicate document IDs")
+    if len({q["query_id"] for q in queries}) != len(queries):
+        raise ValueError("Duplicate query IDs")
     missing: list[tuple[str, str]] = []
     for query in queries:
+        labels = query.get("relevant_doc_ids", [])
+        if not labels or len(labels) != len(set(labels)):
+            raise ValueError(f"Empty or duplicate labels: {query['query_id']}")
+        locked = query.get("core_label_text_sha256")
+        if locked is not None:
+            if set(locked) != set(labels):
+                raise ValueError(f"Core content hashes do not cover labels: {query['query_id']}")
+            for doc_id, expected in locked.items():
+                if doc_id in documents_by_id and hashlib.sha256(documents_by_id[doc_id]['text'].encode()).hexdigest() != expected:
+                    raise ValueError(f"Core source changed; review relevance again: {query['query_id']}:{doc_id}")
+        supplementary = query.get("supplementary_doc_ids", [])
+        excluded = query.get("excluded_doc_ids", [])
+        if any(len(values) != len(set(values)) or not set(values) <= doc_ids for values in [supplementary, excluded]):
+            raise ValueError(f"Invalid non-gold references: {query['query_id']}")
+        if set(labels) & (set(supplementary) | set(excluded)) or set(supplementary) & set(excluded):
+            raise ValueError(f"Gold and non-gold references overlap: {query['query_id']}")
+        aspects = query.get("answer_aspects", [])
+        if aspects:
+            if len({a['aspect_id'] for a in aspects}) != len(aspects):
+                raise ValueError(f"Duplicate answer aspects: {query['query_id']}")
+            for aspect in aspects:
+                if not aspect.get("relevant_doc_ids") or not set(aspect["relevant_doc_ids"]) <= set(labels):
+                    raise ValueError(f"Invalid aspect labels: {query['query_id']}")
+            if set().union(*(set(a['relevant_doc_ids']) for a in aspects)) != set(labels):
+                raise ValueError(f"Aspects do not cover labels: {query['query_id']}")
         for doc_id in query.get("relevant_doc_ids", []):
             if doc_id not in doc_ids:
                 missing.append((query.get("query_id", "<missing query_id>"), doc_id))
@@ -106,6 +145,10 @@ def evaluate_retriever(
     recalls: list[float] = []
     reciprocal_ranks: list[float] = []
     latencies_ms: list[float] = []
+    aspect_recalls: list[float] = []
+    has_aspects = any(query.get("answer_aspects") for query in queries)
+    if has_aspects and not all(query.get("answer_aspects") for query in queries):
+        raise ValueError("Either all queries or no queries must define answer_aspects")
 
     for query in queries:
         relevant_doc_ids = set(query.get("relevant_doc_ids", []))
@@ -121,6 +164,8 @@ def evaluate_retriever(
         recalls.append(query_recall)
         reciprocal_ranks.append(query_rr)
         latencies_ms.append(latency_ms)
+        if has_aspects:
+            aspect_recalls.append(aspect_recall_at_k(results, query["answer_aspects"]))
 
         per_query_rows.append(
             {
@@ -136,6 +181,8 @@ def evaluate_retriever(
                 "top5_doc_ids": "|".join(result.doc_id for result in results),
             }
         )
+        if has_aspects:
+            per_query_rows[-1]["aspect_recall_at_5"] = aspect_recalls[-1]
 
     metrics = {
         "config": config_name,
@@ -144,6 +191,8 @@ def evaluate_retriever(
         "mrr": mean(reciprocal_ranks),
         "p95_latency_ms": float(np.percentile(latencies_ms, 95)),
     }
+    if has_aspects:
+        metrics["aspect_recall_at_5"] = mean(aspect_recalls)
     return metrics, per_query_rows
 
 

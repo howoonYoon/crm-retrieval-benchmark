@@ -1,6 +1,6 @@
 PYTHON ?= python
 
-.PHONY: install run eval build-corpus inspect plot clean-results
+.PHONY: install run eval build-corpus build-html fetch-html inspect plot clean-results
 
 install:
 	$(PYTHON) -m pip install -r requirements.txt
@@ -10,8 +10,14 @@ run: eval
 eval:
 	$(PYTHON) run_eval.py
 
-build-corpus:
+build-corpus: build-html
 	$(PYTHON) src/build_corpus.py
+
+build-html:
+	$(PYTHON) src/build_html_corpus.py --offline
+
+fetch-html:
+	$(PYTHON) src/build_html_corpus.py --render
 
 inspect:
 	$(PYTHON) src/inspect_corpus.py

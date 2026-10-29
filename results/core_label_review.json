@@ -1,0 +1,714 @@
+{
+  "scope": "admin_agent_core_v1",
+  "policy": "Gold requires a direct solution, a concrete core implementation step, or an explicit explanation of the stated symptom. Admin/developer viewpoint is preserved, but does not make every related technical page gold. General prerequisites, authentication, deployment, reference catalogs, migration, navigation and See Also blocks are not gold. Multiple core steps or valid direct alternatives may remain; no five-label cap and no selection based on retrieval rank.",
+  "baseline": "results/before_core_labels",
+  "changes": [
+    {
+      "query_id": "q01",
+      "rationale": "중복 경고의 발생 조건, 기존 Account·Lead 값과 매핑·중복 규칙을 읽기 전용으로 확인하는 근거다. 문서의 전환·필드 수정 예시는 고객 데이터 변경 권한을 뜻하지 않는다.",
+      "old_labels": [
+        "sales_core_p0096_002",
+        "sales_core_p0095_001",
+        "sales_core_p0103_004",
+        "salesforce_apex_developer_guide_p0156_admin_lead_conversion_001"
+      ],
+      "core_labels": [
+        "sales_core_p0096_002",
+        "sales_core_p0095_001",
+        "sales_core_p0103_004",
+        "salesforce_apex_developer_guide_p0156_admin_lead_conversion_001"
+      ],
+      "removed_labels": [],
+      "supplementary_doc_ids": [],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q02",
+      "rationale": "UI 및 Apex의 실제 Account 병합 절차는 직접 답변이므로 함께 유지한다.",
+      "old_labels": [
+        "sales_core_p0218_022",
+        "sales_core_p0220_023",
+        "salesforce_apex_developer_guide_p0152_admin_account_merge_001",
+        "salesforce_apex_developer_guide_p0152_admin_account_merge_002"
+      ],
+      "core_labels": [
+        "sales_core_p0218_022",
+        "sales_core_p0220_023",
+        "salesforce_apex_developer_guide_p0152_admin_account_merge_001",
+        "salesforce_apex_developer_guide_p0152_admin_account_merge_002"
+      ],
+      "removed_labels": [],
+      "supplementary_doc_ids": [],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q03",
+      "rationale": "Case 자동 생성에 필요한 Email-to-Case 활성화와 주소 검증·forwarding 설정을 유지한다. 제한 사항 위주의 소개와 발신 주소 설정은 보조 자료다.",
+      "old_labels": [
+        "agentforce_contact_center_5_30_2026_p0575_001",
+        "agentforce_contact_center_5_30_2026_p0576_002",
+        "agentforce_contact_center_5_30_2026_p0577_003",
+        "agentforce_contact_center_5_30_2026_p0584_010",
+        "agentforce_contact_center_5_30_2026_p0585_011"
+      ],
+      "core_labels": [
+        "agentforce_contact_center_5_30_2026_p0576_002",
+        "agentforce_contact_center_5_30_2026_p0577_003",
+        "agentforce_contact_center_5_30_2026_p0584_010"
+      ],
+      "removed_labels": [
+        "agentforce_contact_center_5_30_2026_p0575_001",
+        "agentforce_contact_center_5_30_2026_p0585_011"
+      ],
+      "supplementary_doc_ids": [
+        "agentforce_contact_center_5_30_2026_p0575_001",
+        "agentforce_contact_center_5_30_2026_p0585_011"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q04",
+      "rationale": "사용자의 Send Apex Warning Emails 설정, 권한과 적용 임계치를 직접 설명한다.",
+      "old_labels": [
+        "salesforce_apex_developer_guide_p0364_028"
+      ],
+      "core_labels": [
+        "salesforce_apex_developer_guide_p0364_028"
+      ],
+      "removed_labels": [],
+      "supplementary_doc_ids": [],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q05",
+      "rationale": "기능 활성화, 관계 생성과 AccountContactRelation의 실제 사용을 유지한다. 지원 호출 목록이나 필드 목록만 있는 청크는 제외한다.",
+      "old_labels": [
+        "sales_core_p0280_027",
+        "sales_core_p0287_029",
+        "sales_core_p0280_028",
+        "sales_core_p0277_026",
+        "sf_html_a32b6bcfc3358a0c_6646068869_001",
+        "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_001",
+        "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_002",
+        "sf_html_a32b6bcfc3358a0c_61b6181242_001",
+        "sf_html_6f20793c7f9103fe_91b9a51529_001"
+      ],
+      "core_labels": [
+        "sales_core_p0280_027",
+        "sales_core_p0280_028",
+        "sales_core_p0277_026",
+        "sales_core_p0287_029",
+        "sf_html_a32b6bcfc3358a0c_61b6181242_001"
+      ],
+      "removed_labels": [
+        "sf_html_a32b6bcfc3358a0c_6646068869_001",
+        "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_001",
+        "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_002",
+        "sf_html_6f20793c7f9103fe_91b9a51529_001"
+      ],
+      "supplementary_doc_ids": [
+        "sf_html_a32b6bcfc3358a0c_6646068869_001",
+        "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_001",
+        "sf_html_a32b6bcfc3358a0c_b0f0dbf1ea_002",
+        "sf_html_6f20793c7f9103fe_91b9a51529_001"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q06",
+      "rationale": "한 Opportunity에 여러 Quote를 만들고 상품·가격 조합을 비교하는 절차가 핵심이다. Quote 활성화와 개별 API 필드 명세는 보조 자료다.",
+      "old_labels": [
+        "sales_core_p0166_020",
+        "sales_core_p0160_admin_quote_setup_001",
+        "sf_html_0d75cf2e23568fa8_7b22e0f9fc_001",
+        "sf_html_0d75cf2e23568fa8_b39f13b193_007",
+        "sf_html_0d75cf2e23568fa8_b39f13b193_008",
+        "sf_html_0d75cf2e23568fa8_b5b2abd769_001",
+        "sf_html_7b09fcf632e1d93c_49e705a3fa_001",
+        "sf_html_7b09fcf632e1d93c_20d5c83054_001",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_001",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_002",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_010",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_013",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_017",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_020",
+        "sf_html_7b09fcf632e1d93c_bef94e49e6_001",
+        "sf_html_7b09fcf632e1d93c_92360aacad_001"
+      ],
+      "core_labels": [
+        "sales_core_p0166_020"
+      ],
+      "removed_labels": [
+        "sales_core_p0160_admin_quote_setup_001",
+        "sf_html_0d75cf2e23568fa8_7b22e0f9fc_001",
+        "sf_html_0d75cf2e23568fa8_b39f13b193_007",
+        "sf_html_0d75cf2e23568fa8_b39f13b193_008",
+        "sf_html_0d75cf2e23568fa8_b5b2abd769_001",
+        "sf_html_7b09fcf632e1d93c_49e705a3fa_001",
+        "sf_html_7b09fcf632e1d93c_20d5c83054_001",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_001",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_002",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_010",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_013",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_017",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_020",
+        "sf_html_7b09fcf632e1d93c_bef94e49e6_001",
+        "sf_html_7b09fcf632e1d93c_92360aacad_001"
+      ],
+      "supplementary_doc_ids": [
+        "sales_core_p0160_admin_quote_setup_001",
+        "sf_html_0d75cf2e23568fa8_7b22e0f9fc_001",
+        "sf_html_0d75cf2e23568fa8_b39f13b193_007",
+        "sf_html_0d75cf2e23568fa8_b39f13b193_008",
+        "sf_html_0d75cf2e23568fa8_b5b2abd769_001",
+        "sf_html_7b09fcf632e1d93c_49e705a3fa_001",
+        "sf_html_7b09fcf632e1d93c_20d5c83054_001",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_001",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_002",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_010",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_013",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_017",
+        "sf_html_7b09fcf632e1d93c_8cca3430d4_020",
+        "sf_html_7b09fcf632e1d93c_bef94e49e6_001",
+        "sf_html_7b09fcf632e1d93c_92360aacad_001"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q07",
+      "rationale": "Apex 없이 before-save Flow를 선택하고 $Record 값을 갱신하는 핵심 구현을 유지한다.",
+      "old_labels": [
+        "extend_click_automate_p0036_005",
+        "extend_click_automate_p0037_006"
+      ],
+      "core_labels": [
+        "extend_click_automate_p0036_005",
+        "extend_click_automate_p0037_006"
+      ],
+      "removed_labels": [],
+      "supplementary_doc_ids": [],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q08",
+      "rationale": "승인 템플릿 개인화와 Journey Builder 전송 설정이 핵심이다. OAuth와 전송 이벤트는 별도 개발 참고이며 정답으로 채점하지 않는다.",
+      "old_labels": [
+        "mc_journeys_and_automations_p0321_034",
+        "mc_journeys_and_automations_p0322_035",
+        "sf_html_ddc7c4c33d518244_dcf90eb56e_001",
+        "sf_html_ddc7c4c33d518244_dcf90eb56e_002",
+        "sf_html_b90a277af96128e6_99de7b6b4b_001",
+        "sf_html_b90a277af96128e6_99de7b6b4b_002",
+        "sf_html_b90a277af96128e6_99de7b6b4b_003",
+        "sf_html_b90a277af96128e6_99de7b6b4b_004",
+        "sf_html_5d436c15ff0d542a_fc26fba295_001",
+        "sf_html_5d436c15ff0d542a_fc26fba295_002",
+        "sf_html_5d436c15ff0d542a_fc26fba295_003",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_001",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_002",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_003",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_004"
+      ],
+      "core_labels": [
+        "mc_journeys_and_automations_p0321_034",
+        "mc_journeys_and_automations_p0322_035"
+      ],
+      "removed_labels": [
+        "sf_html_ddc7c4c33d518244_dcf90eb56e_001",
+        "sf_html_ddc7c4c33d518244_dcf90eb56e_002",
+        "sf_html_b90a277af96128e6_99de7b6b4b_001",
+        "sf_html_b90a277af96128e6_99de7b6b4b_002",
+        "sf_html_b90a277af96128e6_99de7b6b4b_003",
+        "sf_html_b90a277af96128e6_99de7b6b4b_004",
+        "sf_html_5d436c15ff0d542a_fc26fba295_001",
+        "sf_html_5d436c15ff0d542a_fc26fba295_002",
+        "sf_html_5d436c15ff0d542a_fc26fba295_003",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_001",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_002",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_003",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_004"
+      ],
+      "supplementary_doc_ids": [
+        "sf_html_ddc7c4c33d518244_dcf90eb56e_001",
+        "sf_html_ddc7c4c33d518244_dcf90eb56e_002",
+        "sf_html_b90a277af96128e6_99de7b6b4b_001",
+        "sf_html_b90a277af96128e6_99de7b6b4b_002",
+        "sf_html_b90a277af96128e6_99de7b6b4b_003",
+        "sf_html_b90a277af96128e6_99de7b6b4b_004",
+        "sf_html_5d436c15ff0d542a_fc26fba295_001",
+        "sf_html_5d436c15ff0d542a_fc26fba295_002",
+        "sf_html_5d436c15ff0d542a_fc26fba295_003",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_001",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_002",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_003",
+        "sf_html_0ecb9d2e864432dd_6c9660c73f_004"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q09",
+      "rationale": "Apex DML 미지원 목록의 Profile이 직접 답변이다. 일반 Metadata API 배포 방법은 이 질문의 정답이 아니다.",
+      "old_labels": [
+        "salesforce_apex_developer_guide_p0169_008",
+        "sf_html_604b2c392779a3af_d88992ff1f_001",
+        "sf_html_604b2c392779a3af_f8063e22bf_001",
+        "sf_html_604b2c392779a3af_5a3e564979_001",
+        "sf_html_9ccd5bdd18eb6c87_b2b465f622_001",
+        "sf_html_9ccd5bdd18eb6c87_995ce7e129_001",
+        "sf_html_3fabad8a358cefc2_c32ac9f11c_001"
+      ],
+      "core_labels": [
+        "salesforce_apex_developer_guide_p0169_008"
+      ],
+      "removed_labels": [
+        "sf_html_604b2c392779a3af_d88992ff1f_001",
+        "sf_html_604b2c392779a3af_f8063e22bf_001",
+        "sf_html_604b2c392779a3af_5a3e564979_001",
+        "sf_html_9ccd5bdd18eb6c87_b2b465f622_001",
+        "sf_html_9ccd5bdd18eb6c87_995ce7e129_001",
+        "sf_html_3fabad8a358cefc2_c32ac9f11c_001"
+      ],
+      "supplementary_doc_ids": [
+        "sf_html_604b2c392779a3af_d88992ff1f_001",
+        "sf_html_604b2c392779a3af_f8063e22bf_001",
+        "sf_html_604b2c392779a3af_5a3e564979_001",
+        "sf_html_9ccd5bdd18eb6c87_b2b465f622_001",
+        "sf_html_9ccd5bdd18eb6c87_995ce7e129_001",
+        "sf_html_3fabad8a358cefc2_c32ac9f11c_001"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q10",
+      "rationale": "가용성 확인, queue 선택, Decision과 Route Work 분기를 직접 설명하는 부분을 유지한다. migration 및 skills 전용 설정은 제외한다.",
+      "old_labels": [
+        "messaging_admin_implementation_guide_p0039_010",
+        "sf_html_bf7a39fb814a7cd8_9f3ad03c72_001",
+        "sf_html_bf7a39fb814a7cd8_44cba26590_001",
+        "messaging_admin_implementation_guide_p0040_011",
+        "sf_html_a158f2754a62a0da_968aacb04f_001",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_001",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_002",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_003",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_004",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_005",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_006",
+        "sf_html_fda52494777cd957_b79ade9ae3_001",
+        "sf_html_fda52494777cd957_06cfe97dc8_001",
+        "sf_html_fda52494777cd957_06cfe97dc8_002",
+        "sf_html_fda52494777cd957_06cfe97dc8_003"
+      ],
+      "core_labels": [
+        "messaging_admin_implementation_guide_p0040_011",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_001",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_002",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_005"
+      ],
+      "removed_labels": [
+        "messaging_admin_implementation_guide_p0039_010",
+        "sf_html_bf7a39fb814a7cd8_9f3ad03c72_001",
+        "sf_html_bf7a39fb814a7cd8_44cba26590_001",
+        "sf_html_a158f2754a62a0da_968aacb04f_001",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_003",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_004",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_006",
+        "sf_html_fda52494777cd957_b79ade9ae3_001",
+        "sf_html_fda52494777cd957_06cfe97dc8_001",
+        "sf_html_fda52494777cd957_06cfe97dc8_002",
+        "sf_html_fda52494777cd957_06cfe97dc8_003"
+      ],
+      "supplementary_doc_ids": [
+        "messaging_admin_implementation_guide_p0039_010",
+        "sf_html_bf7a39fb814a7cd8_44cba26590_001",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_003",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_004",
+        "sf_html_a158f2754a62a0da_9cbf9b3ddb_006",
+        "sf_html_fda52494777cd957_06cfe97dc8_001",
+        "sf_html_fda52494777cd957_06cfe97dc8_002",
+        "sf_html_fda52494777cd957_06cfe97dc8_003"
+      ],
+      "excluded_doc_ids": [
+        "sf_html_bf7a39fb814a7cd8_9f3ad03c72_001",
+        "sf_html_a158f2754a62a0da_968aacb04f_001",
+        "sf_html_fda52494777cd957_b79ade9ae3_001"
+      ]
+    },
+    {
+      "query_id": "q11",
+      "rationale": "기사·보존 버전·번역 수로 용량을 추정하는 계산이 핵심이다. 실제 사용량 모니터링 절차만으로는 이 질문에 직접 답하지 않는다.",
+      "old_labels": [
+        "lightning_knowledge_guide_p0011_007",
+        "lightning_knowledge_guide_p0012_008"
+      ],
+      "core_labels": [
+        "lightning_knowledge_guide_p0011_007"
+      ],
+      "removed_labels": [
+        "lightning_knowledge_guide_p0012_008"
+      ],
+      "supplementary_doc_ids": [
+        "lightning_knowledge_guide_p0012_008"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q12",
+      "rationale": "after trigger/after-save Flow 선택과 관련 record를 찾아 갱신하는 Update Records 구현은 핵심이다. 실행 순서는 보조 근거다. 정확한 Case→Account 완성 예제라는 주장은 하지 않는다.",
+      "old_labels": [
+        "extend_click_automate_p0031_004",
+        "extend_click_automate_p0100_008",
+        "sf_html_cba0a7e8ba972c9d_d2187ae730_001",
+        "sf_html_cba0a7e8ba972c9d_93946e1262_001",
+        "sf_html_cba0a7e8ba972c9d_71ecfefff0_001",
+        "sf_html_cba0a7e8ba972c9d_71ecfefff0_002",
+        "sf_html_cba0a7e8ba972c9d_71ecfefff0_003",
+        "salesforce_apex_developer_guide_p0271_014",
+        "sf_html_b3ed2404dfa55aae_d3a69febac_001",
+        "sf_html_b3ed2404dfa55aae_577eea7548_001",
+        "sf_html_b3ed2404dfa55aae_69575e955a_001",
+        "sf_html_b3ed2404dfa55aae_69575e955a_002",
+        "sf_html_b3ed2404dfa55aae_69575e955a_003",
+        "sf_html_b3ed2404dfa55aae_69575e955a_004",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_003"
+      ],
+      "core_labels": [
+        "salesforce_apex_developer_guide_p0271_014",
+        "extend_click_automate_p0031_004",
+        "extend_click_automate_p0100_008",
+        "sf_html_cba0a7e8ba972c9d_71ecfefff0_001",
+        "sf_html_cba0a7e8ba972c9d_71ecfefff0_002"
+      ],
+      "removed_labels": [
+        "sf_html_cba0a7e8ba972c9d_d2187ae730_001",
+        "sf_html_cba0a7e8ba972c9d_93946e1262_001",
+        "sf_html_cba0a7e8ba972c9d_71ecfefff0_003",
+        "sf_html_b3ed2404dfa55aae_d3a69febac_001",
+        "sf_html_b3ed2404dfa55aae_577eea7548_001",
+        "sf_html_b3ed2404dfa55aae_69575e955a_001",
+        "sf_html_b3ed2404dfa55aae_69575e955a_002",
+        "sf_html_b3ed2404dfa55aae_69575e955a_003",
+        "sf_html_b3ed2404dfa55aae_69575e955a_004",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_003"
+      ],
+      "supplementary_doc_ids": [
+        "sf_html_cba0a7e8ba972c9d_93946e1262_001",
+        "sf_html_cba0a7e8ba972c9d_71ecfefff0_003",
+        "sf_html_b3ed2404dfa55aae_d3a69febac_001",
+        "sf_html_b3ed2404dfa55aae_577eea7548_001",
+        "sf_html_b3ed2404dfa55aae_69575e955a_001",
+        "sf_html_b3ed2404dfa55aae_69575e955a_002",
+        "sf_html_b3ed2404dfa55aae_69575e955a_003",
+        "sf_html_b3ed2404dfa55aae_69575e955a_004",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_003"
+      ],
+      "excluded_doc_ids": [
+        "sf_html_cba0a7e8ba972c9d_d2187ae730_001"
+      ]
+    },
+    {
+      "query_id": "q13",
+      "rationale": "CRM 데이터 동기화와 생성되는 DE 및 사용 제약을 설명하는 Synchronized Data Sources 설정을 유지한다. 일반 SQL 설정과 동기화 관계 관리 세부 사항은 제외한다.",
+      "old_labels": [
+        "engagement_audience_builder_and_contact_builder_5_30_2026_p0139_007",
+        "engagement_audience_builder_and_contact_builder_5_30_2026_p0139_008",
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "core_labels": [
+        "engagement_audience_builder_and_contact_builder_5_30_2026_p0139_007"
+      ],
+      "removed_labels": [
+        "engagement_audience_builder_and_contact_builder_5_30_2026_p0139_008",
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "supplementary_doc_ids": [
+        "engagement_audience_builder_and_contact_builder_5_30_2026_p0139_008",
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q14",
+      "rationale": "조건으로 새 filtered DE를 만드는 절차가 핵심이다. refresh 절차와 일반 SQL Query Activity 설정은 정답에서 제외한다.",
+      "old_labels": [
+        "mc_email_p0129_011",
+        "mc_email_p0130_012",
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "core_labels": [
+        "mc_email_p0129_011"
+      ],
+      "removed_labels": [
+        "mc_email_p0130_012",
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "supplementary_doc_ids": [
+        "mc_email_p0130_012",
+        "mc_journeys_and_automations_p0029_admin_sql_query_setup_001"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q15",
+      "rationale": "FLS, 실제 field visibility, hidden field sections 및 page assignment처럼 필드가 보이지 않는 원인을 직접 설명하는 부분을 유지한다. custom Apex라는 추가 가정이 필요한 보안 문서는 보조 자료다.",
+      "old_labels": [
+        "salesforce_security_impl_guide_p0048_020",
+        "salesforce_security_impl_guide_p0048_021",
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001",
+        "sf_html_7be2b814b39ccb02_1644173698_001",
+        "sf_html_7be2b814b39ccb02_7b7f2fa2ed_001",
+        "sf_html_7be2b814b39ccb02_cf0e442d16_001",
+        "sf_html_7be2b814b39ccb02_cf0e442d16_002",
+        "sf_html_7be2b814b39ccb02_62cad5e94b_001",
+        "sf_html_7be2b814b39ccb02_62cad5e94b_002",
+        "sf_html_7be2b814b39ccb02_5f34dbfdef_001",
+        "sf_html_7be2b814b39ccb02_ae865163dc_001",
+        "sf_html_ac87ed5d4bc22bf8_01632ab6de_001",
+        "sf_html_ac87ed5d4bc22bf8_6461d16d6f_001",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_001",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_002",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_003",
+        "sf_html_8ada3a8db77b5a87_fd8f93e18b_001",
+        "sf_html_8ada3a8db77b5a87_54fe993072_001",
+        "sf_html_8ada3a8db77b5a87_54fe993072_002",
+        "sf_html_8ada3a8db77b5a87_9aabd6a9da_001"
+      ],
+      "core_labels": [
+        "salesforce_security_impl_guide_p0048_020",
+        "salesforce_security_impl_guide_p0048_021",
+        "sf_html_7be2b814b39ccb02_62cad5e94b_001",
+        "sf_html_8ada3a8db77b5a87_54fe993072_002",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_002"
+      ],
+      "removed_labels": [
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001",
+        "sf_html_7be2b814b39ccb02_1644173698_001",
+        "sf_html_7be2b814b39ccb02_7b7f2fa2ed_001",
+        "sf_html_7be2b814b39ccb02_cf0e442d16_001",
+        "sf_html_7be2b814b39ccb02_cf0e442d16_002",
+        "sf_html_7be2b814b39ccb02_62cad5e94b_002",
+        "sf_html_7be2b814b39ccb02_5f34dbfdef_001",
+        "sf_html_7be2b814b39ccb02_ae865163dc_001",
+        "sf_html_ac87ed5d4bc22bf8_01632ab6de_001",
+        "sf_html_ac87ed5d4bc22bf8_6461d16d6f_001",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_001",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_003",
+        "sf_html_8ada3a8db77b5a87_fd8f93e18b_001",
+        "sf_html_8ada3a8db77b5a87_54fe993072_001",
+        "sf_html_8ada3a8db77b5a87_9aabd6a9da_001"
+      ],
+      "supplementary_doc_ids": [
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001",
+        "sf_html_7be2b814b39ccb02_7b7f2fa2ed_001",
+        "sf_html_7be2b814b39ccb02_cf0e442d16_001",
+        "sf_html_7be2b814b39ccb02_cf0e442d16_002",
+        "sf_html_7be2b814b39ccb02_62cad5e94b_002",
+        "sf_html_7be2b814b39ccb02_5f34dbfdef_001",
+        "sf_html_7be2b814b39ccb02_ae865163dc_001",
+        "sf_html_ac87ed5d4bc22bf8_6461d16d6f_001",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_001",
+        "sf_html_ac87ed5d4bc22bf8_aa7d572199_003",
+        "sf_html_8ada3a8db77b5a87_fd8f93e18b_001",
+        "sf_html_8ada3a8db77b5a87_54fe993072_001"
+      ],
+      "excluded_doc_ids": [
+        "sf_html_7be2b814b39ccb02_1644173698_001",
+        "sf_html_ac87ed5d4bc22bf8_01632ab6de_001",
+        "sf_html_8ada3a8db77b5a87_9aabd6a9da_001"
+      ]
+    },
+    {
+      "query_id": "q16",
+      "rationale": "Engagement Split 설정과 NOT open AND NOT click을 명시한 SQL은 직접 답변이다. 일반 활동 목록과 SQL 대상 DE 소개만 있는 청크는 제외한다.",
+      "old_labels": [
+        "mc_journeys_and_automations_p0351_041",
+        "mc_journeys_and_automations_p0350_040",
+        "mc_journeys_and_automations_p0102_002",
+        "mc_journeys_and_automations_p0103_003",
+        "mc_journeys_and_automations_p0102_admin_sql_nonengagement_001"
+      ],
+      "core_labels": [
+        "mc_journeys_and_automations_p0351_041",
+        "mc_journeys_and_automations_p0103_003",
+        "mc_journeys_and_automations_p0102_admin_sql_nonengagement_001"
+      ],
+      "removed_labels": [
+        "mc_journeys_and_automations_p0350_040",
+        "mc_journeys_and_automations_p0102_002"
+      ],
+      "supplementary_doc_ids": [
+        "mc_journeys_and_automations_p0350_040",
+        "mc_journeys_and_automations_p0102_002"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q17",
+      "rationale": "입력·실행 경로 확인과 rollback을 설명하는 Flow Builder Debug 및 screen flow 예시를 유지한다. 일반 sandbox 통합 테스트 주의 사항은 보조 자료다.",
+      "old_labels": [
+        "extend_click_automate_p0238_012",
+        "extend_click_automate_p0238_013",
+        "extend_click_automate_p0286_admin_flow_debug_limits_001"
+      ],
+      "core_labels": [
+        "extend_click_automate_p0238_012",
+        "extend_click_automate_p0238_013"
+      ],
+      "removed_labels": [
+        "extend_click_automate_p0286_admin_flow_debug_limits_001"
+      ],
+      "supplementary_doc_ids": [
+        "extend_click_automate_p0286_admin_flow_debug_limits_001"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q18",
+      "rationale": "대량 처리·update·export 요구를 충족하는 도구 비교와 Data Loader 기능이 핵심이다. import 권한은 도구 선택에 대한 직접 답변이 아니다.",
+      "old_labels": [
+        "setup_p0411_003",
+        "setup_p0439_013",
+        "setup_p0444_017"
+      ],
+      "core_labels": [
+        "setup_p0411_003",
+        "setup_p0439_013"
+      ],
+      "removed_labels": [
+        "setup_p0444_017"
+      ],
+      "supplementary_doc_ids": [
+        "setup_p0444_017"
+      ],
+      "excluded_doc_ids": []
+    },
+    {
+      "query_id": "q19",
+      "rationale": "질문이 조사와 재설계를 함께 요구하므로 bulk SOQL/DML·Flow 처리와 실제 trace 설정·limit 로그 해석을 유지한다. 일반 실행 순서와 원인 연결이 없는 한도 표는 제외한다.",
+      "old_labels": [
+        "salesforce_apex_developer_guide_p0290_017",
+        "salesforce_apex_developer_guide_p0354_027",
+        "salesforce_apex_developer_guide_p0141_003",
+        "salesforce_apex_developer_guide_p0142_004",
+        "salesforce_apex_developer_guide_p0353_026",
+        "extend_click_automate_p0068_admin_flow_bulk_001",
+        "sf_html_464fa8a2f5d3c3df_46f73113c5_001",
+        "sf_html_464fa8a2f5d3c3df_6be58da2dd_001",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_001",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_002",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_003",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_003",
+        "sf_html_b3ed2404dfa55aae_dcc0d6f3f1_001"
+      ],
+      "core_labels": [
+        "salesforce_apex_developer_guide_p0290_017",
+        "salesforce_apex_developer_guide_p0141_003",
+        "salesforce_apex_developer_guide_p0142_004",
+        "extend_click_automate_p0068_admin_flow_bulk_001",
+        "sf_html_464fa8a2f5d3c3df_46f73113c5_001",
+        "sf_html_464fa8a2f5d3c3df_6be58da2dd_001",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_002"
+      ],
+      "removed_labels": [
+        "salesforce_apex_developer_guide_p0354_027",
+        "salesforce_apex_developer_guide_p0353_026",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_001",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_003",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_003",
+        "sf_html_b3ed2404dfa55aae_dcc0d6f3f1_001"
+      ],
+      "supplementary_doc_ids": [
+        "salesforce_apex_developer_guide_p0354_027",
+        "salesforce_apex_developer_guide_p0353_026",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_001",
+        "sf_html_464fa8a2f5d3c3df_fffc69cbd1_003",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_001",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_002",
+        "sf_html_b3ed2404dfa55aae_2895bfacce_003"
+      ],
+      "excluded_doc_ids": [
+        "sf_html_b3ed2404dfa55aae_dcc0d6f3f1_001"
+      ]
+    },
+    {
+      "query_id": "q20",
+      "rationale": "object Edit와 record sharing, read/write grant, approval lock, 실제 record action 표시 위치처럼 증상의 원인을 직접 설명하는 부분을 유지한다. Apex 실행 모드와 일반 역할 생성 절차는 제외한다.",
+      "old_labels": [
+        "salesforce_record_access_under_the_hood_p0006_002",
+        "salesforce_record_access_under_the_hood_p0007_003",
+        "salesforce_security_impl_guide_p0017_002",
+        "salesforce_record_access_under_the_hood_p0010_006",
+        "salesforce_security_impl_guide_p0046_018",
+        "salesforce_security_impl_guide_p0047_019",
+        "salesforce_security_impl_guide_p0059_023",
+        "salesforce_apex_developer_guide_p0218_admin_apex_sharing_001",
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001",
+        "sf_html_abd6d4a3ef832849_84b8c9d7ec_001",
+        "sf_html_abd6d4a3ef832849_aa2e9eb3de_001",
+        "sf_html_abd6d4a3ef832849_da0f42fbec_001",
+        "sf_html_abd6d4a3ef832849_06b9b0819d_001",
+        "sf_html_7a7bb2c313e0efbb_59516010bb_001",
+        "sf_html_7a7bb2c313e0efbb_d4d3fe8e4c_001",
+        "sf_html_7a7bb2c313e0efbb_6cc2337d89_001",
+        "sf_html_7a7bb2c313e0efbb_6cc2337d89_002",
+        "sf_html_363303a2e9de2b80_88e2d2f8b5_001",
+        "sf_html_363303a2e9de2b80_280d936586_001",
+        "sf_html_363303a2e9de2b80_2063a662c5_001",
+        "sf_html_363303a2e9de2b80_2063a662c5_002"
+      ],
+      "core_labels": [
+        "salesforce_record_access_under_the_hood_p0006_002",
+        "salesforce_security_impl_guide_p0017_002",
+        "salesforce_record_access_under_the_hood_p0010_006",
+        "salesforce_security_impl_guide_p0059_023",
+        "sf_html_abd6d4a3ef832849_da0f42fbec_001",
+        "sf_html_363303a2e9de2b80_280d936586_001"
+      ],
+      "removed_labels": [
+        "salesforce_record_access_under_the_hood_p0007_003",
+        "salesforce_security_impl_guide_p0046_018",
+        "salesforce_security_impl_guide_p0047_019",
+        "salesforce_apex_developer_guide_p0218_admin_apex_sharing_001",
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001",
+        "sf_html_abd6d4a3ef832849_84b8c9d7ec_001",
+        "sf_html_abd6d4a3ef832849_aa2e9eb3de_001",
+        "sf_html_abd6d4a3ef832849_06b9b0819d_001",
+        "sf_html_7a7bb2c313e0efbb_59516010bb_001",
+        "sf_html_7a7bb2c313e0efbb_d4d3fe8e4c_001",
+        "sf_html_7a7bb2c313e0efbb_6cc2337d89_001",
+        "sf_html_7a7bb2c313e0efbb_6cc2337d89_002",
+        "sf_html_363303a2e9de2b80_88e2d2f8b5_001",
+        "sf_html_363303a2e9de2b80_2063a662c5_001",
+        "sf_html_363303a2e9de2b80_2063a662c5_002"
+      ],
+      "supplementary_doc_ids": [
+        "salesforce_record_access_under_the_hood_p0007_003",
+        "salesforce_security_impl_guide_p0046_018",
+        "salesforce_security_impl_guide_p0047_019",
+        "salesforce_apex_developer_guide_p0218_admin_apex_sharing_001",
+        "salesforce_apex_developer_guide_p0220_admin_apex_permissions_001",
+        "sf_html_abd6d4a3ef832849_84b8c9d7ec_001",
+        "sf_html_abd6d4a3ef832849_aa2e9eb3de_001",
+        "sf_html_7a7bb2c313e0efbb_d4d3fe8e4c_001",
+        "sf_html_7a7bb2c313e0efbb_6cc2337d89_001",
+        "sf_html_7a7bb2c313e0efbb_6cc2337d89_002",
+        "sf_html_363303a2e9de2b80_2063a662c5_001",
+        "sf_html_363303a2e9de2b80_2063a662c5_002"
+      ],
+      "excluded_doc_ids": [
+        "sf_html_abd6d4a3ef832849_06b9b0819d_001",
+        "sf_html_7a7bb2c313e0efbb_59516010bb_001",
+        "sf_html_363303a2e9de2b80_88e2d2f8b5_001"
+      ]
+    }
+  ]
+}

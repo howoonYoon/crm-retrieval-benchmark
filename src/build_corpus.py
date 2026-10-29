@@ -17,6 +17,7 @@ DEFAULT_SOURCE_URLS = ROOT / "data" / "raw" / "source_urls.txt"
 DEFAULT_PDF_DIR = ROOT / "data" / "raw" / "pdfs"
 DEFAULT_TEXT_CACHE_DIR = ROOT / "data" / "raw" / "pdf_text"
 DEFAULT_OUT = ROOT / "data" / "processed" / "documents.jsonl"
+DEFAULT_ADMIN_PASSAGES = ROOT / "data" / "raw" / "admin_passages.json"
 
 CHUNK_TOKENS = 600
 CHUNK_OVERLAP = 80
@@ -814,6 +815,66 @@ def build_chunks_for_pdf(
     return documents
 
 
+def chunk_source_text(text: str, chunk_tokens: int = CHUNK_TOKENS, overlap: int = CHUNK_OVERLAP) -> list[str]:
+    """Keep code punctuation/newlines while using the existing token-window sizes."""
+    matches = list(re.finditer(r"[A-Za-z0-9][A-Za-z0-9_-]*", text))
+    if not 0 <= overlap < chunk_tokens:
+        raise ValueError("Overlap must be nonnegative and smaller than chunk size")
+    chunks = []
+    start = 0
+    while start < len(matches):
+        end = min(start + chunk_tokens, len(matches))
+        char_start = 0 if start == 0 else matches[start].start()
+        char_end = len(text) if end == len(matches) else matches[end].start()
+        chunks.append(text[char_start:char_end].strip())
+        if end == len(matches):
+            break
+        start = end - overlap
+    return chunks
+
+
+def admin_supplement_documents(
+    source_urls_path: Path,
+    text_cache_dir: Path,
+    manifest_path: Path = DEFAULT_ADMIN_PASSAGES,
+) -> list[dict]:
+    """Append reviewed PDF passages using IDs independent of candidate selection order."""
+    if not manifest_path.exists():
+        return []
+    sources = {pdf_name(url): url for url in source_urls(source_urls_path)}
+    specs = json.loads(manifest_path.read_text(encoding="utf-8"))
+    documents = []
+    seen_keys = set()
+    for spec in specs:
+        key = spec["key"]
+        if key in seen_keys:
+            raise ValueError(f"Duplicate admin passage key: {key}")
+        seen_keys.add(key)
+        filename = spec["source_file"]
+        cache_path = text_cache_dir / f"{Path(filename).stem}.jsonl"
+        with cache_path.open(encoding="utf-8") as file:
+            pages = {int(page["page"]): page["text"] for page in map(json.loads, file) if page}
+        start, end = int(spec["page_start"]), int(spec["page_end"])
+        if start > end or any(page not in pages for page in range(start, end + 1)):
+            raise ValueError(f"Invalid or missing PDF pages for {key}")
+        passage = " ".join(pages[page] for page in range(start, end + 1))
+        if "start_marker" in spec:
+            marker = spec["start_marker"]
+            if marker not in passage:
+                raise ValueError(f"Missing start marker for {key}: {marker}")
+            passage = passage[passage.index(marker):]
+        if "end_marker" in spec:
+            marker = spec["end_marker"]
+            if marker not in passage:
+                raise ValueError(f"Missing end marker for {key}: {marker}")
+            passage = passage[:passage.index(marker)]
+        profile = profile_for(filename)
+        for index, chunk in enumerate(chunk_source_text(passage), 1):
+            doc_id = f"{slugify(Path(filename).stem)}_p{start:04d}_admin_{key}_{index:03d}"
+            documents.append({"doc_id": doc_id, "title": f"{profile['title']} / {spec['title']} / part {index}", "url": f"{sources[filename]}#page={start}", "source_file": filename, "product_area": profile["product_area"], "page_start": start, "page_end": end, "text": chunk, "curation_key": key})
+    return documents
+
+
 def build_corpus(
     source_urls_path: Path,
     pdf_dir: Path,
@@ -850,6 +911,23 @@ def build_corpus(
     if len(documents) > max_docs:
         documents = documents[:max_docs]
 
+    supplements = admin_supplement_documents(source_urls_path, text_cache_dir)
+    if len(documents) + len(supplements) > max_docs:
+        raise ValueError("--max-docs would exclude reviewed admin passages; increase the limit")
+    documents.extend(supplements)
+
+    html_path = ROOT / "data" / "processed" / "html_documents.jsonl"
+    if html_path.exists():
+        with html_path.open(encoding="utf-8") as file:
+            html_documents = [json.loads(line) for line in file if line.strip()]
+        if any(d.get("document_type") != "html" for d in html_documents):
+            raise ValueError("HTML snapshot contains a document with the wrong type")
+        documents.extend(html_documents)
+    if len(documents) > max_docs:
+        raise ValueError(f"{len(documents)} reviewed PDF/HTML chunks exceed --max-docs={max_docs}; increase the limit instead of dropping sources")
+    if len({d["doc_id"] for d in documents}) != len(documents):
+        raise ValueError("Duplicate document IDs in combined corpus")
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as file:
         for document in documents:
@@ -871,7 +949,7 @@ def main() -> None:
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--min-score", type=int, default=2)
     parser.add_argument("--max-docs-per-pdf", type=int, default=30)
-    parser.add_argument("--max-docs", type=int, default=500)
+    parser.add_argument("--max-docs", type=int, default=2000)
     parser.add_argument("--chunk-tokens", type=int, default=CHUNK_TOKENS)
     parser.add_argument("--overlap", type=int, default=CHUNK_OVERLAP)
     parser.add_argument("--refresh", action="store_true")

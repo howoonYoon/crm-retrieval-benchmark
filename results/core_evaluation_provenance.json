@@ -1,0 +1,19 @@
+{
+  "scope": "admin_agent_core_v1",
+  "review_date": "2026-10-23",
+  "method": "Rescored archived top-5 retrieval results. Corpus and query strings are identical; original measured latency is reused, not measured again.",
+  "corpus_unchanged": true,
+  "query_strings_unchanged": true,
+  "identical_ranking_rows": 80,
+  "labels": 60,
+  "supplementary_references": 99,
+  "excluded_navigation": 11,
+  "sha256": {
+    "data/processed/documents.jsonl": "b1d16b869afc846eb60d13778f7914422a8d96bd2f871ee025857ae860ee3e2f",
+    "data/processed/queries.jsonl": "88a25f6955884ecc05d544a0c2b4acc503347812edfd0e6d6e5721f381d3b47e",
+    "data/raw/core_labels.json": "ea7bb7730c4bbbcbc8497ab1d10aa82fa97270ac345d68c2b54895281278eda3",
+    "results/before_core_labels/per_query_results.csv": "fe6e15791fc1b31edef434b48ae77af7ad2b64f4dfc2df95c6609045ed28517f",
+    "results/metrics.csv": "394ea5272f86a089549d78d4b0973e9fe4fe110755ea67c2917fe957d3a77522",
+    "results/per_query_results.csv": "e3ff78e891c1055ba062b58c34dae50e4b2354aa431cecbeb7c549cab81e7291"
+  }
+}

@@ -1,64 +1,30 @@
-# Query Set
+# Core-answer Query Set
 
-This benchmark uses 20 hand-written queries. Each query has labelled relevant documents in `data/processed/queries.jsonl`.
+All 20 queries retain the CRM admin/developer perspective and their original wording, requester roles, category and difficulty. Only direct core-answer passages are gold. Useful prerequisites and implementation context are stored separately and receive no Recall/MRR credit.
 
-Difficulty is assigned by retrieval difficulty, not by Salesforce administration difficulty alone.
+`relevant_doc_ids`: scored core answers. `supplementary_doc_ids`: non-gold context. `excluded_doc_ids`: navigation or See Also blocks formerly labelled relevant. Broad `answer_aspects` are archived in the previous version; current evaluation reports document recall@5 and MRR@5 only.
 
-## User Perspectives
+Selection is independent of retrieval rank and has no artificial five-document cap. q19 and q20 can have more than five valid core passages; recall@5 still has a ceiling. See [answers](query_answers.md) and [the explicit review](../data/raw/core_labels.json).
 
-User perspective is tracked separately from retrieval category. This keeps role context visible without changing how recall@5 or MRR is computed.
-
-| user perspective | queries |
-| --- | --- |
-| `crm_admin_or_developer` | q04, q07, q09, q11, q12, q15, q17, q18, q19, q20 |
-| `sales_user` | q01, q05, q06 |
-| `service_operations_user` | q03, q10 |
-| `marketing_user` | q02, q08, q13, q14, q16 |
-
-## exact_product_feature_lookup
-
-The query directly names the product, feature, or API concept used by the target documentation.
-
-| id | difficulty | relevant docs | query summary |
-| --- | --- | ---: | --- |
-| q02 | easy | 1 | Merge duplicate Accounts in Salesforce. |
-| q04 | easy | 1 | Configure email warnings for Apex governor limit usage. |
-| q05 | easy | 2 | Relate one Contact to multiple Accounts. |
-| q06 | easy | 1 | Create multiple Quotes for one Opportunity. |
-| q09 | easy | 1 | Check whether the Profile object supports Apex DML update. |
-| q14 | medium | 2 | Create a filtered Data Extension for customers whose Country is UK. |
-
-## natural_language_task_description
-
-The query describes an operator task in natural language while still using some related product terms.
-
-| id | difficulty | relevant docs | query summary |
-| --- | --- | ---: | --- |
-| q01 | easy | 1 | Handle a duplicate Account warning during Lead conversion. |
-| q03 | easy | 4 | Automatically create Cases from support-address emails. |
-| q07 | medium | 2 | Update an Opportunity field before save without Apex. |
-| q08 | medium | 2 | Send approved WhatsApp template messages for a campaign. |
-| q10 | medium | 2 | Route work to another queue based on agent availability. |
-| q11 | medium | 2 | Estimate Knowledge capacity with article versions and translations. |
-| q12 | hard | 5 | Update a related Account when a Case is created or updated. |
-
-## symptom_based_troubleshooting
-
-The query describes a symptom, failure, or access problem without naming the underlying feature directly.
-
-| id | difficulty | relevant docs | query summary |
-| --- | --- | ---: | --- |
-| q15 | medium | 3 | Troubleshoot a custom field that does not appear on an Account page. |
-| q19 | hard | 2 | Troubleshoot automation that fails only when many Cases are updated. |
-| q20 | hard | 2 | Troubleshoot why a user can open but not edit some Account records. |
-
-## paraphrased_feature_discovery
-
-The query describes requirements and expects the system to discover the relevant feature name.
-
-| id | difficulty | relevant docs | query summary |
-| --- | --- | ---: | --- |
-| q13 | medium | 3 | Use Salesforce CRM data in Marketing Cloud data extensions. |
-| q16 | hard | 3 | Branch after email non-engagement before sending a mobile follow-up. |
-| q17 | hard | 3 | Debug a guided Flow while preventing test records from being saved. |
-| q18 | medium | 1 | Choose an import tool for high-volume loads, updates, and export. |
+| id | requester | category | difficulty | core labels | non-gold context |
+| --- | --- | --- | --- | ---: | ---: |
+| q01 | sales_user | natural_language_task_description | easy | 4 | 0 |
+| q02 | marketing_user | exact_product_feature_lookup | easy | 4 | 0 |
+| q03 | service_operations_user | natural_language_task_description | easy | 3 | 2 |
+| q04 | crm_admin_or_developer | exact_product_feature_lookup | easy | 1 | 0 |
+| q05 | sales_user | exact_product_feature_lookup | easy | 5 | 4 |
+| q06 | sales_user | exact_product_feature_lookup | easy | 1 | 15 |
+| q07 | crm_admin_or_developer | natural_language_task_description | medium | 2 | 0 |
+| q08 | marketing_user | natural_language_task_description | medium | 2 | 13 |
+| q09 | crm_admin_or_developer | exact_product_feature_lookup | easy | 1 | 6 |
+| q10 | service_operations_user | natural_language_task_description | medium | 4 | 8 |
+| q11 | crm_admin_or_developer | natural_language_task_description | medium | 1 | 1 |
+| q12 | crm_admin_or_developer | natural_language_task_description | hard | 5 | 11 |
+| q13 | marketing_user | paraphrased_feature_discovery | medium | 1 | 2 |
+| q14 | marketing_user | exact_product_feature_lookup | medium | 1 | 2 |
+| q15 | crm_admin_or_developer | symptom_based_troubleshooting | medium | 5 | 12 |
+| q16 | marketing_user | paraphrased_feature_discovery | hard | 3 | 2 |
+| q17 | crm_admin_or_developer | paraphrased_feature_discovery | hard | 2 | 1 |
+| q18 | crm_admin_or_developer | paraphrased_feature_discovery | medium | 2 | 1 |
+| q19 | crm_admin_or_developer | symptom_based_troubleshooting | hard | 7 | 7 |
+| q20 | crm_admin_or_developer | symptom_based_troubleshooting | hard | 6 | 12 |

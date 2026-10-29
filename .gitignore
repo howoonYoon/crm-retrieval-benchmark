@@ -8,3 +8,7 @@ data/raw/pdf_text/
 
 .pytest_cache/
 .ipynb_checkpoints/
+~$README.md
+~$*
+.codex-artifacts/
+data/raw/html/

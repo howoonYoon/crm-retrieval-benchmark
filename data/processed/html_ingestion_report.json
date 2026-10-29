@@ -1,0 +1,283 @@
+{
+  "requested_urls": 25,
+  "successful_urls": 24,
+  "failed_urls": 1,
+  "chunks": 240,
+  "pages": [
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm",
+      "title": "Triggers and Order of Execution",
+      "status": "ok",
+      "method": "salesforce_public_article_html",
+      "source_sha256": "81f1990d5a61edd81f2434e7ba4b5b542a1f375aa92ba0a2aabec97d1b39f8e8",
+      "fetched_at": "2026-10-23T04:11:54.925159+00:00",
+      "source_version": {
+        "version_text": "Winter '27 (API version 68.0)",
+        "release_version": "68.0",
+        "doc_version": "264.0",
+        "version_url": "atlas.en-us.apexcode.meta"
+      },
+      "chunks": 10
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_permissionset.htm",
+      "title": "PermissionSet",
+      "status": "ok",
+      "method": "salesforce_public_article_html",
+      "source_sha256": "346fb7614f4c022b7f410e868b5b5743bea8a70fbb554e73aead2d829c848677",
+      "fetched_at": "2026-10-23T04:11:47.498613+00:00",
+      "source_version": {
+        "version_text": "Winter '27 (API version 68.0)",
+        "release_version": "68.0",
+        "doc_version": "264.0",
+        "version_url": "atlas.en-us.api_meta.meta"
+      },
+      "chunks": 31
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm",
+      "title": "Profile",
+      "status": "ok",
+      "method": "salesforce_public_article_html",
+      "source_sha256": "09839ddbca9c2f3e18ca23512f227d4eeb89f2d8ed7119697860a700b52f7873",
+      "fetched_at": "2026-10-23T04:11:49.204901+00:00",
+      "source_version": {
+        "version_text": "Winter '27 (API version 68.0)",
+        "release_version": "68.0",
+        "doc_version": "264.0",
+        "version_url": "atlas.en-us.api_meta.meta"
+      },
+      "chunks": 49
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_accountcontactrelation.htm",
+      "title": "AccountContactRelation",
+      "status": "ok",
+      "method": "salesforce_public_article_html",
+      "source_sha256": "c273f6db784f39e05f5f1338a490374131fe21943bbdb5dc5a111a9e4b4396a7",
+      "fetched_at": "2026-10-23T04:11:45.116211+00:00",
+      "source_version": {
+        "version_text": "Winter '27 (API version 68.0)",
+        "release_version": "68.0",
+        "doc_version": "264.0",
+        "version_url": "atlas.en-us.object_reference.meta"
+      },
+      "chunks": 6
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quote.htm",
+      "title": "Quote",
+      "status": "ok",
+      "method": "salesforce_public_article_html",
+      "source_sha256": "99e025474d8f034d46120c33fba400a2f239cdace2d768fa7ea4fedfb265288a",
+      "fetched_at": "2026-10-23T04:11:45.272246+00:00",
+      "source_version": {
+        "version_text": "Winter '27 (API version 68.0)",
+        "release_version": "68.0",
+        "doc_version": "264.0",
+        "version_url": "atlas.en-us.object_reference.meta"
+      },
+      "chunks": 18
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_quotelineitem.htm",
+      "title": "QuoteLineItem",
+      "status": "ok",
+      "method": "salesforce_public_article_html",
+      "source_sha256": "ca71262974f467955ba369931298645f89885abb9e04e512b66dc40a44f68ac6",
+      "fetched_at": "2026-10-23T04:11:46.045778+00:00",
+      "source_version": {
+        "version_text": "Winter '27 (API version 68.0)",
+        "release_version": "68.0",
+        "doc_version": "264.0",
+        "version_url": "atlas.en-us.object_reference.meta"
+      },
+      "chunks": 28
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/access-token-s2s",
+      "title": "Access Token for Server-to-Server Integrations",
+      "status": "ok",
+      "method": "html_main",
+      "source_sha256": "a9a8af342ff4a325594872c2b7d70ff5f4da5499821368609629b93eb6e55110",
+      "fetched_at": "2026-10-23T04:11:49.245972+00:00",
+      "source_version": null,
+      "chunks": 4
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/engagement_ott_events_delivery_receipts.html",
+      "title": "WhatsApp Delivery Receipt Events",
+      "status": "ok",
+      "method": "html_main",
+      "source_sha256": "3182a1d1b27bb857943b5aaf681cb12f81f320ca5eaeacfe80e0ca5132a0b9e1",
+      "fetched_at": "2026-10-23T04:11:48.468441+00:00",
+      "source_version": null,
+      "chunks": 4
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/integration-s2s-client-credentials.html",
+      "title": "Server-to-Server Integrations with Client Credentials Grant Type",
+      "status": "ok",
+      "method": "html_main",
+      "source_sha256": "32df03b6516fc5cc1868ef8753e93dd294f8072448e98125e95271accf4f099f",
+      "fetched_at": "2026-10-23T04:11:49.049823+00:00",
+      "source_version": null,
+      "chunks": 2
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/transactional_ott_events.html",
+      "title": "WhatsApp Send Events",
+      "status": "ok",
+      "method": "html_main",
+      "source_sha256": "99e85e2d76be6946f2e8439b86120ff7c352432d428623f1ee93bcfd5b957d76",
+      "fetched_at": "2026-10-23T04:11:48.392894+00:00",
+      "source_version": null,
+      "chunks": 3
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/field-reference/references/field-reference/salesforce-field-reference-accountcontactrelation.html",
+      "title": "AccountContactRelation",
+      "status": "ok",
+      "method": "html_main",
+      "source_sha256": "364372d0fe40cae5a27c560653be970645a029b8b85de6173ab093bf7953e957",
+      "fetched_at": "2026-10-23T04:11:44.622266+00:00",
+      "source_version": null,
+      "chunks": 1
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/sfvscode-extensions/guide/deploy-source.html",
+      "title": "Deploy Source",
+      "status": "ok",
+      "method": "html_main",
+      "source_sha256": "a8e38072b510301512152987204e5104a7822a5f75f2174cdc423cfceccdac5f",
+      "fetched_at": "2026-10-23T04:11:46.699752+00:00",
+      "source_version": null,
+      "chunks": 1
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=000387888&language=en_US&type=1",
+      "title": "Change Case 'Account Name' when related Contact is changed",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "1f604d5fca71061b5f73644d85fd9cd86fd722cccb5e0f181f8f617aaf113aad",
+      "fetched_at": "2026-10-23T04:17:50.284511+00:00",
+      "source_version": null,
+      "chunks": 4
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=000392579&language=en_US&type=1",
+      "title": "How to Capture and Read Salesforce Debug Logs for Troubleshooting Flows, Apex, and Automations",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "414329077aa67fc838cf2300d7ab181c1cdad271a3ad0e6d5c07bac32db9b660",
+      "fetched_at": "2026-10-23T04:17:50.310251+00:00",
+      "source_version": null,
+      "chunks": 5
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=flow_build_data_update.htm&language=en_US&type=0",
+      "title": "Update Salesforce Records from a Flow",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "2e65726341cacc85ec416c8f9f3ccbcfcccc05f0b61016bf8c9c8d5cf25a91fb",
+      "fetched_at": "2026-10-23T04:15:57.259761+00:00",
+      "source_version": null,
+      "chunks": 5
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=platform.actions_in_lex_ordering.htm&language=en_US&type=5",
+      "title": "How Actions Are Ordered in Lightning Experience",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "293b233c09180ed311d2d33103ed442f6020679ef32da9a379e0e8b7fc9b0d24",
+      "fetched_at": "2026-10-23T04:15:49.364653+00:00",
+      "source_version": null,
+      "chunks": 5
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=platform.adding_actions_using_ple.htm&language=en_US&type=5",
+      "title": "Customize Actions with the Enhanced Page Layout Editor",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "d37b651b625fa7fdc7cc48b5ab4a8d2c4503a9ce8b91ebaa81d07d5a32628d71",
+      "fetched_at": "2026-10-23T04:15:45.516469+00:00",
+      "source_version": null,
+      "chunks": 5
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=service.omnichannel_add_route_action.htm&language=en_US&type=5",
+      "title": "Add a Route Work Action",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "b5648d901666925316898e2af12feb5a4319108de2937c6edf00d0e058e3e200",
+      "fetched_at": "2026-10-23T04:15:24.973595+00:00",
+      "source_version": null,
+      "chunks": 5
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=sf.approvals_terminology.htm&language=en_US&type=5",
+      "title": "Classic Approval Processes Terminology",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "5894c974229ba3128b7b30987f2f4f40aee8ce36fab781e5ea4b38c67bd42425",
+      "fetched_at": "2026-10-23T04:15:41.900345+00:00",
+      "source_version": null,
+      "chunks": 19
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=sf.dynamic_forms_considerations.htm&language=en_US&type=5",
+      "title": "Dynamic Forms Tips and Considerations",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "495464f5eef3cee2a0514e925682a021c96dd1ef897ded44790f2698715e44c1",
+      "fetched_at": "2026-10-23T04:15:38.463880+00:00",
+      "source_version": null,
+      "chunks": 10
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=sf.how_does_an_omni_channel_flow_work.htm&language=en_US&type=5",
+      "title": "How Does an Omni-Channel Flow Work?",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "b82286f9ddcca103e939dcfc35dab084bb726a26022eb540e6de62ca048f72ea",
+      "fetched_at": "2026-10-23T04:15:17.661927+00:00",
+      "source_version": null,
+      "chunks": 2
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_app_builder_customize_lex_pages_activate.htm&language=en_US&type=5",
+      "title": "Activate Lightning  Record or Home Pages",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "1e624db4ad41f6853577f9d6d24c2fc78139b2a67dab662db64c62f2402fc094",
+      "fetched_at": "2026-10-23T04:15:32.020756+00:00",
+      "source_version": null,
+      "chunks": 6
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=sf.lightning_page_components_visibility.htm&language=en_US&type=5",
+      "title": "Visibility Rules on Lightning Pages",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "f49bd71629c17d95c27996fdfd6e11eb1f23a4b5fc573593c182a95176df2b9b",
+      "fetched_at": "2026-10-23T04:15:03.943903+00:00",
+      "source_version": null,
+      "chunks": 9
+    },
+    {
+      "url": "https://help.salesforce.com/s/articleView?id=sf.omnichannel_check_availability_for_routing.htm&language=en_US&type=5",
+      "title": "Make Smarter Routing Decisions by Checking Service Rep Availability",
+      "status": "ok",
+      "method": "rendered_html",
+      "source_sha256": "796a179f5b04ce5cfaa85cc39aba13bf566ecafc8bec59f08c51aff67af7a678",
+      "fetched_at": "2026-10-23T04:11:43.168425+00:00",
+      "source_version": null,
+      "chunks": 8
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc_rest_transactional_messaging_ott",
+      "status": "failed",
+      "error": "API reference is an empty shell; its official schema is unavailable: https://developer.salesforce.com/static/marketingcloud/marketing-cloud/mc_rest_transactional_messaging_ott/transactional_messaging_ott.json (404)"
+    }
+  ]
+}

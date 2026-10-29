@@ -23,7 +23,9 @@ def document_text(document: dict) -> str:
     title = document.get("title", "")
     product_area = document.get("product_area", "")
     text = document.get("text", "")
-    return f"{title}\n{product_area}\n{text}"
+    section = document.get("section", "")
+    context = f"{section}\n" if section else ""
+    return f"{title}\n{product_area}\n{context}{text}"
 
 
 class BM25Retriever:

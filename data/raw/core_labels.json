@@ -1,0 +1,387 @@
+{
+  "scope": "admin_agent_core_v1",
+  "date": "2026-10-23",
+  "policy": "Gold requires a direct solution, a concrete core implementation step, or an explicit explanation of the stated symptom. Admin/developer viewpoint is preserved, but does not make every related technical page gold. General prerequisites, authentication, deployment, reference catalogs, migration, navigation and See Also blocks are not gold. Multiple core steps or valid direct alternatives may remain; no five-label cap and no selection based on retrieval rank.",
+  "queries": [
+    {
+      "query_id": "q01",
+      "query_sha256": "fdce90dae3d3a9dea01db09cebf73483a41f04ab8909bf8fb30e984080f75cce",
+      "rationale": "Explain duplicate warning conditions and inspect existing Account/Lead values, mappings and duplicate rules read-only. Conversion and data modification examples are reference evidence, not authorization to execute them.",
+      "core_labels": [
+        {
+          "doc_id": "sales_core_p0096_002",
+          "text_sha256": "4a115bd2ab433cb0aa13d657d5a96f742f855c079a60472afc9b96997eba4048"
+        },
+        {
+          "doc_id": "sales_core_p0095_001",
+          "text_sha256": "749997e512602889f755967e64fad5af0508e8cbacbbedcc14de9e7fc6968bfb"
+        },
+        {
+          "doc_id": "sales_core_p0103_004",
+          "text_sha256": "c9fde1e47b1edcb7dc777f1a21ad525ad8393a516e5d1b466d636f58a780ff6c"
+        },
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0156_admin_lead_conversion_001",
+          "text_sha256": "052bb3602152213374e526528140e9262d26c0abaf928e6f2550bb4c89c07d08"
+        }
+      ]
+    },
+    {
+      "query_id": "q02",
+      "query_sha256": "031fe8468ea3390e9c19064b6858a237835bf11c2f70e23b98a6552f6b3cd268",
+      "rationale": "Direct Account merge procedures in Lightning, Classic and Apex; permissions are part of those procedures.",
+      "core_labels": [
+        {
+          "doc_id": "sales_core_p0218_022",
+          "text_sha256": "7791e36f7a7118bf6e2533a9c1334c931a31b3c47c27e264be3d423a4974cfee"
+        },
+        {
+          "doc_id": "sales_core_p0220_023",
+          "text_sha256": "d30edb59eadb2b4b7025fe35707b44b4649018ee4b7bb8ef1584c94660ed2a84"
+        },
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0152_admin_account_merge_001",
+          "text_sha256": "e8cff5c665663c808631755d4e7d2867128a75a2cad99cc313b2679431d34519"
+        },
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0152_admin_account_merge_002",
+          "text_sha256": "56d26b29f9b07bc35fa0a990cf10e8fdd0d6043610e3e51f8d196078a66d55c1"
+        }
+      ]
+    },
+    {
+      "query_id": "q03",
+      "query_sha256": "f3446c05f8c75a8e9e76dcd4e43d4ed1e467ca61e14c50d471448410ab4f3888",
+      "rationale": "Enable Email-to-Case and configure the routing address/mail forwarding that creates Cases.",
+      "core_labels": [
+        {
+          "doc_id": "agentforce_contact_center_5_30_2026_p0576_002",
+          "text_sha256": "ebba60543eb9f44e2f4a9ffcc8c4681b49bccd26244e6d84fa3e579803192c17"
+        },
+        {
+          "doc_id": "agentforce_contact_center_5_30_2026_p0577_003",
+          "text_sha256": "a9390a308b0d430da62ad844453ce0913025dd75e01e60dfae24ad8f9fbad506"
+        },
+        {
+          "doc_id": "agentforce_contact_center_5_30_2026_p0584_010",
+          "text_sha256": "ee8fb2d87f553b262e54f848c64ed68f543e66c727a87634f942ecae54a9bc65"
+        }
+      ]
+    },
+    {
+      "query_id": "q04",
+      "query_sha256": "ca49174e92dee18e96bba9a0c9f4105881998833cb45d47bd40f77156814e8f5",
+      "rationale": "Send Apex Warning Emails configuration, eligibility and warning threshold directly answer the question.",
+      "core_labels": [
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0364_028",
+          "text_sha256": "231855a3ea4492e509ef798de11713fc51708ad04811849445b97ff7c5ae7dfb"
+        }
+      ]
+    },
+    {
+      "query_id": "q05",
+      "query_sha256": "fa4b90a503f0d44277c599aff25ef062cca3a3193a32bce8a503e14e3dfc25d3",
+      "rationale": "Contacts to Multiple Accounts setup, relationship creation and AccountContactRelation usage directly explain the relationship.",
+      "core_labels": [
+        {
+          "doc_id": "sales_core_p0280_027",
+          "text_sha256": "4122e11d91ac90f18ae1d8968918f4bacd37562b3581bc7a93508d32b03f01a8"
+        },
+        {
+          "doc_id": "sales_core_p0280_028",
+          "text_sha256": "67136025523707bcac906683cbe8541096676859695a97867d555c4646770e0a"
+        },
+        {
+          "doc_id": "sales_core_p0277_026",
+          "text_sha256": "ef602cbbbe9f0b5efecfe8ead961ffb37fb50b0e95973043b497c92ed2b6527a"
+        },
+        {
+          "doc_id": "sales_core_p0287_029",
+          "text_sha256": "eebc6f6e8d559128c67b13916add156fdacc689c8556bf0139b96553199b9b25"
+        },
+        {
+          "doc_id": "sf_html_a32b6bcfc3358a0c_61b6181242_001",
+          "text_sha256": "c05fede3b8a7956c834ef530b6b6d5f7e13bb48e4e912bbd2b0849f744873692"
+        }
+      ]
+    },
+    {
+      "query_id": "q06",
+      "query_sha256": "a5aefb075a5a7c462cb843353f18b5fb8c614e468cfdfe80ba79722981e34ea5",
+      "rationale": "The Quote creation passage explicitly explains several Quotes for one Opportunity and different product/price combinations. Enabling Quotes and isolated object fields are supporting material.",
+      "core_labels": [
+        {
+          "doc_id": "sales_core_p0166_020",
+          "text_sha256": "b8577524b24084e3ee4859d9ae3a1c37ac54c17352276bb15dc0ccf723c4441b"
+        }
+      ]
+    },
+    {
+      "query_id": "q07",
+      "query_sha256": "516cab3d6e3b4271d5768f8f19fd8ee858d743aae7d69b115182a0d43aad0d8d",
+      "rationale": "Before-save Flow selection and the $Record field-update mechanism directly implement the explicitly no-Apex requirement.",
+      "core_labels": [
+        {
+          "doc_id": "extend_click_automate_p0036_005",
+          "text_sha256": "522c653beb7dcb3c932f758eaaebf0542b123318f126b40855cf1610236bc4e5"
+        },
+        {
+          "doc_id": "extend_click_automate_p0037_006",
+          "text_sha256": "47a72a17b07ca8b27c1ad10d732e5884ef5b93b3f206f83ba1a93001f81a81a1"
+        }
+      ]
+    },
+    {
+      "query_id": "q08",
+      "query_sha256": "014d44ecf6e9aedd3a1b0e3ad1176741a00fa9d9262367ddde337e1e5290fd4c",
+      "rationale": "Approved template personalization and the Journey Builder send activity answer the requested sending workflow. General OAuth and event receipts do not.",
+      "core_labels": [
+        {
+          "doc_id": "mc_journeys_and_automations_p0321_034",
+          "text_sha256": "c09a2cd246075d89c920fe0f1b88b9cc5a592d71f75902b47e5b2e8e4bb55473"
+        },
+        {
+          "doc_id": "mc_journeys_and_automations_p0322_035",
+          "text_sha256": "f29bc68acecd234de731896a9bc9bc006397ea8dcff2f9fbbba3a30579cf80c7"
+        }
+      ]
+    },
+    {
+      "query_id": "q09",
+      "query_sha256": "a578d90968691bf30a4e58b3996897ddc8c8482a507170ebb514b5869f569569",
+      "rationale": "The Apex DML unsupported-object list directly answers whether Profile can be updated in Apex. Generic metadata deployment is a different question.",
+      "core_labels": [
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0169_008",
+          "text_sha256": "ed89e4a84eaac86d80988665444cfe7dcaaa9149e7cd76afe889337010f5660d"
+        }
+      ]
+    },
+    {
+      "query_id": "q10",
+      "query_sha256": "05b0da3a16c658e855abfed4b4b38be6e948aa35201c1bb1e64ffa857e7fc052",
+      "rationale": "Availability-based queue branching: the concrete fallback example, action configuration and Decision-to-Route-Work logic. Migration, generic Omni setup and skills-only routing are supporting.",
+      "core_labels": [
+        {
+          "doc_id": "messaging_admin_implementation_guide_p0040_011",
+          "text_sha256": "a304c4c0ee8806cb3bd0e4dec337eaf6027c0ef4bf8aaed9f575dce06dcbb760"
+        },
+        {
+          "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_001",
+          "text_sha256": "bd2190aabce607f95eb5627c2a56e0df875d70ed141e1f478135b42206c51590"
+        },
+        {
+          "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_002",
+          "text_sha256": "6c63524fe4d1a79eebe90c2bbb0d9076611d1cfef8bc1d2ba0b7cf9abccb0a87"
+        },
+        {
+          "doc_id": "sf_html_a158f2754a62a0da_9cbf9b3ddb_005",
+          "text_sha256": "dcafc31921b0f3d8ba783867237d36762c1e490952be198f2cd9f81c13533b07"
+        }
+      ]
+    },
+    {
+      "query_id": "q11",
+      "query_sha256": "c3ceaf78743f182fca3767d41ab2cdd8bfaf20533e077bab1840c5943a4f088c",
+      "rationale": "The capacity calculation using articles, retained versions and translations directly answers estimation; monitoring instructions alone do not.",
+      "core_labels": [
+        {
+          "doc_id": "lightning_knowledge_guide_p0011_007",
+          "text_sha256": "d0fd9088fc5fa4493e16d81287101962f5b76b0c3ac220503ad8955e1520b062"
+        }
+      ]
+    },
+    {
+      "query_id": "q12",
+      "query_sha256": "0485aa1a50dc13ac047e2a98056562a6900982dce993790c06526cae5b91366e",
+      "rationale": "After-trigger/after-save Flow choice and the concrete Update Records mechanism are core components of the requested related-record update. No complete Case-to-Account example is claimed.",
+      "core_labels": [
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0271_014",
+          "text_sha256": "8ffe2c29f542ab71a5e2711f8679f1db2e98bb58625f26af7a4d694c217a0f5a"
+        },
+        {
+          "doc_id": "extend_click_automate_p0031_004",
+          "text_sha256": "eb30d9c4525a87c788ae6d39e777d7dcdad9ab0f860007a0c97bf01316391220"
+        },
+        {
+          "doc_id": "extend_click_automate_p0100_008",
+          "text_sha256": "39aa7e2c04fa66953db568155c186b898f7afdad045549d06825d5f68911578c"
+        },
+        {
+          "doc_id": "sf_html_cba0a7e8ba972c9d_71ecfefff0_001",
+          "text_sha256": "7b37694f965fe54464254bcac9247b8df9fd73a66842167b256cecff4e52cc16"
+        },
+        {
+          "doc_id": "sf_html_cba0a7e8ba972c9d_71ecfefff0_002",
+          "text_sha256": "15a8c0e17a1801cd7b06fff500ed1e75716c6397a817241240712792a2da4b9b"
+        }
+      ]
+    },
+    {
+      "query_id": "q13",
+      "query_sha256": "f05664d1bb3ce21b42736d34d5ad20d16195d25bc88c571299a7affbba91d82a",
+      "rationale": "Marketing Cloud Connect synchronized source setup explains bringing CRM objects into DEs and their messaging restriction. Generic SQL setup and synchronization relationship administration are supporting.",
+      "core_labels": [
+        {
+          "doc_id": "engagement_audience_builder_and_contact_builder_5_30_2026_p0139_007",
+          "text_sha256": "35ef0845e2e23816f86ee68fd459afd7357cd5f82cfab5e2f243e9f625da3cec"
+        }
+      ]
+    },
+    {
+      "query_id": "q14",
+      "query_sha256": "225e02854afbf40c31f27d963b208781bfa6aadf0c2c1dbf8fac24fb67905754",
+      "rationale": "The filtered data extension creation procedure directly implements a new DE with a field predicate. Refresh-only guidance and generic SQL Query setup are supporting.",
+      "core_labels": [
+        {
+          "doc_id": "mc_email_p0129_011",
+          "text_sha256": "bde44ef05f84055afc3eb5ab805566483267db3d30fd60c9d78ce7a99a9452d1"
+        }
+      ]
+    },
+    {
+      "query_id": "q15",
+      "query_sha256": "0f64491d7d55f50c494665a0284f8055e4774956903f20abb567280c3c630f17",
+      "rationale": "FLS checks, actual Dynamic Forms field visibility rules, hidden field sections and page assignment directly explain the missing-field symptom. Generic Apex security is conditional supporting context.",
+      "core_labels": [
+        {
+          "doc_id": "salesforce_security_impl_guide_p0048_020",
+          "text_sha256": "83f546e0c0b102e829f8b8b553c8b5417d8eef05aa9a42d3207a46b64b2481ec"
+        },
+        {
+          "doc_id": "salesforce_security_impl_guide_p0048_021",
+          "text_sha256": "409bb1fae22a5ea6c88a24c6faf616b2cc754ea99361f77af606541f6cccc7d4"
+        },
+        {
+          "doc_id": "sf_html_7be2b814b39ccb02_62cad5e94b_001",
+          "text_sha256": "224acaa5e7dec0f053b4906116aea229664f743b3c10bde3868fa0429ccf3509"
+        },
+        {
+          "doc_id": "sf_html_8ada3a8db77b5a87_54fe993072_002",
+          "text_sha256": "c380f85666a2ed25c3975f367b39fbc6e67d1628e02b22b9eb0fc7456678badd"
+        },
+        {
+          "doc_id": "sf_html_ac87ed5d4bc22bf8_aa7d572199_002",
+          "text_sha256": "10fb5c2643c169468a7897266ec2a17003c86b1cb2c39dd911fe8b158bb5ff83"
+        }
+      ]
+    },
+    {
+      "query_id": "q16",
+      "query_sha256": "95a41f01bca30689fea7098d63a449286b53100f9f2ecf870dbad090a8160423",
+      "rationale": "Engagement Split configuration and the explicit no-open AND no-click SQL are direct identification methods. Catalog introductions and unrelated mobile activities are not core.",
+      "core_labels": [
+        {
+          "doc_id": "mc_journeys_and_automations_p0351_041",
+          "text_sha256": "2419aff01710a642f03f200390eb2872382ef3db0c7c524f4bdb1c8376d06463"
+        },
+        {
+          "doc_id": "mc_journeys_and_automations_p0103_003",
+          "text_sha256": "3bba3fabf0347df657ace44dbaec582b210372710523a6cfe8222f4e6e3a581b"
+        },
+        {
+          "doc_id": "mc_journeys_and_automations_p0102_admin_sql_nonengagement_001",
+          "text_sha256": "8f12a81cebfb49b9c90aae60d4ca3ef7ba809015587e4a683d6611eda7df7704"
+        }
+      ]
+    },
+    {
+      "query_id": "q17",
+      "query_sha256": "9e7f2f174befbfd2dff164d15fd880a7edfbb06c36e1cafeb1937834fc3e60a9",
+      "rationale": "Flow Builder Debug, rollback guidance and the screen-flow input/path example directly address the requested feature. General sandbox/debug limitations are supporting.",
+      "core_labels": [
+        {
+          "doc_id": "extend_click_automate_p0238_012",
+          "text_sha256": "5412d70723b976a94a90c78e466013261f1680788bf38861416d796e40567c55"
+        },
+        {
+          "doc_id": "extend_click_automate_p0238_013",
+          "text_sha256": "84cc20339a3f600db50b3c2ab8270c0d3d9056b28f42c40870682d71903367ab"
+        }
+      ]
+    },
+    {
+      "query_id": "q18",
+      "query_sha256": "60397567999d1e28403f74e80c8981acdaeb64579b21f3f29724f9ff48223d3a",
+      "rationale": "The import-tool comparison and Data Loader capabilities directly establish volume, update and export suitability. Import permissions are a separate setup concern.",
+      "core_labels": [
+        {
+          "doc_id": "setup_p0411_003",
+          "text_sha256": "8d76263406159fcba8295355a626f46b1d5f72f4bc52b9feeb8d4fd451889661"
+        },
+        {
+          "doc_id": "setup_p0439_013",
+          "text_sha256": "0a5fa1c4397c5ae9f35511c3e388ea7b01c9b3912911de48f1d8f5337c9362c9"
+        }
+      ]
+    },
+    {
+      "query_id": "q19",
+      "query_sha256": "97584baa016ae3ad2f0f80916441f4a38f2bf52928887cde80973b9ae8ea34d9",
+      "rationale": "The question explicitly asks investigation AND redesign: bulk SOQL/DML patterns, Flow bulk behavior, trace setup and limit-related debug events are direct core evidence. Generic order-of-execution and numeric tables without the batch-failure link are supporting.",
+      "core_labels": [
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0290_017",
+          "text_sha256": "dc37de1724f56bd212876e963f5ce1d72826e2f03d820ab7865ab88bc1acdeca"
+        },
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0141_003",
+          "text_sha256": "9bf40e129cc2d36c1e8a84ebdb4058f355a0f9f4228afa1d4d7372caaa15afad"
+        },
+        {
+          "doc_id": "salesforce_apex_developer_guide_p0142_004",
+          "text_sha256": "35e5aade15853519ab82134973d81e4edf7183916d55f9c40e4ab1450a41febd"
+        },
+        {
+          "doc_id": "extend_click_automate_p0068_admin_flow_bulk_001",
+          "text_sha256": "5e92271e5f8d15b4eaa7d0d096bac2da1e2fcdd6fa5e4c51fe97c580964e487f"
+        },
+        {
+          "doc_id": "sf_html_464fa8a2f5d3c3df_46f73113c5_001",
+          "text_sha256": "69d14db0c13218a2ce1625b248c082dddedc8fc703d397eb301fb7aeb45e846f"
+        },
+        {
+          "doc_id": "sf_html_464fa8a2f5d3c3df_6be58da2dd_001",
+          "text_sha256": "5f310966da922bd869a267a93378f74d69bb74169cdc4dd81a16f823e32273eb"
+        },
+        {
+          "doc_id": "sf_html_464fa8a2f5d3c3df_fffc69cbd1_002",
+          "text_sha256": "f3998cdab3cea10d9027044f3079aed9afab770d45721d5e738938b4ea10599f"
+        }
+      ]
+    },
+    {
+      "query_id": "q20",
+      "query_sha256": "8ccac1ec2644141f26bfbdf78d85208c06e59c989c46caf6a964c57cc85c8214",
+      "rationale": "Object Edit versus record read/write sharing, Account-specific grants, approval locking and the page-layout action source directly address possible causes. Apex mode and generic role-creation instructions are supporting.",
+      "core_labels": [
+        {
+          "doc_id": "salesforce_record_access_under_the_hood_p0006_002",
+          "text_sha256": "f6fde0117ba1ffc4e7dbc42727c8278d82f2c4cc0ee4929e9b904ef597d63167"
+        },
+        {
+          "doc_id": "salesforce_security_impl_guide_p0017_002",
+          "text_sha256": "49b26e274d784a6f4af0df33d798ff30617f4a3ecd4948021ffb1f6413d8ae4d"
+        },
+        {
+          "doc_id": "salesforce_record_access_under_the_hood_p0010_006",
+          "text_sha256": "b9f0cd29c0a99538e9fd993814f3cb5f10fed633ebfb40436f6910481ba59988"
+        },
+        {
+          "doc_id": "salesforce_security_impl_guide_p0059_023",
+          "text_sha256": "f49c2174073f80d4935418fb34de45f0bd6c385efdbee377391a6c1d08d38b3c"
+        },
+        {
+          "doc_id": "sf_html_abd6d4a3ef832849_da0f42fbec_001",
+          "text_sha256": "b3e6450a87954905b096fb402a6d503f85bacacb61ec42b15d155d96517b4ef3"
+        },
+        {
+          "doc_id": "sf_html_363303a2e9de2b80_280d936586_001",
+          "text_sha256": "81aaec40a9cfd1c05f6a3c8bfd82199cf7a3d8072f23b6e1a82ec65cba6160bb"
+        }
+      ]
+    }
+  ]
+}
