@@ -51,6 +51,27 @@ The benchmark evaluates four configurations on the same documents and queries:
 - `hybrid_rerank`: hybrid RRF candidate generation followed by a CrossEncoder
   reranker over the top 20 candidates.
 
+## Reusable document search
+
+`search_documents` exposes BM25, dense, and hybrid RRF retrieval through one
+MCP-ready JSON response. The default strategy is `hybrid_rrf`; model and index
+objects are cached after their first use.
+
+```python
+from src.search_documents import search_documents
+
+response = search_documents(
+    "Why is a Case stuck in New status?",
+    top_k=5,
+    strategy="hybrid_rrf",
+)
+```
+
+The response contains a schema version, status, selected strategy, and an
+`evidence` list. Each evidence item includes its document ID, rank, score,
+title, excerpt, section, source URL, and source type so an MCP server can return
+the object without additional conversion.
+
 # Metrics
 
 - Core document recall@5: retrieved core-labelled passages / all core-labelled passages per query.

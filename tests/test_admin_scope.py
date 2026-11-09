@@ -6,10 +6,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from build_corpus import admin_supplement_documents, chunk_source_text
-from evaluate import SearchResult, aspect_recall_at_k, evaluate_retriever, validate_inputs
+from evaluate import SearchResult, evaluate_retriever, validate_inputs
 
 
-class AspectEvaluationTests(unittest.TestCase):
+class CoreEvaluationTests(unittest.TestCase):
     def test_supplementary_hits_receive_no_core_credit(self):
         class ContextRetriever:
             def search(self, query, top_k):
@@ -32,38 +32,37 @@ class AspectEvaluationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Core source changed'):
             validate_inputs([{'doc_id': 'core', 'text': 'Changed to a different subject'}], [query])
 
-    def test_aspects_count_groups_not_number_of_documents(self):
-        aspects = [
-            {"aspect_id": "setup", "relevant_doc_ids": ["a", "b", "c"]},
-            {"aspect_id": "code", "relevant_doc_ids": ["d"]},
-        ]
-        self.assertEqual(aspect_recall_at_k([SearchResult("a", 1), SearchResult("b", .9)], aspects), .5)
-        self.assertEqual(aspect_recall_at_k([SearchResult("c", 1), SearchResult("d", .9)], aspects), 1)
-        self.assertEqual(aspect_recall_at_k([SearchResult("x", 1)], aspects), 0)
-
-    def test_invalid_aspect_cannot_silently_change_denominator(self):
-        docs = [{"doc_id": "a"}, {"doc_id": "b"}]
-        for aspects in [[{"aspect_id": "s", "relevant_doc_ids": []}], [{"aspect_id": "s", "relevant_doc_ids": ["x"]}], [{"aspect_id": "s", "relevant_doc_ids": ["a"]}]]:
-            with self.subTest(aspects=aspects), self.assertRaises(ValueError):
-                validate_inputs(docs, [{"query_id": "q", "relevant_doc_ids": ["a", "b"], "answer_aspects": aspects}])
-
-    def test_new_metric_is_macro_average_and_legacy_queries_work(self):
+    def test_recall_and_mrr_are_macro_averages(self):
         class Retriever:
             def search(self, query, top_k):
                 return [SearchResult("irrelevant", 2), SearchResult("a", 1)]
         queries = [
-            {"query_id": "q1", "query": "one", "relevant_doc_ids": ["a", "b"], "answer_aspects": [{"aspect_id": "s", "relevant_doc_ids": ["a"]}, {"aspect_id": "c", "relevant_doc_ids": ["b"]}]},
-            {"query_id": "q2", "query": "two", "relevant_doc_ids": ["a"], "answer_aspects": [{"aspect_id": "s", "relevant_doc_ids": ["a"]}]},
+            {"query_id": "q1", "query": "one", "relevant_doc_ids": ["a", "b"]},
+            {"query_id": "q2", "query": "two", "relevant_doc_ids": ["a"]},
         ]
         metrics, rows = evaluate_retriever("fixture", Retriever(), queries, 5)
-        self.assertEqual(metrics['aspect_recall_at_5'], .75)
+        self.assertEqual(metrics['recall_at_5'], .75)
         self.assertEqual(metrics['mrr'], .5)
-        self.assertEqual([r['aspect_recall_at_5'] for r in rows], [.5, 1])
-        for query in queries:
-            del query['answer_aspects']
-        metrics, rows = evaluate_retriever("fixture", Retriever(), queries, 5)
+        self.assertEqual([r['recall_at_5'] for r in rows], [.5, 1])
+        self.assertEqual([r['first_relevant_rank'] for r in rows], [2, 2])
         self.assertNotIn('aspect_recall_at_5', metrics)
         self.assertNotIn('aspect_recall_at_5', rows[0])
+
+    def test_first_hit_rank_and_reciprocal_rank_agree(self):
+        class Retriever:
+            def search(self, query, top_k):
+                return [SearchResult(doc_id, 0) for doc_id in rankings[query]][:top_k]
+
+        rankings = {
+            'first': ['gold', 'other'],
+            'last': ['a', 'b', 'c', 'd', 'gold'],
+            'miss': ['other'],
+            'empty': [],
+        }
+        queries = [{'query_id': key, 'query': key, 'relevant_doc_ids': ['gold']} for key in rankings]
+        _, rows = evaluate_retriever('fixture', Retriever(), queries, 5)
+        self.assertEqual([r['first_relevant_rank'] for r in rows], [1, 5, None, None])
+        self.assertEqual([r['reciprocal_rank'] for r in rows], [1, .2, 0, 0])
 
 
 class CuratedPassageTests(unittest.TestCase):

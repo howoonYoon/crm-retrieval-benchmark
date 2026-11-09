@@ -12,7 +12,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from build_html_corpus import read_jsonl
-from evaluate import SearchResult, first_relevant_rank, recall_at_k, reciprocal_rank, validate_inputs, write_csv
+from evaluate import SearchResult, first_relevant_rank, recall_at_k, validate_inputs, write_csv
 from plot_results import plot_metrics
 from summarize_admin_scope import csv_rows
 
@@ -45,7 +45,8 @@ def main():
             results = [SearchResult(i, 0) for i in old['top5_doc_ids'].split('|')]
             relevant = set(q['relevant_doc_ids'])
             row = {key: value for key, value in old.items() if key != 'aspect_recall_at_5'}
-            row.update(recall_at_5=recall_at_k(results, relevant), reciprocal_rank=reciprocal_rank(results, relevant), first_relevant_rank=first_relevant_rank(results, relevant))
+            rank = first_relevant_rank(results, relevant)
+            row.update(recall_at_5=recall_at_k(results, relevant), reciprocal_rank=1.0 / rank if rank is not None else 0.0, first_relevant_rank=rank)
             rows.append(row)
         metrics = []
         for config in dict.fromkeys(row['config'] for row in rows):
