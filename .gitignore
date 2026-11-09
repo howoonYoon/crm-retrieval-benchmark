@@ -12,3 +12,778 @@ data/raw/pdf_text/
 ~$*
 .codex-artifacts/
 data/raw/html/
+Salesforce_CRM_Troubleshooting_Agent_7Day_Plan_v5_20261109.docx
+Salesforce_CRM_Troubleshooting_Agent_LangGraph_MCP_28Day_Plan_v4_20261029.docx
+
+scripts/simple_mcp_client.py
+.docx_render_7day/contact-sheet.png
+.docx_render_7day/final-1.png
+.docx_render_7day/final-2.png
+.docx_render_7day/final-3.png
+.docx_render_7day/final-4.png
+.docx_render_7day/final-5.png
+.docx_render_7day/final-6.png
+.docx_render_7day/final-7.png
+.docx_render_7day/final-8.png
+.docx_render_7day/final-9.png
+.docx_render_7day/plan-browser.pdf
+.docx_render_7day/plan-final.html
+.docx_render_7day/plan-final.pdf
+.docx_render_7day/plan.html
+.docx_render_7day/review-1.png
+.docx_render_7day/review-2.png
+.docx_render_7day/review-3.png
+.docx_render_7day/review-4.png
+.docx_render_7day/review-5.png
+.docx_render_7day/review-6.png
+.docx_render_7day/review-7.png
+.docx_render_7day/review-8.png
+.docx_render_7day/review-9.png
+.docx_render_7day/chrome-profile/FirstLaunchAfterInstallation
+.docx_render_7day/chrome-profile/Last Version
+.docx_render_7day/chrome-profile/Local State
+.docx_render_7day/chrome-profile/Variations
+.docx_render_7day/chrome-profile/VariationsRuntimeSeedV2
+.docx_render_7day/chrome-profile/VariationsSafeSeedV2
+.docx_render_7day/chrome-profile/VariationsSeedV2
+.docx_render_7day/chrome-profile/Crashpad/metadata
+.docx_render_7day/chrome-profile/Crashpad/settings.dat
+.docx_render_7day/chrome-profile/Crashpad/throttle_store.dat
+.docx_render_7day/chrome-profile/Default/Affiliation Database
+.docx_render_7day/chrome-profile/Default/Affiliation Database-journal
+.docx_render_7day/chrome-profile/Default/arbitration_service_config.json
+.docx_render_7day/chrome-profile/Default/BookmarkMergedSurfaceOrdering
+.docx_render_7day/chrome-profile/Default/Bookmarks
+.docx_render_7day/chrome-profile/Default/declarative_performance_observer.db
+.docx_render_7day/chrome-profile/Default/declarative_performance_observer.db-journal
+.docx_render_7day/chrome-profile/Default/EncryptedBookmarks2
+.docx_render_7day/chrome-profile/Default/Favicons
+.docx_render_7day/chrome-profile/Default/Favicons-journal
+.docx_render_7day/chrome-profile/Default/History
+.docx_render_7day/chrome-profile/Default/History-journal
+.docx_render_7day/chrome-profile/Default/HubApps Icons
+.docx_render_7day/chrome-profile/Default/HubApps Icons-journal
+.docx_render_7day/chrome-profile/Default/load_statistics.db
+.docx_render_7day/chrome-profile/Default/load_statistics.db-shm
+.docx_render_7day/chrome-profile/Default/load_statistics.db-wal
+.docx_render_7day/chrome-profile/Default/LOCK
+.docx_render_7day/chrome-profile/Default/LOG
+.docx_render_7day/chrome-profile/Default/Login Data
+.docx_render_7day/chrome-profile/Default/Login Data For Account
+.docx_render_7day/chrome-profile/Default/Login Data For Account-journal
+.docx_render_7day/chrome-profile/Default/Login Data-journal
+.docx_render_7day/chrome-profile/Default/Preferences
+.docx_render_7day/chrome-profile/Default/README
+.docx_render_7day/chrome-profile/Default/Secure Preferences
+.docx_render_7day/chrome-profile/Default/ServerCertificate
+.docx_render_7day/chrome-profile/Default/ServerCertificate-journal
+.docx_render_7day/chrome-profile/Default/Top Sites
+.docx_render_7day/chrome-profile/Default/Top Sites-journal
+.docx_render_7day/chrome-profile/Default/Vpn Tokens
+.docx_render_7day/chrome-profile/Default/Vpn Tokens-journal
+.docx_render_7day/chrome-profile/Default/Web Data
+.docx_render_7day/chrome-profile/Default/Web Data-journal
+.docx_render_7day/chrome-profile/Default/Cache/Cache_Data/data_0
+.docx_render_7day/chrome-profile/Default/Cache/Cache_Data/data_1
+.docx_render_7day/chrome-profile/Default/Cache/Cache_Data/data_2
+.docx_render_7day/chrome-profile/Default/Cache/Cache_Data/data_3
+.docx_render_7day/chrome-profile/Default/Cache/Cache_Data/f_000001
+.docx_render_7day/chrome-profile/Default/Cache/Cache_Data/index
+.docx_render_7day/chrome-profile/Default/Cache/No_Vary_Search/journal.baj
+.docx_render_7day/chrome-profile/Default/Cache/No_Vary_Search/snapshot.baf
+.docx_render_7day/chrome-profile/Default/ClientCertificates/LOCK
+.docx_render_7day/chrome-profile/Default/ClientCertificates/LOG
+.docx_render_7day/chrome-profile/Default/Code Cache/js/2a8a6f695a3ff316_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/2cca9bc741a6516d_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/5cce1706364839f1_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/5fbb54f36261c413_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/7de0dc67a2b3a69c_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/8bb1867be67136eb_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/945cb8fb56d09a8e_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/8020acacb3d13763_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/b21fb45197b9c728_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/baded5730168391f_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/e9a142a21b9ad9ef_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/e94999eac39dfd99_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/ebce9e52a869b921_0
+.docx_render_7day/chrome-profile/Default/Code Cache/js/index
+.docx_render_7day/chrome-profile/Default/Code Cache/js/index-dir/the-real-index
+.docx_render_7day/chrome-profile/Default/Code Cache/wasm/index
+.docx_render_7day/chrome-profile/Default/Code Cache/wasm/index-dir/the-real-index
+.docx_render_7day/chrome-profile/Default/commerce_subscription_db/LOCK
+.docx_render_7day/chrome-profile/Default/commerce_subscription_db/LOG
+.docx_render_7day/chrome-profile/Default/DawnGraphiteCache/data_0
+.docx_render_7day/chrome-profile/Default/DawnGraphiteCache/data_1
+.docx_render_7day/chrome-profile/Default/DawnGraphiteCache/data_2
+.docx_render_7day/chrome-profile/Default/DawnGraphiteCache/data_3
+.docx_render_7day/chrome-profile/Default/DawnGraphiteCache/index
+.docx_render_7day/chrome-profile/Default/DawnWebGPUCache/data_0
+.docx_render_7day/chrome-profile/Default/DawnWebGPUCache/data_1
+.docx_render_7day/chrome-profile/Default/DawnWebGPUCache/data_2
+.docx_render_7day/chrome-profile/Default/DawnWebGPUCache/data_3
+.docx_render_7day/chrome-profile/Default/DawnWebGPUCache/index
+.docx_render_7day/chrome-profile/Default/discount_infos_db/LOCK
+.docx_render_7day/chrome-profile/Default/discount_infos_db/LOG
+.docx_render_7day/chrome-profile/Default/discounts_db/LOCK
+.docx_render_7day/chrome-profile/Default/discounts_db/LOG
+.docx_render_7day/chrome-profile/Default/DualEngine/SiteList-Consumer.json
+.docx_render_7day/chrome-profile/Default/DualEngine/SiteList-Enterprise.json
+.docx_render_7day/chrome-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db
+.docx_render_7day/chrome-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db-journal
+.docx_render_7day/chrome-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOCK
+.docx_render_7day/chrome-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOG
+.docx_render_7day/chrome-profile/Default/Extension Rules/000003.log
+.docx_render_7day/chrome-profile/Default/Extension Rules/CURRENT
+.docx_render_7day/chrome-profile/Default/Extension Rules/LOCK
+.docx_render_7day/chrome-profile/Default/Extension Rules/LOG
+.docx_render_7day/chrome-profile/Default/Extension Rules/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Extension Scripts/000003.log
+.docx_render_7day/chrome-profile/Default/Extension Scripts/CURRENT
+.docx_render_7day/chrome-profile/Default/Extension Scripts/LOCK
+.docx_render_7day/chrome-profile/Default/Extension Scripts/LOG
+.docx_render_7day/chrome-profile/Default/Extension Scripts/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Extension State/000003.log
+.docx_render_7day/chrome-profile/Default/Extension State/CURRENT
+.docx_render_7day/chrome-profile/Default/Extension State/LOCK
+.docx_render_7day/chrome-profile/Default/Extension State/LOG
+.docx_render_7day/chrome-profile/Default/Extension State/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/GPUCache/data_0
+.docx_render_7day/chrome-profile/Default/GPUCache/data_1
+.docx_render_7day/chrome-profile/Default/GPUCache/data_2
+.docx_render_7day/chrome-profile/Default/GPUCache/data_3
+.docx_render_7day/chrome-profile/Default/GPUCache/index
+.docx_render_7day/chrome-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/000003.log
+.docx_render_7day/chrome-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/CURRENT
+.docx_render_7day/chrome-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOCK
+.docx_render_7day/chrome-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOG
+.docx_render_7day/chrome-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Local Storage/leveldb/000003.log
+.docx_render_7day/chrome-profile/Default/Local Storage/leveldb/CURRENT
+.docx_render_7day/chrome-profile/Default/Local Storage/leveldb/LOCK
+.docx_render_7day/chrome-profile/Default/Local Storage/leveldb/LOG
+.docx_render_7day/chrome-profile/Default/Local Storage/leveldb/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Network/Cookies
+.docx_render_7day/chrome-profile/Default/Network/Cookies-journal
+.docx_render_7day/chrome-profile/Default/Network/Device Bound Sessions
+.docx_render_7day/chrome-profile/Default/Network/Device Bound Sessions-journal
+.docx_render_7day/chrome-profile/Default/Network/Network Persistent State
+.docx_render_7day/chrome-profile/Default/Network/NetworkDataMigrated
+.docx_render_7day/chrome-profile/Default/Network/Reporting and NEL
+.docx_render_7day/chrome-profile/Default/Network/Reporting and NEL-journal
+.docx_render_7day/chrome-profile/Default/Network/SCT Auditing Pending Reports
+.docx_render_7day/chrome-profile/Default/Network/Trust Tokens
+.docx_render_7day/chrome-profile/Default/Network/Trust Tokens-journal
+.docx_render_7day/chrome-profile/Default/Nurturing/campaign_history
+.docx_render_7day/chrome-profile/Default/Nurturing/campaign_history-journal
+.docx_render_7day/chrome-profile/Default/parcel_tracking_db/LOCK
+.docx_render_7day/chrome-profile/Default/parcel_tracking_db/LOG
+.docx_render_7day/chrome-profile/Default/PersistentOriginTrials/LOCK
+.docx_render_7day/chrome-profile/Default/PersistentOriginTrials/LOG
+.docx_render_7day/chrome-profile/Default/Service Worker/Database/000003.log
+.docx_render_7day/chrome-profile/Default/Service Worker/Database/CURRENT
+.docx_render_7day/chrome-profile/Default/Service Worker/Database/LOCK
+.docx_render_7day/chrome-profile/Default/Service Worker/Database/LOG
+.docx_render_7day/chrome-profile/Default/Service Worker/Database/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_0
+.docx_render_7day/chrome-profile/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_1
+.docx_render_7day/chrome-profile/Default/Service Worker/ScriptCache/4cb013792b196a35_0
+.docx_render_7day/chrome-profile/Default/Service Worker/ScriptCache/index
+.docx_render_7day/chrome-profile/Default/Service Worker/ScriptCache/index-dir/the-real-index
+.docx_render_7day/chrome-profile/Default/Session Storage/000003.log
+.docx_render_7day/chrome-profile/Default/Session Storage/CURRENT
+.docx_render_7day/chrome-profile/Default/Session Storage/LOCK
+.docx_render_7day/chrome-profile/Default/Session Storage/LOG
+.docx_render_7day/chrome-profile/Default/Session Storage/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Sessions/Session_13438695780287872
+.docx_render_7day/chrome-profile/Default/Sessions/Tabs_13438695780382103
+.docx_render_7day/chrome-profile/Default/Sessions_Encrypted/Session_13438695780292389
+.docx_render_7day/chrome-profile/Default/Sessions_Encrypted/Tabs_13438695780385775
+.docx_render_7day/chrome-profile/Default/Shared Dictionary/db
+.docx_render_7day/chrome-profile/Default/Shared Dictionary/db-journal
+.docx_render_7day/chrome-profile/Default/Shared Dictionary/cache/index
+.docx_render_7day/chrome-profile/Default/Shared Dictionary/cache/index-dir/the-real-index
+.docx_render_7day/chrome-profile/Default/shared_proto_db/000003.log
+.docx_render_7day/chrome-profile/Default/shared_proto_db/CURRENT
+.docx_render_7day/chrome-profile/Default/shared_proto_db/LOCK
+.docx_render_7day/chrome-profile/Default/shared_proto_db/LOG
+.docx_render_7day/chrome-profile/Default/shared_proto_db/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/shared_proto_db/metadata/000003.log
+.docx_render_7day/chrome-profile/Default/shared_proto_db/metadata/CURRENT
+.docx_render_7day/chrome-profile/Default/shared_proto_db/metadata/LOCK
+.docx_render_7day/chrome-profile/Default/shared_proto_db/metadata/LOG
+.docx_render_7day/chrome-profile/Default/shared_proto_db/metadata/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Site Characteristics Database/000003.log
+.docx_render_7day/chrome-profile/Default/Site Characteristics Database/CURRENT
+.docx_render_7day/chrome-profile/Default/Site Characteristics Database/LOCK
+.docx_render_7day/chrome-profile/Default/Site Characteristics Database/LOG
+.docx_render_7day/chrome-profile/Default/Site Characteristics Database/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db-journal
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/6f3a0dc5e6916f1e_0
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index-dir/the-real-index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index-dir/the-real-index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_0
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_1
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_2
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_3
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_0
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_1
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_2
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_3
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_0
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_1
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_2
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_3
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/000003.log
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/CURRENT
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOCK
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOG
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions-journal
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Network Persistent State
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/NetworkDataMigrated
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Reporting and NEL
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Reporting and NEL-journal
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/SCT Auditing Pending Reports
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens-journal
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/000003.log
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/CURRENT
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOCK
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOG
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db-journal
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index
+.docx_render_7day/chrome-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index-dir/the-real-index
+.docx_render_7day/chrome-profile/Default/Sync Data/LevelDB/000003.log
+.docx_render_7day/chrome-profile/Default/Sync Data/LevelDB/CURRENT
+.docx_render_7day/chrome-profile/Default/Sync Data/LevelDB/LOCK
+.docx_render_7day/chrome-profile/Default/Sync Data/LevelDB/LOG
+.docx_render_7day/chrome-profile/Default/Sync Data/LevelDB/MANIFEST-000001
+.docx_render_7day/chrome-profile/Default/WebStorage/QuotaManager
+.docx_render_7day/chrome-profile/Default/WebStorage/QuotaManager-journal
+.docx_render_7day/chrome-profile/extensions_crx_cache/metadata.json
+.docx_render_7day/chrome-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.db
+.docx_render_7day/chrome-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.db-wal
+.docx_render_7day/chrome-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.journal
+.docx_render_7day/chrome-profile/GrShaderCache/data_0
+.docx_render_7day/chrome-profile/GrShaderCache/data_1
+.docx_render_7day/chrome-profile/GrShaderCache/data_2
+.docx_render_7day/chrome-profile/GrShaderCache/data_3
+.docx_render_7day/chrome-profile/GrShaderCache/index
+.docx_render_7day/chrome-profile/Nurturing/campaign_history
+.docx_render_7day/chrome-profile/Nurturing/campaign_history-journal
+.docx_render_7day/chrome-profile/ShaderCache/data_0
+.docx_render_7day/chrome-profile/ShaderCache/data_1
+.docx_render_7day/chrome-profile/ShaderCache/data_2
+.docx_render_7day/chrome-profile/ShaderCache/data_3
+.docx_render_7day/chrome-profile/ShaderCache/index
+.docx_render_7day/chrome-profile/SmartScreen/RemoteData/customSettings
+.docx_render_7day/chrome-profile/SmartScreen/RemoteData/customSettings_F95BA787499AB4FA9EFFF472CE383A14
+.docx_render_7day/chrome-profile/SmartScreen/RemoteData/edgeSettings
+.docx_render_7day/chrome-profile/SmartScreen/RemoteData/edgeSettings_2.0-0
+.docx_render_7day/edge-final-profile/FirstLaunchAfterInstallation
+.docx_render_7day/edge-final-profile/Last Version
+.docx_render_7day/edge-final-profile/Local State
+.docx_render_7day/edge-final-profile/Variations
+.docx_render_7day/edge-final-profile/VariationsRuntimeSeedV2
+.docx_render_7day/edge-final-profile/VariationsSafeSeedV2
+.docx_render_7day/edge-final-profile/VariationsSeedV2
+.docx_render_7day/edge-final-profile/Crashpad/metadata
+.docx_render_7day/edge-final-profile/Crashpad/settings.dat
+.docx_render_7day/edge-final-profile/Crashpad/throttle_store.dat
+.docx_render_7day/edge-final-profile/Default/Affiliation Database
+.docx_render_7day/edge-final-profile/Default/Affiliation Database-journal
+.docx_render_7day/edge-final-profile/Default/arbitration_service_config.json
+.docx_render_7day/edge-final-profile/Default/BookmarkMergedSurfaceOrdering
+.docx_render_7day/edge-final-profile/Default/Bookmarks
+.docx_render_7day/edge-final-profile/Default/declarative_performance_observer.db
+.docx_render_7day/edge-final-profile/Default/declarative_performance_observer.db-journal
+.docx_render_7day/edge-final-profile/Default/EncryptedBookmarks2
+.docx_render_7day/edge-final-profile/Default/Favicons
+.docx_render_7day/edge-final-profile/Default/Favicons-journal
+.docx_render_7day/edge-final-profile/Default/History
+.docx_render_7day/edge-final-profile/Default/History-journal
+.docx_render_7day/edge-final-profile/Default/HubApps Icons
+.docx_render_7day/edge-final-profile/Default/HubApps Icons-journal
+.docx_render_7day/edge-final-profile/Default/load_statistics.db
+.docx_render_7day/edge-final-profile/Default/load_statistics.db-shm
+.docx_render_7day/edge-final-profile/Default/load_statistics.db-wal
+.docx_render_7day/edge-final-profile/Default/LOCK
+.docx_render_7day/edge-final-profile/Default/LOG
+.docx_render_7day/edge-final-profile/Default/Login Data
+.docx_render_7day/edge-final-profile/Default/Login Data For Account
+.docx_render_7day/edge-final-profile/Default/Login Data For Account-journal
+.docx_render_7day/edge-final-profile/Default/Login Data-journal
+.docx_render_7day/edge-final-profile/Default/Preferences
+.docx_render_7day/edge-final-profile/Default/README
+.docx_render_7day/edge-final-profile/Default/Secure Preferences
+.docx_render_7day/edge-final-profile/Default/ServerCertificate
+.docx_render_7day/edge-final-profile/Default/ServerCertificate-journal
+.docx_render_7day/edge-final-profile/Default/Top Sites
+.docx_render_7day/edge-final-profile/Default/Top Sites-journal
+.docx_render_7day/edge-final-profile/Default/Vpn Tokens
+.docx_render_7day/edge-final-profile/Default/Vpn Tokens-journal
+.docx_render_7day/edge-final-profile/Default/Web Data
+.docx_render_7day/edge-final-profile/Default/Web Data-journal
+.docx_render_7day/edge-final-profile/Default/Cache/Cache_Data/data_0
+.docx_render_7day/edge-final-profile/Default/Cache/Cache_Data/data_1
+.docx_render_7day/edge-final-profile/Default/Cache/Cache_Data/data_2
+.docx_render_7day/edge-final-profile/Default/Cache/Cache_Data/data_3
+.docx_render_7day/edge-final-profile/Default/Cache/Cache_Data/f_000001
+.docx_render_7day/edge-final-profile/Default/Cache/Cache_Data/index
+.docx_render_7day/edge-final-profile/Default/Cache/No_Vary_Search/journal.baj
+.docx_render_7day/edge-final-profile/Default/Cache/No_Vary_Search/snapshot.baf
+.docx_render_7day/edge-final-profile/Default/ClientCertificates/LOCK
+.docx_render_7day/edge-final-profile/Default/ClientCertificates/LOG
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/2a8a6f695a3ff316_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/2cca9bc741a6516d_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/5cce1706364839f1_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/5fbb54f36261c413_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/7de0dc67a2b3a69c_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/8bb1867be67136eb_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/945cb8fb56d09a8e_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/8020acacb3d13763_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/b21fb45197b9c728_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/baded5730168391f_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/e9a142a21b9ad9ef_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/e94999eac39dfd99_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/ebce9e52a869b921_0
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/index
+.docx_render_7day/edge-final-profile/Default/Code Cache/js/index-dir/the-real-index
+.docx_render_7day/edge-final-profile/Default/Code Cache/wasm/index
+.docx_render_7day/edge-final-profile/Default/Code Cache/wasm/index-dir/the-real-index
+.docx_render_7day/edge-final-profile/Default/commerce_subscription_db/LOCK
+.docx_render_7day/edge-final-profile/Default/commerce_subscription_db/LOG
+.docx_render_7day/edge-final-profile/Default/DawnGraphiteCache/data_0
+.docx_render_7day/edge-final-profile/Default/DawnGraphiteCache/data_1
+.docx_render_7day/edge-final-profile/Default/DawnGraphiteCache/data_2
+.docx_render_7day/edge-final-profile/Default/DawnGraphiteCache/data_3
+.docx_render_7day/edge-final-profile/Default/DawnGraphiteCache/index
+.docx_render_7day/edge-final-profile/Default/DawnWebGPUCache/data_0
+.docx_render_7day/edge-final-profile/Default/DawnWebGPUCache/data_1
+.docx_render_7day/edge-final-profile/Default/DawnWebGPUCache/data_2
+.docx_render_7day/edge-final-profile/Default/DawnWebGPUCache/data_3
+.docx_render_7day/edge-final-profile/Default/DawnWebGPUCache/index
+.docx_render_7day/edge-final-profile/Default/discount_infos_db/LOCK
+.docx_render_7day/edge-final-profile/Default/discount_infos_db/LOG
+.docx_render_7day/edge-final-profile/Default/discounts_db/LOCK
+.docx_render_7day/edge-final-profile/Default/discounts_db/LOG
+.docx_render_7day/edge-final-profile/Default/DualEngine/SiteList-Consumer.json
+.docx_render_7day/edge-final-profile/Default/DualEngine/SiteList-Enterprise.json
+.docx_render_7day/edge-final-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db
+.docx_render_7day/edge-final-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db-journal
+.docx_render_7day/edge-final-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOCK
+.docx_render_7day/edge-final-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOG
+.docx_render_7day/edge-final-profile/Default/Extension Rules/000003.log
+.docx_render_7day/edge-final-profile/Default/Extension Rules/CURRENT
+.docx_render_7day/edge-final-profile/Default/Extension Rules/LOCK
+.docx_render_7day/edge-final-profile/Default/Extension Rules/LOG
+.docx_render_7day/edge-final-profile/Default/Extension Rules/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Extension Scripts/000003.log
+.docx_render_7day/edge-final-profile/Default/Extension Scripts/CURRENT
+.docx_render_7day/edge-final-profile/Default/Extension Scripts/LOCK
+.docx_render_7day/edge-final-profile/Default/Extension Scripts/LOG
+.docx_render_7day/edge-final-profile/Default/Extension Scripts/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Extension State/000003.log
+.docx_render_7day/edge-final-profile/Default/Extension State/CURRENT
+.docx_render_7day/edge-final-profile/Default/Extension State/LOCK
+.docx_render_7day/edge-final-profile/Default/Extension State/LOG
+.docx_render_7day/edge-final-profile/Default/Extension State/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/GPUCache/data_0
+.docx_render_7day/edge-final-profile/Default/GPUCache/data_1
+.docx_render_7day/edge-final-profile/Default/GPUCache/data_2
+.docx_render_7day/edge-final-profile/Default/GPUCache/data_3
+.docx_render_7day/edge-final-profile/Default/GPUCache/index
+.docx_render_7day/edge-final-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/000003.log
+.docx_render_7day/edge-final-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/CURRENT
+.docx_render_7day/edge-final-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOCK
+.docx_render_7day/edge-final-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOG
+.docx_render_7day/edge-final-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Local Storage/leveldb/000003.log
+.docx_render_7day/edge-final-profile/Default/Local Storage/leveldb/CURRENT
+.docx_render_7day/edge-final-profile/Default/Local Storage/leveldb/LOCK
+.docx_render_7day/edge-final-profile/Default/Local Storage/leveldb/LOG
+.docx_render_7day/edge-final-profile/Default/Local Storage/leveldb/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Network/Cookies
+.docx_render_7day/edge-final-profile/Default/Network/Cookies-journal
+.docx_render_7day/edge-final-profile/Default/Network/Device Bound Sessions
+.docx_render_7day/edge-final-profile/Default/Network/Device Bound Sessions-journal
+.docx_render_7day/edge-final-profile/Default/Network/Network Persistent State
+.docx_render_7day/edge-final-profile/Default/Network/NetworkDataMigrated
+.docx_render_7day/edge-final-profile/Default/Network/Reporting and NEL
+.docx_render_7day/edge-final-profile/Default/Network/Reporting and NEL-journal
+.docx_render_7day/edge-final-profile/Default/Network/SCT Auditing Pending Reports
+.docx_render_7day/edge-final-profile/Default/Network/Trust Tokens
+.docx_render_7day/edge-final-profile/Default/Network/Trust Tokens-journal
+.docx_render_7day/edge-final-profile/Default/Nurturing/campaign_history
+.docx_render_7day/edge-final-profile/Default/Nurturing/campaign_history-journal
+.docx_render_7day/edge-final-profile/Default/parcel_tracking_db/LOCK
+.docx_render_7day/edge-final-profile/Default/parcel_tracking_db/LOG
+.docx_render_7day/edge-final-profile/Default/PersistentOriginTrials/LOCK
+.docx_render_7day/edge-final-profile/Default/PersistentOriginTrials/LOG
+.docx_render_7day/edge-final-profile/Default/Service Worker/Database/000003.log
+.docx_render_7day/edge-final-profile/Default/Service Worker/Database/CURRENT
+.docx_render_7day/edge-final-profile/Default/Service Worker/Database/LOCK
+.docx_render_7day/edge-final-profile/Default/Service Worker/Database/LOG
+.docx_render_7day/edge-final-profile/Default/Service Worker/Database/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_0
+.docx_render_7day/edge-final-profile/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_1
+.docx_render_7day/edge-final-profile/Default/Service Worker/ScriptCache/4cb013792b196a35_0
+.docx_render_7day/edge-final-profile/Default/Service Worker/ScriptCache/f1cdccba37924bda_0
+.docx_render_7day/edge-final-profile/Default/Service Worker/ScriptCache/index
+.docx_render_7day/edge-final-profile/Default/Service Worker/ScriptCache/index-dir/the-real-index
+.docx_render_7day/edge-final-profile/Default/Session Storage/000003.log
+.docx_render_7day/edge-final-profile/Default/Session Storage/CURRENT
+.docx_render_7day/edge-final-profile/Default/Session Storage/LOCK
+.docx_render_7day/edge-final-profile/Default/Session Storage/LOG
+.docx_render_7day/edge-final-profile/Default/Session Storage/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Sessions/Session_13438695936319209
+.docx_render_7day/edge-final-profile/Default/Sessions/Tabs_13438695936415048
+.docx_render_7day/edge-final-profile/Default/Sessions_Encrypted/Session_13438695936323974
+.docx_render_7day/edge-final-profile/Default/Sessions_Encrypted/Tabs_13438695936421058
+.docx_render_7day/edge-final-profile/Default/Shared Dictionary/db
+.docx_render_7day/edge-final-profile/Default/Shared Dictionary/db-journal
+.docx_render_7day/edge-final-profile/Default/Shared Dictionary/cache/index
+.docx_render_7day/edge-final-profile/Default/Shared Dictionary/cache/index-dir/the-real-index
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/000003.log
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/CURRENT
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/LOCK
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/LOG
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/metadata/000003.log
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/metadata/CURRENT
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/metadata/LOCK
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/metadata/LOG
+.docx_render_7day/edge-final-profile/Default/shared_proto_db/metadata/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Site Characteristics Database/000003.log
+.docx_render_7day/edge-final-profile/Default/Site Characteristics Database/CURRENT
+.docx_render_7day/edge-final-profile/Default/Site Characteristics Database/LOCK
+.docx_render_7day/edge-final-profile/Default/Site Characteristics Database/LOG
+.docx_render_7day/edge-final-profile/Default/Site Characteristics Database/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db-journal
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/6f3a0dc5e6916f1e_0
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index-dir/the-real-index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index-dir/the-real-index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_0
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_1
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_2
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_3
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_0
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_1
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_2
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_3
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_0
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_1
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_2
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_3
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/000003.log
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/CURRENT
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOCK
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOG
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions-journal
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Network Persistent State
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/NetworkDataMigrated
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Reporting and NEL
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Reporting and NEL-journal
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/SCT Auditing Pending Reports
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens-journal
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/000003.log
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/CURRENT
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOCK
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOG
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db-journal
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index
+.docx_render_7day/edge-final-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index-dir/the-real-index
+.docx_render_7day/edge-final-profile/Default/Sync Data/LevelDB/000003.log
+.docx_render_7day/edge-final-profile/Default/Sync Data/LevelDB/CURRENT
+.docx_render_7day/edge-final-profile/Default/Sync Data/LevelDB/LOCK
+.docx_render_7day/edge-final-profile/Default/Sync Data/LevelDB/LOG
+.docx_render_7day/edge-final-profile/Default/Sync Data/LevelDB/MANIFEST-000001
+.docx_render_7day/edge-final-profile/Default/WebStorage/QuotaManager
+.docx_render_7day/edge-final-profile/Default/WebStorage/QuotaManager-journal
+.docx_render_7day/edge-final-profile/extensions_crx_cache/metadata.json
+.docx_render_7day/edge-final-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.db
+.docx_render_7day/edge-final-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.db-wal
+.docx_render_7day/edge-final-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.journal
+.docx_render_7day/edge-final-profile/GrShaderCache/data_0
+.docx_render_7day/edge-final-profile/GrShaderCache/data_1
+.docx_render_7day/edge-final-profile/GrShaderCache/data_2
+.docx_render_7day/edge-final-profile/GrShaderCache/data_3
+.docx_render_7day/edge-final-profile/GrShaderCache/index
+.docx_render_7day/edge-final-profile/Nurturing/campaign_history
+.docx_render_7day/edge-final-profile/Nurturing/campaign_history-journal
+.docx_render_7day/edge-final-profile/ShaderCache/data_0
+.docx_render_7day/edge-final-profile/ShaderCache/data_1
+.docx_render_7day/edge-final-profile/ShaderCache/data_2
+.docx_render_7day/edge-final-profile/ShaderCache/data_3
+.docx_render_7day/edge-final-profile/ShaderCache/index
+.docx_render_7day/edge-final-profile/SmartScreen/RemoteData/customSettings
+.docx_render_7day/edge-final-profile/SmartScreen/RemoteData/customSettings_F95BA787499AB4FA9EFFF472CE383A14
+.docx_render_7day/edge-final-profile/SmartScreen/RemoteData/edgeSettings
+.docx_render_7day/edge-final-profile/SmartScreen/RemoteData/edgeSettings_2.0-0
+.docx_render_7day/edge-profile/FirstLaunchAfterInstallation
+.docx_render_7day/edge-profile/Last Version
+.docx_render_7day/edge-profile/Local State
+.docx_render_7day/edge-profile/Variations
+.docx_render_7day/edge-profile/VariationsRuntimeSeedV2
+.docx_render_7day/edge-profile/VariationsSafeSeedV2
+.docx_render_7day/edge-profile/VariationsSeedV2
+.docx_render_7day/edge-profile/Crashpad/metadata
+.docx_render_7day/edge-profile/Crashpad/settings.dat
+.docx_render_7day/edge-profile/Crashpad/throttle_store.dat
+.docx_render_7day/edge-profile/Default/Affiliation Database
+.docx_render_7day/edge-profile/Default/Affiliation Database-journal
+.docx_render_7day/edge-profile/Default/arbitration_service_config.json
+.docx_render_7day/edge-profile/Default/BookmarkMergedSurfaceOrdering
+.docx_render_7day/edge-profile/Default/Bookmarks
+.docx_render_7day/edge-profile/Default/declarative_performance_observer.db
+.docx_render_7day/edge-profile/Default/declarative_performance_observer.db-journal
+.docx_render_7day/edge-profile/Default/EncryptedBookmarks2
+.docx_render_7day/edge-profile/Default/Favicons
+.docx_render_7day/edge-profile/Default/Favicons-journal
+.docx_render_7day/edge-profile/Default/History
+.docx_render_7day/edge-profile/Default/History-journal
+.docx_render_7day/edge-profile/Default/HubApps Icons
+.docx_render_7day/edge-profile/Default/HubApps Icons-journal
+.docx_render_7day/edge-profile/Default/load_statistics.db
+.docx_render_7day/edge-profile/Default/load_statistics.db-shm
+.docx_render_7day/edge-profile/Default/load_statistics.db-wal
+.docx_render_7day/edge-profile/Default/LOCK
+.docx_render_7day/edge-profile/Default/LOG
+.docx_render_7day/edge-profile/Default/Login Data
+.docx_render_7day/edge-profile/Default/Login Data For Account
+.docx_render_7day/edge-profile/Default/Login Data For Account-journal
+.docx_render_7day/edge-profile/Default/Login Data-journal
+.docx_render_7day/edge-profile/Default/Preferences
+.docx_render_7day/edge-profile/Default/README
+.docx_render_7day/edge-profile/Default/Secure Preferences
+.docx_render_7day/edge-profile/Default/ServerCertificate
+.docx_render_7day/edge-profile/Default/ServerCertificate-journal
+.docx_render_7day/edge-profile/Default/Top Sites
+.docx_render_7day/edge-profile/Default/Top Sites-journal
+.docx_render_7day/edge-profile/Default/Vpn Tokens
+.docx_render_7day/edge-profile/Default/Vpn Tokens-journal
+.docx_render_7day/edge-profile/Default/Web Data
+.docx_render_7day/edge-profile/Default/Web Data-journal
+.docx_render_7day/edge-profile/Default/Cache/Cache_Data/data_0
+.docx_render_7day/edge-profile/Default/Cache/Cache_Data/data_1
+.docx_render_7day/edge-profile/Default/Cache/Cache_Data/data_2
+.docx_render_7day/edge-profile/Default/Cache/Cache_Data/data_3
+.docx_render_7day/edge-profile/Default/Cache/Cache_Data/f_000001
+.docx_render_7day/edge-profile/Default/Cache/Cache_Data/index
+.docx_render_7day/edge-profile/Default/ClientCertificates/LOCK
+.docx_render_7day/edge-profile/Default/ClientCertificates/LOG
+.docx_render_7day/edge-profile/Default/Code Cache/js/2a8a6f695a3ff316_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/2cca9bc741a6516d_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/5cce1706364839f1_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/5fbb54f36261c413_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/7de0dc67a2b3a69c_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/8bb1867be67136eb_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/945cb8fb56d09a8e_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/8020acacb3d13763_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/b21fb45197b9c728_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/baded5730168391f_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/e9a142a21b9ad9ef_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/e94999eac39dfd99_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/ebce9e52a869b921_0
+.docx_render_7day/edge-profile/Default/Code Cache/js/index
+.docx_render_7day/edge-profile/Default/Code Cache/js/index-dir/the-real-index
+.docx_render_7day/edge-profile/Default/Code Cache/wasm/index
+.docx_render_7day/edge-profile/Default/Code Cache/wasm/index-dir/the-real-index
+.docx_render_7day/edge-profile/Default/commerce_subscription_db/LOCK
+.docx_render_7day/edge-profile/Default/commerce_subscription_db/LOG
+.docx_render_7day/edge-profile/Default/DawnGraphiteCache/data_0
+.docx_render_7day/edge-profile/Default/DawnGraphiteCache/data_1
+.docx_render_7day/edge-profile/Default/DawnGraphiteCache/data_2
+.docx_render_7day/edge-profile/Default/DawnGraphiteCache/data_3
+.docx_render_7day/edge-profile/Default/DawnGraphiteCache/index
+.docx_render_7day/edge-profile/Default/DawnWebGPUCache/data_0
+.docx_render_7day/edge-profile/Default/DawnWebGPUCache/data_1
+.docx_render_7day/edge-profile/Default/DawnWebGPUCache/data_2
+.docx_render_7day/edge-profile/Default/DawnWebGPUCache/data_3
+.docx_render_7day/edge-profile/Default/DawnWebGPUCache/index
+.docx_render_7day/edge-profile/Default/discount_infos_db/LOCK
+.docx_render_7day/edge-profile/Default/discount_infos_db/LOG
+.docx_render_7day/edge-profile/Default/discounts_db/LOCK
+.docx_render_7day/edge-profile/Default/discounts_db/LOG
+.docx_render_7day/edge-profile/Default/DualEngine/SiteList-Consumer.json
+.docx_render_7day/edge-profile/Default/DualEngine/SiteList-Enterprise.json
+.docx_render_7day/edge-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db
+.docx_render_7day/edge-profile/Default/EdgeHubAppUsage/EdgeHubAppUsageSQLite.db-journal
+.docx_render_7day/edge-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOCK
+.docx_render_7day/edge-profile/Default/EdgePushStorageWithConnectTokenAndKey/LOG
+.docx_render_7day/edge-profile/Default/Extension Rules/000003.log
+.docx_render_7day/edge-profile/Default/Extension Rules/CURRENT
+.docx_render_7day/edge-profile/Default/Extension Rules/LOCK
+.docx_render_7day/edge-profile/Default/Extension Rules/LOG
+.docx_render_7day/edge-profile/Default/Extension Rules/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Extension Scripts/000003.log
+.docx_render_7day/edge-profile/Default/Extension Scripts/CURRENT
+.docx_render_7day/edge-profile/Default/Extension Scripts/LOCK
+.docx_render_7day/edge-profile/Default/Extension Scripts/LOG
+.docx_render_7day/edge-profile/Default/Extension Scripts/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Extension State/000003.log
+.docx_render_7day/edge-profile/Default/Extension State/CURRENT
+.docx_render_7day/edge-profile/Default/Extension State/LOCK
+.docx_render_7day/edge-profile/Default/Extension State/LOG
+.docx_render_7day/edge-profile/Default/Extension State/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/GPUCache/data_0
+.docx_render_7day/edge-profile/Default/GPUCache/data_1
+.docx_render_7day/edge-profile/Default/GPUCache/data_2
+.docx_render_7day/edge-profile/Default/GPUCache/data_3
+.docx_render_7day/edge-profile/Default/GPUCache/index
+.docx_render_7day/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/000003.log
+.docx_render_7day/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/CURRENT
+.docx_render_7day/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOCK
+.docx_render_7day/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/LOG
+.docx_render_7day/edge-profile/Default/Local Extension Settings/jdiccldimpdaibmpdkjnbmckianbfold/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Local Storage/leveldb/000003.log
+.docx_render_7day/edge-profile/Default/Local Storage/leveldb/CURRENT
+.docx_render_7day/edge-profile/Default/Local Storage/leveldb/LOCK
+.docx_render_7day/edge-profile/Default/Local Storage/leveldb/LOG
+.docx_render_7day/edge-profile/Default/Local Storage/leveldb/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Network/Cookies
+.docx_render_7day/edge-profile/Default/Network/Cookies-journal
+.docx_render_7day/edge-profile/Default/Network/Device Bound Sessions
+.docx_render_7day/edge-profile/Default/Network/Device Bound Sessions-journal
+.docx_render_7day/edge-profile/Default/Network/Network Persistent State
+.docx_render_7day/edge-profile/Default/Network/NetworkDataMigrated
+.docx_render_7day/edge-profile/Default/Network/Reporting and NEL
+.docx_render_7day/edge-profile/Default/Network/Reporting and NEL-journal
+.docx_render_7day/edge-profile/Default/Network/SCT Auditing Pending Reports
+.docx_render_7day/edge-profile/Default/Network/Trust Tokens
+.docx_render_7day/edge-profile/Default/Network/Trust Tokens-journal
+.docx_render_7day/edge-profile/Default/Nurturing/campaign_history
+.docx_render_7day/edge-profile/Default/Nurturing/campaign_history-journal
+.docx_render_7day/edge-profile/Default/parcel_tracking_db/LOCK
+.docx_render_7day/edge-profile/Default/parcel_tracking_db/LOG
+.docx_render_7day/edge-profile/Default/PersistentOriginTrials/LOCK
+.docx_render_7day/edge-profile/Default/PersistentOriginTrials/LOG
+.docx_render_7day/edge-profile/Default/Service Worker/Database/000003.log
+.docx_render_7day/edge-profile/Default/Service Worker/Database/CURRENT
+.docx_render_7day/edge-profile/Default/Service Worker/Database/LOCK
+.docx_render_7day/edge-profile/Default/Service Worker/Database/LOG
+.docx_render_7day/edge-profile/Default/Service Worker/Database/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_0
+.docx_render_7day/edge-profile/Default/Service Worker/ScriptCache/4cb013792b196a35_0
+.docx_render_7day/edge-profile/Default/Service Worker/ScriptCache/index
+.docx_render_7day/edge-profile/Default/Service Worker/ScriptCache/index-dir/the-real-index
+.docx_render_7day/edge-profile/Default/Session Storage/000003.log
+.docx_render_7day/edge-profile/Default/Session Storage/CURRENT
+.docx_render_7day/edge-profile/Default/Session Storage/LOCK
+.docx_render_7day/edge-profile/Default/Session Storage/LOG
+.docx_render_7day/edge-profile/Default/Session Storage/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Sessions/Session_13438695807192875
+.docx_render_7day/edge-profile/Default/Sessions/Tabs_13438695807301805
+.docx_render_7day/edge-profile/Default/Sessions_Encrypted/Session_13438695807208586
+.docx_render_7day/edge-profile/Default/Sessions_Encrypted/Tabs_13438695807343515
+.docx_render_7day/edge-profile/Default/Shared Dictionary/db
+.docx_render_7day/edge-profile/Default/Shared Dictionary/db-journal
+.docx_render_7day/edge-profile/Default/Shared Dictionary/cache/index
+.docx_render_7day/edge-profile/Default/Shared Dictionary/cache/index-dir/the-real-index
+.docx_render_7day/edge-profile/Default/shared_proto_db/000003.log
+.docx_render_7day/edge-profile/Default/shared_proto_db/CURRENT
+.docx_render_7day/edge-profile/Default/shared_proto_db/LOCK
+.docx_render_7day/edge-profile/Default/shared_proto_db/LOG
+.docx_render_7day/edge-profile/Default/shared_proto_db/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/shared_proto_db/metadata/000003.log
+.docx_render_7day/edge-profile/Default/shared_proto_db/metadata/CURRENT
+.docx_render_7day/edge-profile/Default/shared_proto_db/metadata/LOCK
+.docx_render_7day/edge-profile/Default/shared_proto_db/metadata/LOG
+.docx_render_7day/edge-profile/Default/shared_proto_db/metadata/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Site Characteristics Database/000003.log
+.docx_render_7day/edge-profile/Default/Site Characteristics Database/CURRENT
+.docx_render_7day/edge-profile/Default/Site Characteristics Database/LOCK
+.docx_render_7day/edge-profile/Default/Site Characteristics Database/LOG
+.docx_render_7day/edge-profile/Default/Site Characteristics Database/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/declarative_performance_observer.db-journal
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/6f3a0dc5e6916f1e_0
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index-dir/the-real-index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index-dir/the-real-index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_0
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_1
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_2
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/data_3
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnGraphiteCache/index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_0
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_1
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_2
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/data_3
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/DawnWebGPUCache/index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_0
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_1
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_2
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/data_3
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/GPUCache/index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/000003.log
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/CURRENT
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOCK
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/LOG
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Local Storage/leveldb/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Device Bound Sessions-journal
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Network Persistent State
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/NetworkDataMigrated
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Reporting and NEL
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Reporting and NEL-journal
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/SCT Auditing Pending Reports
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Network/Trust Tokens-journal
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/000003.log
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/CURRENT
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOCK
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/LOG
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Session Storage/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/db-journal
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index
+.docx_render_7day/edge-profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index-dir/the-real-index
+.docx_render_7day/edge-profile/Default/Sync Data/LevelDB/000003.log
+.docx_render_7day/edge-profile/Default/Sync Data/LevelDB/CURRENT
+.docx_render_7day/edge-profile/Default/Sync Data/LevelDB/LOCK
+.docx_render_7day/edge-profile/Default/Sync Data/LevelDB/LOG
+.docx_render_7day/edge-profile/Default/Sync Data/LevelDB/MANIFEST-000001
+.docx_render_7day/edge-profile/Default/WebStorage/QuotaManager
+.docx_render_7day/edge-profile/Default/WebStorage/QuotaManager-journal
+.docx_render_7day/edge-profile/extensions_crx_cache/metadata.json
+.docx_render_7day/edge-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.db
+.docx_render_7day/edge-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.db-wal
+.docx_render_7day/edge-profile/GPUPersistentCache/DawnGraphiteCache/OMXJKWSVDDS6L3YMYJJRNHVYDBSO7SEM/cache.journal
+.docx_render_7day/edge-profile/GrShaderCache/data_0
+.docx_render_7day/edge-profile/GrShaderCache/data_1
+.docx_render_7day/edge-profile/GrShaderCache/data_2
+.docx_render_7day/edge-profile/GrShaderCache/data_3
+.docx_render_7day/edge-profile/GrShaderCache/index
+.docx_render_7day/edge-profile/Nurturing/campaign_history
+.docx_render_7day/edge-profile/Nurturing/campaign_history-journal
+.docx_render_7day/edge-profile/ShaderCache/data_0
+.docx_render_7day/edge-profile/ShaderCache/data_1
+.docx_render_7day/edge-profile/ShaderCache/data_2
+.docx_render_7day/edge-profile/ShaderCache/data_3
+.docx_render_7day/edge-profile/ShaderCache/index
+.docx_render_7day/edge-profile/SmartScreen/RemoteData/customSettings
+.docx_render_7day/edge-profile/SmartScreen/RemoteData/customSettings_F95BA787499AB4FA9EFFF472CE383A14
+.docx_render_7day/edge-profile/SmartScreen/RemoteData/edgeSettings
+.docx_render_7day/edge-profile/SmartScreen/RemoteData/edgeSettings_2.0-0

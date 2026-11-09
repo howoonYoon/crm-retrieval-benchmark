@@ -72,6 +72,41 @@ The response contains a schema version, status, selected strategy, and an
 title, excerpt, section, source URL, and source type so an MCP server can return
 the object without additional conversion.
 
+## Local MCP stdio smoke test
+
+The repository includes a minimal local MCP server entry point and a real SDK
+client smoke test. Install the dependencies, then run:
+
+```powershell
+python scripts/mcp_smoke_test.py
+```
+
+The client starts `src/mcp_server.py` as a subprocess, connects over stdin and
+stdout, negotiates the MCP protocol, verifies the server identity, and exits.
+A successful run prints one JSON object similar to:
+
+```json
+{"status": "ok", "server_name": "salesforce-crm-troubleshooting", "server_version": "0.1.0", "protocol_version": "..."}
+```
+
+The server exposes four read-only tools:
+
+- `search_documents`: searches the checked-in Salesforce document corpus.
+- `get_case_record`: returns a Case record from the local mock CRM data.
+- `get_case_metadata`: returns mock Salesforce describe metadata for Case.
+- `get_error_logs`: returns mock diagnostic entries associated with a Case.
+
+The three CRM data tools return both `"data_source": "mock"` and
+`"is_mock": true`. Their deterministic fixture uses Case ID
+`500000000000001AAA`; it is not live Salesforce customer data.
+
+The smoke test uses the real SDK stdio client to verify initialization,
+`tools/list`, generated input schemas, and `tools/call` for all four tools. It
+also verifies the strategy and mock Case ID allowlists, the `top_k` range of
+1 through 10, invalid arguments, Mock markers, and a 20-second per-call client
+timeout. The MCP server reserves stdout for protocol messages and writes its
+startup log to stderr.
+
 # Metrics
 
 - Core document recall@5: retrieved core-labelled passages / all core-labelled passages per query.
