@@ -7,7 +7,7 @@ from typing import Any
 
 from langchain_core.messages import HumanMessage
 
-from agent.state import AgentAnswer, AgentState, Intent
+from agent.state import AgentAnswer, AgentState
 
 
 # Salesforce Case ID는 500으로 시작하는 15자 또는 18자 ID
