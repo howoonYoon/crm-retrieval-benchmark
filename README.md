@@ -158,17 +158,6 @@ Mean core document recall@5:
 
 Some questions need multiple core passages and retain scope limitations. In particular, related-record update concepts do not constitute a complete tested Case-to-Account implementation. Technical supporting pages remain available for an admin agent, but retrieving them alone is not counted as a core answer.
 
-# If I Had One More Week
-
-If I had one more week, I would improve the corpus construction, the evaluation set, and the retrieval pipeline.
-
-For corpus construction, I would improve the context and structure retained from PDFs. The current retrieval input already includes each chunk's title, product area, and section where available. HTML chunks also retain heading-based sections, code and table context, and parent document metadata. PDF chunks still have less structural context, even though Salesforce guides often depend on section hierarchies, tables, setup steps, diagrams, and screenshots. I would therefore extract richer section hierarchies and parent document metadata from PDFs, preserve table and step-by-step structures more faithfully, and generate short descriptions for visual content. This could help distinguish chunks containing terms such as `routing address`, `debug options`, or `field permissions` across Email-to-Case, Flow Debug, and Field-Level Security documentation. I would also test grouping results from the same page or section.
-
-For evaluation, I would expand the 20-query benchmark, especially in the hardest categories: symptom-based troubleshooting and paraphrased feature discovery. I would also add more natural-language automation cases to test whether dense retrieval can consistently handle broad, goal-oriented user phrasing.
-
-I would also tune the hybrid retrieval and reranking pipeline rather than assuming the current hybrid settings are optimal. The current results show that hybrid methods recovered different hard cases from dense retrieval, so better weighting, candidate depth, or reranker calibration might improve robustness on difficult queries.
-
-Finally, I would inspect hard misses to see whether they are caused by poor chunk boundaries, missing section context, ambiguous labels, or model limitations. This would make the benchmark more representative of real Salesforce documentation search, where users often describe their goal or problem without knowing the exact Salesforce feature name.
 
 
 # Reproduce
